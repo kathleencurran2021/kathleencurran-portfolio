@@ -1,0 +1,38 @@
+#nav-home {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.kat-icon {
+  width: 2.5rem;
+  height: auto;
+}
+
+#nav-home:hover {
+  font-weight: 1000;
+}
+
+.navbar .navbar-expand-md {
+  background-color: orange;
+}
+
+.navbar-nav li a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.navbar-nav li a:hover {
+  font-weight: bolder;
+}
+
+.dropdown button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.dropdown-item {
+  font-family: "Montserrat", sans-serif;
+}
