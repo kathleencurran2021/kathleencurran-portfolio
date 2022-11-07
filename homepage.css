@@ -56,3 +56,48 @@ html {
 .connect {
   margin: 3rem;
 }
+
+/* ~~~~~~~~~Resume~~~~~~~~~~~~~ */
+
+.experience {
+  margin: 3rem 4rem 4rem 4rem;
+}
+
+.experience > h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.resume-pdf {
+  text-align: center;
+}
+
+
+
+.experience-block {
+  display: grid;
+  grid-template-columns: 1fr 1.8fr;
+  column-gap: 3rem;
+  margin: 2rem 8rem;
+  align-items: center;
+}
+
+.experience-block .role {
+  grid-row: 1;
+  grid-column: 1;
+  /* margin: auto; */
+}
+
+.role h2,
+.role h4 {
+  font-weight: 300;
+}
+
+.role p {
+  color: grey;
+}
+
+.experience-block ul {
+  grid-row: 1;
+  grid-column: 2;
+}
