@@ -29,17 +29,9 @@
       <a class="navbar-brand active" id="nav-home" href="index.html">Kathleen Curran</a>
 
       <ul class="navbar-nav  mb-2 me-5 justify-content-right">
-        <div class="dropdown me-4">
-          <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Projects
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="sahiyo-project.html">Needs Assessment</a>
-            <a class="dropdown-item" href="cutgroup-project.html">Civic User Testing</a>
-            <!-- <a class="dropdown-item" href="#">Something else here</a> -->
-          </div>
-        </div>
+        <li class="nav-item me-4">
+          <a class="nav-link" id="nav-about" aria-current="page" href="index.html">Projects</a>
+        </li>
         <li class="nav-item me-4">
           <a class="nav-link" id="nav-about" aria-current="page" href="about.html">About</a>
         </li>
@@ -48,21 +40,26 @@
         </li>
       </ul>
     </div>
-
   </nav>
 
   <div class="project-contents">
-    <div class="project-thumbnail sahiyo-thumbnail">
-      <a href="sahiyo-project.html">
-        <img class="sahiyo-thumbnail-img" src="images/Sahiyo-logo-2.jpg">
-        <img class="sahiyo-info" src="images/Sahiyo Group.png">
-      </a>
-    </div>
-    <div class="project-thumbnail cutgroup-thumbnail">
-      <a href="cutgroup-project.html">
-        <img class="cutgroup-thumbnail-img" src="images/ballot.jpg">
 
-      </a>
+
+    <div class="project-thumbnail sahiyo-thumbnail ">
+      <div class="sahiyo-description proj-desc">
+        <h3>Sahiyo: Needs Assessment and Usability Evaluation</h3>
+        <a href="sahiyo-project.html" type="button" class="btn btn-light">Learn More</button>
+      </div>
+      <img class="sahiyo-thumbnail-img" src="images/Sahiyo-logo-2.jpg">
+    </div>
+
+    <div class="project-thumbnail cutgroup-thumbnail">
+      <div class="proj-desc cutgroup-description">
+        <h3>Civic User Testing: Poll Work</h3>
+        <a href="cutgroup-project.html" type="button" class="btn btn-light">Learn More</a>
+      </div>
+
+      <img class="cutgroup-thumbnail-img thumbnail-img" src="images/ballot.jpg">
     </div>
   </div>
 
