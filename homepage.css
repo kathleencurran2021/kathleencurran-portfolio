@@ -95,6 +95,9 @@ html {
   transform: translateY(0);
 } */
 
+.cutgroup-description h3 {
+  width: 100%;
+}
 .cutgroup-thumbnail-img {
   grid-row: 1;
   grid-column: 2;
