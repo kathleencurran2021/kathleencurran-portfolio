@@ -1,0 +1,8 @@
+#huddle-survey {
+  display: none;
+}
+
+.huddle-personas {
+  grid-column: 1/3;
+  grid-row: 3;
+}
