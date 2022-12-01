@@ -5,37 +5,60 @@ html {
   margin: 0;
 }
 .project-contents {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   column-gap: 3rem;
   width: 80%;
   align-items: center;
-  margin: 3rem auto;
+  margin: 2rem auto;
+}
+
+.sahiyo-project {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  align-items: center;
+  text-align: center;
+}
+
+.sahiyo-name {
+  font-family: "Montserrat", sans-serif;
+  grid-column: 1;
+}
+
+.sahiyo-thumbnail {
+  grid-column: 2;
+  width: 100%;
 }
 
 .sahiyo-thumbnail-img {
   width: 100%;
-  grid-row: 1;
-  grid-column: 1;
 }
 
-/* .sahiyo-thumbnail {
-  position: relative;
-  grid-row: 1;
-  grid-column: 1;
-  height: 100%;
-  width: 100%;
-  display: flex;
+.cutgroup-project {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
   align-items: center;
-} */
+  text-align: center;
+}
+
+.cutgroup-thumbnail {
+  grid-column: 1;
+  width: 100%;
+}
+
+.cutgroup-thumbnail-img {
+  width: 100%;
+}
+
+.cutgroup-name {
+  font-family: "Montserrat", sans-serif;
+  grid-column: 2;
+}
 
 .project-thumbnail {
   position: relative;
-  /* grid-row: 1;
-  grid-column: 1; */
   height: 100%;
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -57,7 +80,7 @@ html {
   /* padding-left: 2rem; */
 /* } */
 
-.proj-desc {
+/* .proj-desc {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -75,7 +98,7 @@ html {
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
+} */
 
 .thumbnail-img {
   justify-content: center;
@@ -87,11 +110,6 @@ html {
 }
 
 .cutgroup-description h3 {
-  width: 100%;
-}
-.cutgroup-thumbnail-img {
-  grid-row: 1;
-  grid-column: 2;
   width: 100%;
 }
 
