@@ -133,9 +133,10 @@ html {
 /* ~~~~~~~~~Resume~~~~~~~~~~~~~ */
 
 .resume-head {
-  text-align: center;
+  text-align: start;
   margin-bottom: 2rem;
   margin-top: 1rem;
+  margin-left: 1rem;
 }
 
 .experience {
@@ -153,16 +154,16 @@ html {
 
 .experience-block {
   display: grid;
-  grid-template-columns: 1fr 1.8fr;
-  column-gap: 3rem;
+  grid-template-columns: 1fr 1.7fr;
+  column-gap: 2rem;
   margin: 2rem 8rem;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .experience-block .role {
   grid-row: 1;
   grid-column: 1;
-  /* margin: auto; */
+  margin-left: 2rem;
 }
 
 .role h2,
@@ -177,4 +178,20 @@ html {
 .experience-block ul {
   grid-row: 1;
   grid-column: 2;
+}
+
+#resume-button {
+  background-color: #683254;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  width: 14rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#resume-button:hover {
+  background-color: #4d243d;
+  color: white;
+  font-weight: 550;
+  font-family: "Montserrat", sans-serif;
 }
