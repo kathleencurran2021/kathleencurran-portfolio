@@ -13,10 +13,6 @@
   font-weight: 1000;
 }
 
-/* .navbar .navbar-expand-md {
-  background-color: orange;
-} */
-
 .navbar-nav li a {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
@@ -36,4 +32,34 @@
 
 .dropdown-item {
   font-family: "Montserrat", sans-serif;
+}
+
+/* ~~~~ Footer ~~~~~ */
+
+#footer-container {
+  padding-top: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-center p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.icon-stuff .fa {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.created-by {
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+}
+
+.created-by p {
+  margin: 0;
+  font-size: 0.8rem;
 }
