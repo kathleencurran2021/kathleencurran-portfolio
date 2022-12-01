@@ -23,6 +23,10 @@ html {
   grid-column: 1;
 }
 
+.sahiyo-name h3 {
+  font-weight: 400;
+}
+
 .sahiyo-thumbnail {
   grid-column: 2;
   width: 100%;
@@ -31,6 +35,19 @@ html {
 .sahiyo-thumbnail-img {
   width: 100%;
 }
+
+#sahiyo-learn-more {
+  background-color: #683254;
+  color: white;
+}
+
+#sahiyo-learn-more:hover {
+  background-color: #4d243d;
+  color: white;
+  font-weight: 550;
+}
+
+/* ~~~~~~~~~~ */
 
 .cutgroup-project {
   display: grid;
@@ -53,6 +70,25 @@ html {
   grid-column: 2;
 }
 
+.cutgroup-name h3 {
+  font-weight: 400;
+}
+
+.cutgroup-description h3 {
+  width: 100%;
+}
+
+#cutgroup-learn-more {
+  background-color: #683254;
+  color: white;
+}
+
+#cutgroup-learn-more:hover {
+  background-color: #4d243d;
+  color: white;
+  font-weight: 550;
+}
+
 .project-thumbnail {
   position: relative;
   height: 100%;
@@ -62,55 +98,8 @@ html {
   align-items: center;
 }
 
-/* .sahiyo-description {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(4, 6, 15, 0.6);
-  color: #fff;
-  visibility: visible;
-  opacity: 0;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  text-align: center;
-
-  /* padding-left: 2rem; */
-/* } */
-
-/* .proj-desc {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(4, 6, 15, 0.6);
-  color: #fff;
-  visibility: visible;
-  opacity: 0;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  align-content: space-between;
-  flex-wrap: wrap;
-  text-align: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-} */
-
 .thumbnail-img {
   justify-content: center;
-}
-
-.project-thumbnail:hover .proj-desc {
-  visibility: visible;
-  opacity: 1;
-}
-
-.cutgroup-description h3 {
-  width: 100%;
 }
 
 /* ~~~~~~~~~~~~~~~~~ */

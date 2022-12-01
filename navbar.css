@@ -20,11 +20,12 @@
 .navbar-nav li a {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
-  color: black;
+  color: #683254;
 }
 
 .navbar-nav li a:hover {
-  font-weight: bolder;
+  font-weight: bold;
+  color: #683254;
 }
 
 .dropdown button {
