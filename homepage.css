@@ -1,9 +1,13 @@
+
+
 body,
 html {
   width: 100%;
   height: auto;
   margin: 0 0 10rem 0;
 }
+
+
 .project-contents {
   column-gap: 3rem;
   width: 80%;
