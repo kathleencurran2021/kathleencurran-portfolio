@@ -13,7 +13,9 @@ h2 {
   font-weight: 500;
 }
 
-p {
+p,
+ol,
+li {
   font-family: "Merriweather", serif;
 }
 
@@ -22,9 +24,12 @@ p {
   width: 80%;
   align-items: center;
   margin: 2rem auto;
+  display: grid;
+  row-gap: 2rem;
 }
 
 .sahiyo-project {
+  grid-row: 1;
   display: grid;
   grid-template-columns: 2fr 3fr;
   align-items: center;
@@ -70,6 +75,7 @@ p {
 /* ~~~~~~~~~~ */
 
 .cutgroup-project {
+  grid-row: 2;
   display: grid;
   grid-template-columns: 3fr 2fr;
   align-items: center;
