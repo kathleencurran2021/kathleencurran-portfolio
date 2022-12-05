@@ -1,12 +1,21 @@
-
+/* Global CSS */
 
 body,
 html {
   width: 100%;
   height: auto;
-  margin: 0 0 10rem 0;
+  margin: 0;
 }
 
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+p {
+  font-family: "Merriweather", serif;
+}
 
 .project-contents {
   column-gap: 3rem;
@@ -20,6 +29,7 @@ html {
   grid-template-columns: 2fr 3fr;
   align-items: center;
   text-align: center;
+  background-color: #f8f9fa;
 }
 
 .sahiyo-name {
@@ -64,6 +74,7 @@ html {
   grid-template-columns: 3fr 2fr;
   align-items: center;
   text-align: center;
+  background-color: #f8f9fa;
 }
 
 .cutgroup-thumbnail {
@@ -166,6 +177,7 @@ html {
 
 .resume-pdf {
   text-align: center;
+  margin-top: 4rem;
 }
 
 .experience-block {
