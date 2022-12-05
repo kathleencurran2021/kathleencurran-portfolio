@@ -9,22 +9,16 @@
   height: auto;
 }
 
-#nav-home:hover {
-  font-weight: 1000;
-}
-
-.navbar .navbar-expand-md {
-  background-color: orange;
-}
-
 .navbar-nav li a {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
-  color: black;
+  font-weight: 450;
+  color: #683254;
 }
 
 .navbar-nav li a:hover {
-  font-weight: bolder;
+  font-weight: bold;
+  color: #683254;
 }
 
 .dropdown button {
@@ -34,4 +28,44 @@
 
 .dropdown-item {
   font-family: "Montserrat", sans-serif;
+}
+
+/* ~~~~ Footer ~~~~~ */
+
+#footer-container {
+  margin-top: 2rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-center p {
+  margin: 0;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-stuff .fa {
+  font-size: 1.75rem;
+  margin: 0.9rem;
+}
+
+.created-by {
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+}
+
+.created-by p {
+  margin: 0;
+  font-size: 0.7rem;
 }
