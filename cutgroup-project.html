@@ -19,7 +19,7 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-md bg-light">
+  <nav class="navbar navbar-expand-md">
     <div class="container-fluid">
       <a class="navbar-brand active" id="nav-home" href="index.html">Kathleen Curran</a>
 
@@ -152,12 +152,26 @@
               mentioned that graphics helped them further understand the content of the manual.</p>
           </div>
           <q>Graphics are helpful -- I'm a very visual learner.</q>
+          <div class="hierarchy-img">
+            <img class="rec-img hierarchy-img" alt="A before and after version of the Assisting Voters page in the manual. The Before page is word-dense with little visual hierarchy. 
+              The After page uses color and headers to show important parts of the page." id="merged-image"
+              src="/images/cutgroup imgs/Merged_before_after.png">
+            <figcaption>Click image to enlarge</figcaption>
+          </div>
+
+        </div>
+
+
+        <div id="merged-img-modal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-merged-image" id="img01">
+          <div id="caption"></div>
         </div>
 
 
         <div class="rec3 all-rec">
           <div class="rec-deets">
-            <h5>3. Divide the manual into two parts, based on the poll worker's roles.</h5>
+            <h5>3. Divide the manual into two parts based on roles.</h5>
             <p>Typical poll workers tend to use the manual only for procedural tasks, and then ask the precinct chair
               whenever issues arise. </p>
             <p>Part 1 would include step by step instructions for all poll workers to follow. It would include
@@ -179,7 +193,13 @@
             <p> We also propose a series of ‘Voters, Know Your Rights’ posters that can be displayed around the
               precinct to help guide voters at the polls.</p>
           </div>
-          <img src="#">
+          <div class="know-rights-container">
+            <img class="rec-img know-rights" src="/images/cutgroup imgs/Know Your Rights Guide.png">
+            <figcaption>
+              A prototype of a poster informing voters of their right to stay in line at the polls.
+            </figcaption>
+          </div>
+
         </div>
       </div>
 
@@ -187,27 +207,35 @@
 
     <div class="conclusion">
       <h2>Conclusion</h2>
+      <p>In July of 2021, our contact at the Michigan BOE notified us that they had <b> included a number of our
+          recommendations into the new version of the Election Inspector's Procedure Manual, </b> including updating
+        the
+        Table of Contents, adding bullet points and numbering for procedural tasks, and putting relevant tasks into
+        chronological order. </p>
+
+      <p>While our methods and findings certainly were not perfect, we did make a positive impact on the Michigan BOE
+        by
+        giving them the data they needed to make informed, user-centric decisions about how to update the manual for
+        the
+        upcoming 2022 midterm elections.</p>
+
+
+
+
       <div class="what-learned">
-        <h5>What I Learned</h5>
-        <p>One thing I learned was that while a lot of UX research tends to focus on digital tools like websites, it
+        <h4>What I Learned</h4>
+        <p>While a lot of UX research tends to focus on digital tools like websites, it
           still has great uses for things that are not on the web. <b>CUTgroup was an excellent learning experience in
             applying UX
             research methods to solve offline problems</b>.</p>
 
         <p>One of the big themes of CUTGroup is, 'Don't let perfect be the enemy of the good.' In a project like this
           with such a short timeline, we simply didn't have time to make things perfect. It was tempting to think in
-          terms of <i>‘if we only had more time we could…’</i> but instead we <b> found the place we could add the
-            most value and focused our energy on that</b>.</p>
+          terms of <i>‘if we only had more time we could…’</i> but instead we <b> focused on the areas we could add the
+            most value</b>.</p>
       </div>
 
-      <p>In July of 2021, our contact at the Michigan BOE notified us that they had <b> included a number of our
-          recommendations into the new version of the Election Inspector's Procedure Manual, </b> including updating the
-        Table of Contents, adding bullet points and numbering for procedural tasks, and putting relevant tasks into
-        chronological order. </p>
 
-      <p>While our methods and findings certainly were not perfect, we did make a positive impact on the Michigan BOE by
-        giving them the data they needed to make informed, user-centric decisions about how to update the manual for the
-        upcoming 2022 midterm elections.</p>
     </div>
 
   </div>
@@ -228,6 +256,31 @@
       </div>
     </div>
   </div>
+
+  <script>
+    let modal = document.getElementById("merged-img-modal")
+    let img = document.getElementById("merged-image")
+    let modalImg = document.getElementById("img01")
+    var captionText = document.getElementById("caption");
+
+    img.onclick = function () {
+      console.log('something is happening')
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+
+    var closeButton = document.getElementsByClassName("close")[0];
+
+    closeButton.onclick = function () {
+      modal.style.display = "none";
+    }
+
+
+
+
+
+  </script>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
