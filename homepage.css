@@ -8,15 +8,23 @@ html {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5 {
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 p,
 ol,
 li {
   font-family: "Merriweather", serif;
+  font-weight: 300;
+}
+
+b {
+  font-weight: 700;
 }
 
 .project-contents {
@@ -43,7 +51,7 @@ li {
 }
 
 .sahiyo-name h3 {
-  font-weight: 400;
+  /* font-weight: 400; */
 }
 
 .sahiyo-thumbnail {
@@ -98,7 +106,7 @@ li {
 }
 
 .cutgroup-name h3 {
-  font-weight: 400;
+  /* font-weight: 400; */
 }
 
 .cutgroup-description h3 {
@@ -202,7 +210,7 @@ li {
 
 .role h2,
 .role h4 {
-  font-weight: 300;
+  /* font-weight: 300; */
 }
 
 .role p {
