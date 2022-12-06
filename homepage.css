@@ -7,6 +7,17 @@ html {
   margin: 0;
 }
 
+#portfolio-welcome {
+  font-size: 1.7rem;
+  margin: 1rem auto 1rem 2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.proj-name h3 {
+  font-weight: 300;
+}
+
 h1,
 h2,
 h3,
@@ -26,6 +37,8 @@ li {
 b {
   font-weight: 700;
 }
+
+/* Home */
 
 .project-contents {
   column-gap: 3rem;
@@ -48,10 +61,6 @@ b {
 .sahiyo-name {
   font-family: "Montserrat", sans-serif;
   grid-column: 1;
-}
-
-.sahiyo-name h3 {
-  /* font-weight: 400; */
 }
 
 .sahiyo-thumbnail {
@@ -103,10 +112,6 @@ b {
 .cutgroup-name {
   font-family: "Montserrat", sans-serif;
   grid-column: 2;
-}
-
-.cutgroup-name h3 {
-  /* font-weight: 400; */
 }
 
 .cutgroup-description h3 {
@@ -174,10 +179,10 @@ b {
 /* ~~~~~~~~~Resume~~~~~~~~~~~~~ */
 
 .resume-head {
-  text-align: start;
-  margin-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
   margin-top: 1rem;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
 }
 
 .experience {
@@ -186,12 +191,13 @@ b {
 
 .experience > h2 {
   text-align: center;
+  font-weight: 400;
   text-decoration: underline;
 }
 
 .resume-pdf {
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 2.5rem;
 }
 
 .experience-block {
@@ -202,15 +208,14 @@ b {
   align-items: flex-start;
 }
 
+.role h3 {
+  font-size: 1.4rem;
+}
+
 .experience-block .role {
   grid-row: 1;
   grid-column: 1;
   margin-left: 2rem;
-}
-
-.role h2,
-.role h4 {
-  /* font-weight: 300; */
 }
 
 .role p {
@@ -237,4 +242,75 @@ b {
   color: white;
   font-weight: 550;
   font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (min-width: 730px) and (max-width: 1000px) {
+  .proj-name {
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .about-text :first-child {
+    text-align: center;
+  }
+
+  .headshot {
+    width: 65%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 729px) {
+  .sahiyo-project {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #cg-proj {
+    display: flex;
+    flex-direction: column;
+  }
+  .proj-name {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .project-contents {
+    row-gap: 4rem;
+  }
+  p,
+  li,
+  span {
+    font-size: 1.5rem;
+  }
+
+  #resume-button {
+    height: 48px;
+    width: 400px;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .headshot {
+    width: 75%;
+    margin-bottom: 1rem;
+  }
+
+  .about-text :first-child {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .about-text {
+    font-size: 1.5rem;
+  }
 }

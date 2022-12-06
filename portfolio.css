@@ -5,12 +5,7 @@
   gap: 2rem 5rem;
 }
 
-.case-study h3 {
-  /* font-weight: 300; */
-}
-
 .case-study h2 {
-  /* font-weight: 400; */
   font-size: 2.5rem;
 }
 
@@ -106,7 +101,6 @@ figcaption {
 }
 
 .what-learned {
-  /* margin: auto 8rem 2rem 4rem; */
   margin-top: 2rem;
 }
 
@@ -138,7 +132,6 @@ q {
 }
 
 .cutgroup-recs {
-  /* margin-top: 4rem; */
   grid-row: 4;
 }
 
@@ -394,15 +387,70 @@ q {
 }
 
 .link-container {
-  display: flex;
-  margin: 2rem;
-  justify-content: center;
+  text-align: center;
+  margin: 1.5rem auto;
+  display: block;
 }
 
-.jump-link {
+span {
+  font-family: "Merriweather", serif;
+}
+
+.some-link:hover {
+  font-weight: 600;
+}
+
+.link-container:hover {
   font-weight: 600;
 }
 
 .presentation-link:hover {
   font-weight: 600;
+}
+
+#sahiyo-script-link {
+  text-align: center;
+  margin: 1.5rem auto;
+  display: block;
+}
+#sahiyo-script-link:hover {
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 700px) {
+  .case-study {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    height: auto;
+  }
+
+  .title-div {
+    grid-column: 2/3;
+  }
+
+  p,
+  b,
+  ol,
+  ul,
+  span {
+    font-size: 1.5rem;
+  }
+
+  #sahiyo-case-study section {
+    grid-column: 2/3;
+    width: auto;
+  }
+  #sahiyo-process {
+    grid-column: 2/3;
+    grid-row: 6;
+    display: block;
+  }
+
+  #sahiyo-process section {
+    margin-top: 2rem;
+  }
+
+  .conclusion {
+    grid-column: 2/3;
+  }
 }
