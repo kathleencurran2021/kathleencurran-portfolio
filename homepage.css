@@ -202,11 +202,6 @@ b {
   margin-left: 2rem;
 }
 
-.role h2,
-.role h4 {
-  /* font-weight: 300; */
-}
-
 .role p {
   color: grey;
 }
@@ -238,6 +233,21 @@ b {
     padding-right: 0.75rem;
     padding-left: 0.75rem;
   }
+
+  .about-content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .about-text :first-child {
+    text-align: center;
+  }
+
+  .headshot {
+    width: 65%;
+    margin-bottom: 1rem;
+  }
 }
 
 @media only screen and (max-width: 729px) {
@@ -255,5 +265,36 @@ b {
   }
   .project-contents {
     row-gap: 4rem;
+  }
+  p,
+  li,
+  span {
+    font-size: 1.5rem;
+  }
+
+  #resume-button {
+    height: 48px;
+    width: 400px;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .headshot {
+    width: 75%;
+    margin-bottom: 1rem;
+  }
+
+  .about-text :first-child {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .about-text {
+    font-size: 1.5rem;
   }
 }
