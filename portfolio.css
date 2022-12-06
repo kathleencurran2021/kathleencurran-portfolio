@@ -180,6 +180,7 @@ q {
   justify-content: center;
   align-items: center;
   max-width: fit-content;
+  margin: auto;
 }
 
 .hierarchy-img img {
