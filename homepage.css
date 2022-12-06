@@ -27,6 +27,8 @@ b {
   font-weight: 700;
 }
 
+/* Home */
+
 .project-contents {
   column-gap: 3rem;
   width: 80%;
@@ -48,10 +50,6 @@ b {
 .sahiyo-name {
   font-family: "Montserrat", sans-serif;
   grid-column: 1;
-}
-
-.sahiyo-name h3 {
-  /* font-weight: 400; */
 }
 
 .sahiyo-thumbnail {
@@ -103,10 +101,6 @@ b {
 .cutgroup-name {
   font-family: "Montserrat", sans-serif;
   grid-column: 2;
-}
-
-.cutgroup-name h3 {
-  /* font-weight: 400; */
 }
 
 .cutgroup-description h3 {
@@ -237,4 +231,29 @@ b {
   color: white;
   font-weight: 550;
   font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (min-width: 730px) and (max-width: 1000px) {
+  .proj-name {
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 729px) {
+  .sahiyo-project {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #cg-proj {
+    display: flex;
+    flex-direction: column;
+  }
+  .proj-name {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .project-contents {
+    row-gap: 4rem;
+  }
 }
