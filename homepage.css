@@ -40,6 +40,10 @@ b {
 
 /* Home */
 
+.proj-name {
+  padding: 1rem;
+}
+
 .project-contents {
   column-gap: 3rem;
   width: 80%;
@@ -52,7 +56,7 @@ b {
 .sahiyo-project {
   grid-row: 1;
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 3fr 4fr;
   align-items: center;
   text-align: center;
   background-color: #f8f9fa;
@@ -94,7 +98,7 @@ b {
 .cutgroup-project {
   grid-row: 2;
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 4fr 3fr;
   align-items: center;
   text-align: center;
   background-color: #f8f9fa;
@@ -102,20 +106,16 @@ b {
 
 .cutgroup-thumbnail {
   grid-column: 1;
-  width: 100%;
+  width: 80%;
 }
 
 .cutgroup-thumbnail-img {
-  width: 100%;
+  width: 80%;
 }
 
 .cutgroup-name {
   font-family: "Montserrat", sans-serif;
   grid-column: 2;
-}
-
-.cutgroup-description h3 {
-  width: 100%;
 }
 
 #cutgroup-learn-more {
@@ -146,6 +146,42 @@ b {
 
 .thumbnail-img {
   justify-content: center;
+  width: 100%;
+}
+
+/*  */
+
+.huddle-project {
+  grid-row: 3;
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+  align-items: center;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+.huddle-thumbnail {
+  grid-column: 2;
+  width: 100%;
+}
+
+.huddle-name {
+  font-family: "Montserrat", sans-serif;
+  grid-column: 1;
+}
+
+#huddle-learn-more {
+  background-color: #683254;
+  color: white;
+  border-radius: 1.2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+#huddle-learn-more:hover {
+  background-color: #683254;
+  color: white;
+  font-weight: 600;
 }
 
 /* ~~~~~~~~~~~~~~~~~ */
