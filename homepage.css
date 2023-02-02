@@ -123,9 +123,16 @@
   grid-row: 3;
 }
 
-.huddle-thumbnail {
+#huddle-thumbnail {
   grid-column: 1;
+  flex-direction: row;
   width: 80%;
+  margin: auto;
+}
+
+.huddle-thumbnail-img {
+  width: 40%;
+  margin-top: 2rem;
 }
 
 .huddle-name {
@@ -300,6 +307,4 @@
   .about-text {
     font-size: 1.5rem;
   }
-
-
 }
