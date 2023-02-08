@@ -1,138 +1,39 @@
-/* Global CSS */
-
-body,
-html {
-  width: 100%;
-  height: auto;
-  margin: 0;
-}
-
 #portfolio-welcome {
-  font-size: 1.7rem;
-  margin: 1rem auto 1rem 2rem;
-  font-weight: 400;
+  font-size: 2rem;
+  margin-top: 1rem;
+  font-weight: 300;
   text-align: center;
 }
 
-.proj-name h3 {
-  font-weight: 300;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-}
-
-p,
-ol,
-li {
-  font-family: "Merriweather", serif;
-  font-weight: 300;
-}
-
-b {
-  font-weight: 700;
-}
-
-/* Home */
-
-.proj-name {
-  padding: 1rem;
-}
-
+/* common css */
 .project-contents {
   column-gap: 3rem;
   width: 80%;
   align-items: center;
   margin: 2rem auto;
   display: grid;
-  row-gap: 2rem;
+  row-gap: 1rem;
+  grid-auto-rows: 1fr;
 }
 
-.sahiyo-project {
-  grid-row: 2;
-  display: grid;
-  grid-template-columns: 3fr 4fr;
-  align-items: center;
-  text-align: center;
-  background-color: #f8f9fa;
-}
-
-.sahiyo-name {
-  font-family: "Montserrat", sans-serif;
-  grid-column: 1;
-}
-
-.sahiyo-thumbnail {
-  grid-column: 2;
-  width: 100%;
-}
-
-.sahiyo-thumbnail-img {
-  width: 100%;
-}
-
-#sahiyo-learn-more {
-  background-color: #683254;
-  color: white;
-  border-radius: 1.2rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-
-#sahiyo-learn-more:hover {
-  background-color: #4d243d;
-  color: white;
-  font-weight: 550;
-  border-radius: 1.2rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-
-/* ~~~~~~~~~~ */
-
-.cutgroup-project {
+.thumbnail-left {
   grid-row: 1;
   display: grid;
-  grid-template-columns: 4fr 3fr;
+  grid-template-columns: 3fr 3fr;
   align-items: center;
   text-align: center;
-  background-color: #f8f9fa;
 }
 
-.cutgroup-thumbnail {
-  grid-column: 1;
-  width: 80%;
+.thumbnail-right {
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  align-items: center;
+  text-align: center;
 }
 
-.cutgroup-thumbnail-img {
-  width: 80%;
-}
-
-.cutgroup-name {
-  font-family: "Montserrat", sans-serif;
-  grid-column: 2;
-}
-
-#cutgroup-learn-more {
-  background-color: #683254;
-  color: white;
-  border-radius: 1.2rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-
-#cutgroup-learn-more:hover {
-  background-color: #4d243d;
-  color: white;
-  font-weight: 550;
-  border-radius: 1.2rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
+.project-block {
+  height: 100%;
 }
 
 .project-thumbnail {
@@ -142,6 +43,7 @@ b {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .thumbnail-img {
@@ -149,55 +51,98 @@ b {
   width: 100%;
 }
 
-/*  */
-
-.huddle-project {
-  grid-row: 3;
-  display: grid;
-  grid-template-columns: 4fr 3fr;
-  align-items: center;
-  text-align: center;
+.proj-name {
   background-color: #f8f9fa;
+  height: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }
 
-.huddle-thumbnail {
+.proj-name h3 {
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+}
+
+.proj-name .btn {
+  margin-top: 1rem;
+}
+
+/* all these importants are to override the bootstrap styling */
+.learn-more {
+  background-color: #683254 !important;
+  color: white !important;
+  border-radius: 20px !important;
+  padding-right: 24px !important;
+  padding-left: 24px !important;
+  height: 40px;
+}
+
+.learn-more:hover {
+  background-color: #4d243d !important;
+  color: white !important;
+  font-weight: 550 !important;
+}
+
+/* cutgroup-specific */
+#cutgroup-thumbnail {
   grid-column: 1;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.cutgroup-thumbnail-img {
+  width: 80%;
+}
+
+.cutgroup-name {
+  grid-column: 2;
+}
+
+/* Sahiyo-specific */
+#sahiyo-project {
+  grid-row: 2;
+}
+
+.sahiyo-name {
+  grid-column: 1;
+}
+
+.sahiyo-thumbnail {
+  grid-column: 2;
   width: 100%;
 }
 
+/* ~~~~huddle~~~~~~ */
+#huddle-project {
+  grid-row: 3;
+}
+
+#huddle-thumbnail {
+  grid-column: 1;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+}
+
+.huddle-thumbnail-img {
+  width: 40%;
+  margin-top: 2rem;
+}
+
 .huddle-name {
-  font-family: "Montserrat", sans-serif;
   grid-column: 2;
   grid-row: 1;
 }
 
-#huddle-learn-more {
-  background-color: #683254;
-  color: white;
-  border-radius: 1.2rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-
-#huddle-learn-more:hover {
-  background-color: #683254;
-  color: white;
-  font-weight: 600;
-}
-
-/* ~~~~~~~~~~~~~~~~~ */
-
+/* ~~~~~~~~About me page~~~~~~~~~ */
 .about-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 2rem;
   column-gap: 2rem;
-}
-
-.headshot {
-  grid-row: 1;
-  grid-column: 2;
-  width: 90%;
 }
 
 .about-text {
@@ -207,6 +152,12 @@ b {
 
 .about-text :first-child {
   font-size: 1.4rem;
+}
+
+.headshot {
+  grid-row: 1;
+  grid-column: 2;
+  width: 90%;
 }
 
 .connect {
@@ -219,7 +170,41 @@ b {
   text-align: center;
   margin-bottom: 1rem;
   margin-top: 1rem;
-  /* margin-left: 1rem; */
+}
+
+.resume-pdf {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+#resume-button {
+  background-color: #683254;
+  border: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 16px;
+  padding-left: 24px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+#resume-button a {
+  padding-right: 8px;
+}
+
+#resume-button i {
+  font-size: 16px;
+  padding-left: 8px;
+  vertical-align: -7.5%;
+}
+
+#resume-button:hover {
+  background-color: #4d243d;
+  color: white;
+  font-weight: 550;
+  font-family: "Montserrat", sans-serif;
 }
 
 .experience {
@@ -230,11 +215,6 @@ b {
   text-align: center;
   font-weight: 400;
   text-decoration: underline;
-}
-
-.resume-pdf {
-  text-align: center;
-  margin-top: 2.5rem;
 }
 
 .experience-block {
@@ -264,23 +244,6 @@ b {
   grid-column: 2;
 }
 
-#resume-button {
-  background-color: #683254;
-  border: none;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  width: 14rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-#resume-button:hover {
-  background-color: #4d243d;
-  color: white;
-  font-weight: 550;
-  font-family: "Montserrat", sans-serif;
-}
-
 @media only screen and (min-width: 730px) and (max-width: 1000px) {
   .proj-name {
     padding-right: 0.75rem;
@@ -304,11 +267,11 @@ b {
 }
 
 @media only screen and (max-width: 729px) {
-  .sahiyo-project {
+  .thumbnail-right {
     display: flex;
     flex-direction: column-reverse;
   }
-  #cg-proj {
+  .thumbnail-left {
     display: flex;
     flex-direction: column;
   }
@@ -326,8 +289,8 @@ b {
   }
 
   #resume-button {
-    height: 48px;
-    width: 400px;
+    /* height: 48px;
+    width: 400px; */
     vertical-align: middle;
     text-align: center;
   }
@@ -345,6 +308,10 @@ b {
   .about-text :first-child {
     text-align: center;
     font-weight: bold;
+  }
+
+  .container-fluid .me-5 {
+    margin-right: 0.2rem !important;
   }
 
   .about-text {
