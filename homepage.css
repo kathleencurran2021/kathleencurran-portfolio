@@ -19,7 +19,7 @@
 .thumbnail-left {
   grid-row: 1;
   display: grid;
-  grid-template-columns: 4fr 3fr;
+  grid-template-columns: 3fr 3fr;
   align-items: center;
   text-align: center;
 }
@@ -27,7 +27,7 @@
 .thumbnail-right {
   grid-row: 1;
   display: grid;
-  grid-template-columns: 3fr 4fr;
+  grid-template-columns: 3fr 3fr;
   align-items: center;
   text-align: center;
 }
@@ -67,7 +67,6 @@
 }
 
 .proj-name .btn {
-  width: 40%;
   margin-top: 1rem;
 }
 
@@ -75,18 +74,16 @@
 .learn-more {
   background-color: #683254 !important;
   color: white !important;
-  border-radius: 1.2rem !important;
-  padding-right: 1rem !important;
-  padding-left: 1rem !important;
+  border-radius: 20px !important;
+  padding-right: 24px !important;
+  padding-left: 24px !important;
+  height: 40px;
 }
 
 .learn-more:hover {
   background-color: #4d243d !important;
   color: white !important;
   font-weight: 550 !important;
-  border-radius: 1.2rem !important;
-  padding-right: 1rem !important;
-  padding-left: 1rem !important;
 }
 
 /* cutgroup-specific */
@@ -140,18 +137,12 @@
   grid-row: 1;
 }
 
-/* ~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~About me page~~~~~~~~~ */
 .about-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 2rem;
   column-gap: 2rem;
-}
-
-.headshot {
-  grid-row: 1;
-  grid-column: 2;
-  width: 90%;
 }
 
 .about-text {
@@ -161,6 +152,12 @@
 
 .about-text :first-child {
   font-size: 1.4rem;
+}
+
+.headshot {
+  grid-row: 1;
+  grid-column: 2;
+  width: 90%;
 }
 
 .connect {
@@ -175,6 +172,40 @@
   margin-top: 1rem;
 }
 
+.resume-pdf {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+#resume-button {
+  background-color: #683254;
+  border: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 16px;
+  padding-left: 24px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+#resume-button a {
+  padding-right: 8px;
+}
+
+#resume-button i {
+  font-size: 16px;
+  padding-left: 8px;
+}
+
+#resume-button:hover {
+  background-color: #4d243d;
+  color: white;
+  font-weight: 550;
+  font-family: "Montserrat", sans-serif;
+}
+
 .experience {
   margin: 3rem 4rem 4rem 4rem;
 }
@@ -183,11 +214,6 @@
   text-align: center;
   font-weight: 400;
   text-decoration: underline;
-}
-
-.resume-pdf {
-  text-align: center;
-  margin-top: 2.5rem;
 }
 
 .experience-block {
@@ -215,23 +241,6 @@
 .experience-block ul {
   grid-row: 1;
   grid-column: 2;
-}
-
-#resume-button {
-  background-color: #683254;
-  border: none;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  width: 14rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-#resume-button:hover {
-  background-color: #4d243d;
-  color: white;
-  font-weight: 550;
-  font-family: "Montserrat", sans-serif;
 }
 
 @media only screen and (min-width: 730px) and (max-width: 1000px) {
