@@ -197,6 +197,7 @@
 #resume-button i {
   font-size: 16px;
   padding-left: 8px;
+  vertical-align: -7.5%;
 }
 
 #resume-button:hover {
@@ -288,8 +289,8 @@
   }
 
   #resume-button {
-    height: 48px;
-    width: 400px;
+    /* height: 48px;
+    width: 400px; */
     vertical-align: middle;
     text-align: center;
   }
