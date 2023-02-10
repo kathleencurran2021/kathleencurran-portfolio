@@ -155,11 +155,29 @@
               made
               decisions.</p>
             <div class="persona-container">
-              <img class="persona-1" src="images/sahiyo imgs/kara persona.png"
+              <img class="persona-1" id="kara-image"
+                src="images/sahiyo imgs/kara persona.png"
                 alt="an infographic of the persona Kara, who has the role of intern at Sahiyo">
-              <img class="persona-2" src="images/sahiyo imgs/anita-persona.png"
+              <img class="persona-2" id="anita-image"
+                src="images/sahiyo imgs/anita-persona.png"
                 alt="an infographic of the persona Anita, who has the role of advisory board member at Sahiyo">
             </div>
+
+            <div id="merged-kara-modal" class="persona-modal modal">
+              <span tabindex="0" role="button" aria-pressed="false"
+                class="close" id="kara-close">&times;</span>
+              <img class="modal-merged-image" id="kara-enlarged-image">
+              <!-- <div id="caption"></div> -->
+            </div>
+
+            <div id="merged-anita-modal" class="persona-modal modal">
+              <span tabindex="0" role="button" aria-pressed="false"
+                class="close" id="anita-close">&times;</span>
+              <img class="modal-merged-image" id="anita-enlarged-image">
+              <!-- <div id="caption"></div> -->
+            </div>
+
+
           </div>
         </section>
 
@@ -377,6 +395,81 @@
       </div>
     </div>
   </footer>
+
+
+  <script>
+    // Kara variables
+    let karaModal = document.getElementById("merged-kara-modal")
+    let karaImage = document.getElementById("kara-image")
+    let karaModalImage = document.getElementById("kara-enlarged-image")
+    // var karaCaptionText = document.getElementById("caption");
+    let karaClose = document.getElementById("kara-close")
+
+    // Anita variables
+    let anitaModal = document.getElementById("merged-anita-modal")
+    let anitaImage = document.getElementById("anita-image")
+    let anitaModalImage = document.getElementById("anita-enlarged-image")
+    // var closeButton = document.getElementsByClassName("close")[0];
+    let anitaClose = document.getElementById("anita-close")
+
+
+    // Kara JS
+    karaImage.onclick = function () {
+      karaModal.style.display = "flex";
+      karaModal.style.flexDirection = "column";
+      karaModalImage.src = this.src;
+    }
+
+
+
+    karaClose.onclick = function () {
+      karaModal.style.display = "none";
+    }
+
+
+    // Anita JS
+    anitaImage.onclick = function () {
+      anitaModal.style.display = "flex";
+      anitaModal.style.flexDirection = "column";
+      anitaModalImage.src = this.src;
+    }
+
+    anitaClose.onclick = function () {
+      anitaModal.style.display = "none";
+    }
+
+
+
+
+    /*
+       let modal = document.getElementById("merged-img-modal")
+      let img = document.getElementById("merged-image")
+      let modalImg = document.getElementById("img01")
+      var captionText = document.getElementById("caption");
+  
+      img.onclick = function () {
+        console.log('something is happening')
+        modal.style.display = "flex";
+        modal.style.flexDirection = "column";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+  
+      var closeButton = document.getElementsByClassName("close")[0];
+  
+      closeButton.onclick = function () {
+        modal.style.display = "none";
+      }
+  
+      closeButton.addEventListener("keypress", function (e) {
+        if (e.key === "Enter") {
+          console.log('pressed enter')
+          event.preventDefault();
+          modal.style.display = 'none';
+        }
+      });
+      */
+  </script>
 
 
   <script
