@@ -53,6 +53,8 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 0.4rem;
   width: 100%;
+  justify-items: center;
+  margin: auto;
 }
 
 .huddle-testing {
