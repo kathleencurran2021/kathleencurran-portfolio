@@ -51,10 +51,11 @@ section {
 }
 
 figcaption {
-  margin: 0px;
+  margin: 0.5rem;
   padding: 0px;
   font-size: 0.8rem;
   font-style: italic;
+  text-align: center;
 }
 
 /* Reusable CSS */

@@ -12,12 +12,12 @@
 
 #interview-findings {
   display: flex;
-  
 }
 
 #interview-findings-img {
   width: 80%;
   margin: auto;
+  margin-top: 1rem;
 }
 
 .sahiyo-personas {
