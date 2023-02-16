@@ -1,4 +1,25 @@
 /* Sahiyo specific CSS */
+
+.challenge-statement {
+  width: 80%;
+  display: block;
+  margin: auto;
+  font-weight: 700;
+  color: #683353;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+#interview-findings {
+  display: flex;
+}
+
+#interview-findings-img {
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+}
+
 .sahiyo-personas {
   grid-row: 2;
   grid-column: 1/3;

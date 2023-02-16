@@ -180,7 +180,7 @@
 #resume-button {
   background-color: #683254;
   border: none;
-  color: white;
+  color: white !important;
   font-family: "Montserrat", sans-serif;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -219,7 +219,7 @@
 
 .experience-block {
   display: grid;
-  grid-template-columns: 1fr 1.7fr;
+  grid-template-columns: 1fr 1fr;
   column-gap: 2rem;
   margin: 2rem 8rem;
   align-items: flex-start;
@@ -232,7 +232,10 @@
 .experience-block .role {
   grid-row: 1;
   grid-column: 1;
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
+  margin: 0 auto;
+  text-align: right;
+  width: 80%;
 }
 
 .role p {

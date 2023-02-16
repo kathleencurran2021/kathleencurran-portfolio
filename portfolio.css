@@ -5,7 +5,19 @@ html {
   width: 100%;
   height: auto;
   margin: 0;
+  line-height: 200%;
   /* background-color: #fffbff; */
+}
+
+a {
+  color: #683254 !important;
+  font-family: "Merriweather", serif;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #4d243d !important;
+  font-weight: 700;
 }
 
 h1,
@@ -22,6 +34,7 @@ ol,
 li {
   font-family: "Merriweather", serif;
   font-weight: 300;
+  line-height: 175%;
 }
 
 b {
@@ -38,10 +51,11 @@ section {
 }
 
 figcaption {
-  margin: 0px;
+  margin: 0.5rem;
   padding: 0px;
   font-size: 0.8rem;
   font-style: italic;
+  text-align: center;
 }
 
 /* Reusable CSS */
@@ -72,7 +86,7 @@ figcaption {
   margin: auto;
 }
 .title-div h1 {
-  margin: 1rem 3rem 1.5rem 3rem;
+  margin: 2.5rem 3rem 1.5rem 3rem;
   text-align: center;
 }
 
@@ -80,16 +94,34 @@ figcaption {
   grid-row: 2;
   grid-column-start: 2;
   grid-column-end: 4;
-  display: flex;
-  justify-content: space-around;
+  /* display: flex;
+  justify-content: space-around; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.project-specs h3 {
+  /* text-align: center; */
+}
+
+.project-specs ul {
+  list-style-type: square;
 }
 
 .specs {
-  grid-column: 2/3;
+  grid-column: 1;
   width: auto;
 }
+
 .skills {
-  grid-column: 3/4;
+  grid-column: 2;
+  overflow: hidden;
+  width: auto;
+}
+
+.tools {
+  grid-column: 3;
   overflow: hidden;
   width: auto;
 }

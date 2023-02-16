@@ -21,6 +21,17 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Hotjar Tracking Code for my site -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 3370557, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
 </head>
 
 <body>
@@ -45,8 +56,9 @@
   <main>
     <div id="sahiyo-case-study" class="case-study">
       <div id="title" class="title-div">
-        <img src="images/sahiyo imgs/Sahiyo-logo-2.jpg" height="270" width="600"
-          alt="An image of the Sahiyo logo, with the words 'United Against Female Genital Cutting' underneath ">
+        <!-- <img src="images/sahiyo imgs/Sahiyo-logo-2.jpg" height="270" width="600"
+          alt="An image of the Sahiyo logo, with the words 
+          'United Against Female Genital Cutting' underneath "> -->
         <h1>Sahiyo: Needs Assessment and Usability Evaluation</h1>
       </div>
 
@@ -55,8 +67,8 @@
           <h3>Project Details</h3>
           <ul>
             <li><b>Role:</b> UX Researcher</li>
-            <li><b>Time Frame:</b> Spring 2022</li>
-            <li><b>Team:</b> Austin Williams, Grace Brindle, and <br> Alyssa
+            <!-- <li><b>Time Frame:</b> Spring 2022</li> -->
+            <li><b>Team:</b> Austin Williams, Grace Brindle, and Alyssa
               Downs</li>
           </ul>
         </div>
@@ -65,8 +77,18 @@
           <ul>
             <li>Usability Testing</li>
             <li>Semi-Structured Interviewing</li>
-            <li>Qualitative and Quantitative Data Analysis</li>
+            <li>Qualitative Data Analysis </li>
+            <li>Quantitative Data Analysis</li>
             <li>Heuristic Evaluation</li>
+          </ul>
+        </div>
+        <div id="sahiyo-project-tools" class="sahiyo-overview overview tools">
+          <h3>Tools</h3>
+          <ul>
+            <li>Qualtrics</li>
+            <li>Miro</li>
+            <li>Google Analytics</li>
+            <li>Figma</li>
           </ul>
         </div>
       </section>
@@ -80,41 +102,37 @@
           empower communities to end FGC and
           create social change through education and community involvement on
           their website, sahiyo.org.
-          <span class="link-container">
-            <a href="#final-presentation" class="jump-link">Jump to final
-              presentation and conclusion </a>
-          </span>
+
         </p>
       </section>
 
       <section class="challenge">
         <h3>The Challenge</h3>
-        <p>Sahiyo uses their website to guide community involvement. The
-          organization posts resources for victims or
-          people who want to help, testimonies from people involved in FGC, and
-          information about community events.
-          However, the website is not always accessible to those with
-          disabilities, and users often have difficulty
+        <p>Sahiyo uses their website to post resources for FGC as well as foster
+          community involvement.
+          However, the website is not always accessible and users often have
+          difficulty
           finding the resources they need, particularly with event information.
-          We then created the following statement to guide our research:</p>
-        <span class="challenge-statement"><b>“What challenges do users encounter
-            when they use Sahiyo’s website, and how will solving those issues
-            increase site-wide accessibility and user engagement?”</b></span>
+          Throughout the study, our team sought to answer the following
+          question:</p>
+        <span class="challenge-statement">“What accessibility challenges do
+          users encounter
+          when they use Sahiyo’s website, and how are those issues negatively
+          impacting user engagement across the site?”</span>
       </section>
 
       <section class="scope-constraints">
         <h3>Scope and Constraints</h3>
         <p>
-          The project was limited to four months, which made it difficult to
-          spend as much time as we would have liked
-          in data collection. Due to this time constraint, we were only able to
-          work with the desktop version of
-          sahiyo.org, even though there is a mobile version of the site.
-          Additionally, it was difficult to recruit participants for interviews,
-          a survey, and user testing, in part
-          because we were unable to provide a monetary incentive. We recruited
-          mostly from Sahiyo’s contacts and word of
-          mouth from our team.</p>
+          The project was limited to four months. Due to this time constraint,
+          we decided to work primarily with the desktop version of sahiyo.org
+          because analytics showed that most visitors accessed the site
+          on desktop, despite there being a mobile version as well.</p>
+
+        <span class="link-container">
+          <a href="#final-presentation" class="jump-link">Jump to final
+            presentation and conclusion </a>
+        </span>
       </section>
 
       <div id="sahiyo-process" class="project-process">
@@ -130,8 +148,13 @@
             help of Sahiyo leadership and through
             online forums
             for people with disabilities.</p>
-          <span>We found that:</span>
-          <ol>
+          <h5>Key Findings:</h5>
+          <div id="interview-findings">
+            <img src="images/sahiyo imgs/interview-findings.png"
+              id="interview-findings-img">
+
+          </div>
+          <!-- <ol>
             <li>Users believed that sahiyo.org was effective at helping them
               find resources about FGC.</li>
             <li>Users struggled with accessibility issues like responsiveness,
@@ -142,7 +165,7 @@
             <li>Users often accidentally navigated to Sahiyo’s old website
               (sahiyo.com), since it is more prevalent in
               Google search results.</li>
-          </ol>
+          </ol> -->
         </section>
 
         <section class="sahiyo-personas">
@@ -187,40 +210,48 @@
           </h3>
           <p>To better understand how users of varying abilities engaged with
             sahiyo.org, we launched a survey to the
-            Sahiyo community, asking about their experience with the website,
-            their role in Sahiyo, their disability
-            status, and how often they used the site. </p>
+            Sahiyo community. Our goal was to <b>understand people's experiences
+              with the site,
+              especially for anyone who had a disability</b>. </p>
           <p>
-            The survey had several limitations that weakened our data’s
-            accuracy. First, we did not receive enough
+            The survey had several limitations. First, we did not receive
+            enough
             responses for our survey results to be statistically significant.
             Secondly, the majority of respondents were
             either Sahiyo staff or volunteers which may not be representative of
             typical users. </p>
           <p>
-            However, our results indicated that <b>users who disabilities had a
-              more difficult time using the site than
+            However, our results indicated that <b>users with disabilities had a
+              more negative experience using the site than
               those without disabilities.</b> </p>
           <div class="survey-img-container">
             <figure class="surv-res-fig">
               <img class="survey-results-img"
-                src="images/sahiyo imgs/survey-results.png"
+                src="images/sahiyo imgs/survey-results1.png"
                 alt="Crosstab image showing results from a survey question asking about user's experience with Sahiyo">
               <figcaption>A crosstab comparing the average experiences of users
                 who reported disabilities to
                 those who did
-                not </figcaption>
+                not. </figcaption>
             </figure>
           </div>
 
-          <p>While the survey gathered general data about users’ experiences on
-            the website, it did not provide any
-            details behind why users felt the way they did. Because of this, we
-            decided to perform a heuristic
-            evaluation
-            to find specific instances of usability issues, and usability
-            testing to get further insight on our survey
-            responses. </p>
+          <p>
+            The survey showed that people with reported disabilities had lower
+            satisfaction with the site in every area. In particular, their
+            experiences in finding information on Sahiyo events was
+            significantly more negative.
+          </p>
+
+          <p>These responses suggested that there <b>were
+              issues within the site affecting accessibility and engagement</b>,
+            especially
+            when it came to Sahiyo events.
+          </p>
+
+          <p>
+            Because of this, we decided to perform a heuristic
+            evaluation to identify specific usability issues. </p>
         </section>
 
 
@@ -240,29 +271,25 @@
           </p>
           <p>Most of the issues we found were related to the visual design of
             the site. We recommended that Sahiyo
-            implement
-            several changes to the website, such as <b>increasing the color
-              contrast</b> of fonts and buttons, <b>adding
-              alternative text</b> to images, <b>increasing keyboard
-              accessibility</b>, and <b>adding text
-              decoration</b> to links to make them more distinct. </p>
+            implement several changes, such as:
+          <ul>
+            <li> increasing the color contrast of fonts and buttons</li>
+            <li>adding alternative text to images</li>
+            <li> increasing keyboard accessibility </li>
+            <li>adding text decoration to links to make them more distinct</li>
+            </p>
+          </ul>
+
+
         </section>
 
         <section class="sahiyo-usability">
           <h3>Usability Testing</h3>
-          <p>In our usability tests, we wanted to assess users' ability to find
-            information on sahiyo.org, specifically
-            those who have visual impairments such as low vision or
-            colorblindness.
+          <p>In our usability tests, we assessed sahiyo.org and how well users
+            with visual impairments such as low vision or
+            colorblindness were able to engage with the site.
           </p>
-          <p>
-            We used word of mouth, online forums, and survey responses to
-            recruit users with visual disabilities and/or
-            Sahiyo
-            connections. We recruited five individuals of varying ages,
-            disabilities, and levels of experience with
-            sahiyo.org.
-          </p>
+
           <p>
             Tests were conducted via Zoom and ranged from 20 – 60 minutes.
             <span id="sahiyo-script-link">
@@ -270,20 +297,15 @@
                 href="https://drive.google.com/file/d/1z_0kFGCPEJUpWSEaO2Pp4xMoFwRB-j2t/view?usp=share_link">
                 View Protocol Here</a>
             </span>
-            Users generally had high success with general navigation within the
-            site and had the most
-            frustration locating an event in the calendar. Additionally, some
-            aspects of the site were out of date or
-            broken, leaving users
-            frustrated.
-          </p>
-          <p>For each task, the we recorded the participant's completion of the
+            For each task, the we recorded the participant's completion of the
             task, the time they took,
             and how
             satisfying they found the task. We also kept observations of
             participants in a color-coded spreadsheet,
             which allowed us to keep track of common issues and comments that
-            users encountered. </p>
+            users encountered.
+          </p>
+
           <div class="ut-observations">
             <figure class="metrics-fig">
               <img id="metrics" src="images/sahiyo imgs/Task 1 metrics.png"
@@ -299,6 +321,16 @@
                 Each color corresponds to a different participant.</figcaption>
             </figure>
           </div>
+          <p>
+            Users generally had high success with general navigation within the
+            site. They were generally able to locate Sahiyo's blog, which
+            is consistent with the satisfaction results from our survey.</p>
+          <p>However, users had difficulty
+            locating Sahiyo events in the calendar. Additionally, some
+            resources on the site were out of date or
+            broken, leaving users
+            frustrated.
+          </p>
         </section>
 
         <section class="recommendations">

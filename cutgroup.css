@@ -12,6 +12,10 @@
   width: 75%;
 }
 
+#cutgroup-findings-img {
+  width: 100%;
+}
+
 .cutgroup-recs {
   grid-row: 4;
 }
@@ -93,7 +97,7 @@
   display: block;
   /* padding-top: 2rem; */
   width: 80%;
-  max-width: 800px;
+  max-width: 875px;
 }
 
 #caption {
