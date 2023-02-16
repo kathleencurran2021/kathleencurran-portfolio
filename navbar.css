@@ -23,10 +23,11 @@
 
 #logo-home {
   margin-left: 1rem;
+  color: black !important;
 }
 
 #logo-home:hover {
-  color: #683254 !important;
+  color: black !important;
 }
 
 .navbar-nav li a:hover {
