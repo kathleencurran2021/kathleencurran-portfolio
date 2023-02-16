@@ -180,7 +180,7 @@
 #resume-button {
   background-color: #683254;
   border: none;
-  color: white;
+  color: white !important;
   font-family: "Montserrat", sans-serif;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;

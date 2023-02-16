@@ -25,6 +25,10 @@
   margin-left: 1rem;
 }
 
+#logo-home:hover {
+  color: #683254 !important;
+}
+
 .navbar-nav li a:hover {
   font-weight: bold;
   color: #683254;
