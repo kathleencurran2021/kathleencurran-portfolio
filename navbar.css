@@ -1,38 +1,32 @@
-#logo-home {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
-  font-weight: 300;
+.navbar {
+  border-bottom: solid 3px #f8f9fa;
+  height: 22rem;
+  background-color: #e5fcea;
+}
+
+.flex-guy {
+  flex-direction: column;
 }
 
 .kat-icon {
-  width: 2.5rem;
-  height: auto;
+  width: 40%;
+  /* margin: auto; */
 }
 
-.navbar {
-  border-bottom: solid 3px #f8f9fa;
-  height: 6rem;
+.kat-icon img {
+  width: 100%;
 }
 
 .navbar-nav li a {
   font-family: "Montserrat", sans-serif;
   font-size: 1.4rem;
-  font-weight: 450;
-  color: #683254;
-}
-
-#logo-home {
-  margin-left: 1rem;
-  color: black !important;
-}
-
-#logo-home:hover {
-  color: black !important;
+  color: black;
+  text-transform: uppercase;
 }
 
 .navbar-nav li a:hover {
-  font-weight: bold;
-  color: #683254;
+  font-weight: 500;
+  color: black;
 }
 
 .dropdown button {
