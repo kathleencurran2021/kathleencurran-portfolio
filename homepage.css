@@ -32,6 +32,16 @@
   text-align: center;
 }
 
+.learn-more {
+  font-family: "Montserrat", sans-serif !important;
+  color: #683254 !important;
+}
+
+.learn-more:hover {
+  font-family: "Montserrat", sans-serif !important;
+  color: #4d243d !important;
+}
+
 .project-block {
   height: 100%;
 }
