@@ -1,6 +1,6 @@
 .navbar {
   border-bottom: solid 3px #f8f9fa;
-  height: 22rem;
+  height: 20rem;
   background-color: #e5fcea;
 }
 
@@ -10,7 +10,6 @@
 
 .kat-icon {
   width: 40%;
-  /* margin: auto; */
 }
 
 .kat-icon img {
@@ -19,7 +18,7 @@
 
 .navbar-nav li a {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: black;
   text-transform: uppercase;
 }

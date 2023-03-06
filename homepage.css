@@ -9,57 +9,119 @@
 .project-contents {
   column-gap: 3rem;
   width: 80%;
-  align-items: center;
+  /* align-items: center; */
+  align-items: start;
   margin: 2rem auto;
   display: grid;
   row-gap: 1rem;
-  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
-.thumbnail-left {
-  grid-row: 1;
-  display: grid;
-  grid-template-columns: 3fr 3fr;
-  align-items: center;
-  text-align: center;
-}
-
-.thumbnail-right {
-  grid-row: 1;
-  display: grid;
-  grid-template-columns: 3fr 3fr;
-  align-items: center;
-  text-align: center;
-}
-
-.learn-more {
-  font-family: "Montserrat", sans-serif !important;
-  color: #683254 !important;
-}
-
-.learn-more:hover {
-  font-family: "Montserrat", sans-serif !important;
-  color: #4d243d !important;
-}
-
-.project-block {
-  height: 100%;
-}
-
-.project-thumbnail {
+/* overlay  */
+.project-image {
   position: relative;
-  height: 100%;
-  width: 100%;
+  /* aspect-ratio: 1; */
+  /* background-color: pink; */
+  height: -webkit-fill-available;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  height: 100%;
 }
 
-.thumbnail-img {
-  justify-content: center;
+.project-image img {
+  width: 100%;
+  opacity: 1;
+  display: block;
+  height: auto;
+
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+#huddle-image-container {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  margin: auto;
+}
+
+#huddle-image-container img {
+  width: 75%;
+}
+
+.huddle-image-container:first-child {
+  grid-column: 1;
+}
+
+.huddle-image-container:last-child {
+  grid-column: 2;
+}
+
+.project-image .huddle-image-container {
+  width: 100%;
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.cutgroup-overlay {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.sahiyo-overlay {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.huddle-overlay {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.project-image:hover img {
+  opacity: 0.3;
   width: 100%;
 }
+
+.project-image:hover .huddle-image-container {
+  opacity: 0.3;
+  width: auto;
+}
+
+.project-image:hover .project-overlay {
+  opacity: 1;
+  width: 100%;
+  height: auto;
+  /* background-color: #e4e4e4; */
+}
+
+.project-image:hover {
+  background-color: #e4e4e4;
+}
+
+/*  */
 
 .proj-name {
   background-color: #f8f9fa;
@@ -76,13 +138,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.proj-name .btn {
-  margin-top: 1rem;
-}
-
 /* all these importants are to override the bootstrap styling */
 .learn-more {
-  background-color: #683254 !important;
+  font-family: "Montserrat", sans-serif !important;
+  background-color: #006d43 !important;
   color: white !important;
   border-radius: 20px !important;
   padding-right: 24px !important;
@@ -91,7 +150,8 @@
 }
 
 .learn-more:hover {
-  background-color: #4d243d !important;
+  font-family: "Montserrat", sans-serif !important;
+  background-color: #006d43 !important;
   color: white !important;
   font-weight: 550 !important;
 }
@@ -188,7 +248,7 @@
 }
 
 #resume-button {
-  background-color: #683254;
+  background-color: #006d43;
   border: none;
   color: white !important;
   font-family: "Montserrat", sans-serif;
@@ -211,7 +271,7 @@
 }
 
 #resume-button:hover {
-  background-color: #4d243d;
+  background-color: #006d43;
   color: white;
   font-weight: 550;
   font-family: "Montserrat", sans-serif;
@@ -242,7 +302,6 @@
 .experience-block .role {
   grid-row: 1;
   grid-column: 1;
-  /* margin-left: 2rem; */
   margin: 0 auto;
   text-align: right;
   width: 80%;
