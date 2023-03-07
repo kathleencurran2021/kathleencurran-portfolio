@@ -1,15 +1,14 @@
 #portfolio-welcome {
   font-size: 2rem;
-  margin-top: 1rem;
+  margin: 4rem auto;
   font-weight: 300;
   text-align: center;
 }
 
 /* common css */
 .project-contents {
-  column-gap: 3rem;
+  column-gap: 2rem;
   width: 80%;
-  /* align-items: center; */
   align-items: start;
   margin: 2rem auto;
   display: grid;
@@ -20,8 +19,6 @@
 /* overlay  */
 .project-image {
   position: relative;
-  /* aspect-ratio: 1; */
-  /* background-color: pink; */
   height: -webkit-fill-available;
   display: flex;
   align-items: center;
@@ -114,11 +111,10 @@
   opacity: 1;
   width: 100%;
   height: auto;
-  /* background-color: #e4e4e4; */
 }
 
 .project-image:hover {
-  background-color: #e4e4e4;
+  background-color: #c4c4c4;
 }
 
 /*  */
@@ -339,21 +335,11 @@
 }
 
 @media only screen and (max-width: 729px) {
-  .thumbnail-right {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .thumbnail-left {
-    display: flex;
-    flex-direction: column;
-  }
-  .proj-name {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
   .project-contents {
-    row-gap: 4rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20rem 20rem 20rem;
   }
+
   p,
   li,
   span {
@@ -361,8 +347,6 @@
   }
 
   #resume-button {
-    /* height: 48px;
-    width: 400px; */
     vertical-align: middle;
     text-align: center;
   }
