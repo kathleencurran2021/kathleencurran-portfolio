@@ -16,7 +16,31 @@ h3,
 h4,
 h5 {
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+h2 {
+  font-size: 2.75rem;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 p,
@@ -24,7 +48,6 @@ ol,
 li {
   font-family: "Merriweather", serif;
   font-weight: 300;
-  line-height: 175%;
 }
 
 b {
@@ -33,7 +56,11 @@ b {
 
 q {
   font-style: italic;
-  color: #683254;
+  font-family: "Merriweather", serif;
+  color: #396661;
+  line-height: 150%;
+  font-weight: 600;
+  margin-bottom: 2rem;
 }
 
 section {
@@ -41,11 +68,14 @@ section {
 }
 
 figcaption {
-  margin: 0.5rem;
-  padding: 0px;
-  font-size: 0.8rem;
+  font-family: "Merriweather", serif;
   font-style: italic;
   text-align: center;
+  font-size: 0.85rem;
+  line-height: 150%;
+
+  margin: 0.5rem;
+  padding: 0px;
 }
 
 /* Reusable CSS */

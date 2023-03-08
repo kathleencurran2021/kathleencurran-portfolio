@@ -73,11 +73,13 @@
   grid-column: 1;
   grid-row: 1;
   max-width: fit-content;
+  align-items: center;
 }
 
 .know-rights {
   width: 200px;
   max-width: 220px;
+  border: 1px solid #bbb;
 }
 
 /* this the modal styling */
@@ -98,6 +100,11 @@
   /* padding-top: 2rem; */
   width: 80%;
   max-width: 875px;
+}
+
+#merged-img-modal {
+  flex-direction: row !important;
+  align-items: center !important;
 }
 
 #caption {
