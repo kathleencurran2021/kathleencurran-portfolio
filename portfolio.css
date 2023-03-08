@@ -158,6 +158,16 @@ figcaption {
   grid-column: 2/4;
 }
 
+.jump-link {
+  font-family: "Merriweather", serif;
+  color: #49680d;
+}
+
+.jump-link:hover {
+  color: #49680d;
+  font-weight: 700;
+}
+
 .project-process {
   grid-column: 2/4;
   display: grid;
