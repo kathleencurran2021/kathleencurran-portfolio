@@ -30,7 +30,6 @@
   opacity: 1;
   display: block;
   height: auto;
-
   transition: 0.5s ease;
   backface-visibility: hidden;
 }
@@ -107,14 +106,18 @@
   width: auto;
 }
 
+.project-overlay {
+  width: 70%;
+}
+
 .project-image:hover .project-overlay {
   opacity: 1;
-  width: 100%;
+  width: 70%;
   height: auto;
 }
 
 .project-image:hover {
-  background-color: #c4c4c4;
+  background-color: lightgray;
 }
 
 /*  */
@@ -137,7 +140,7 @@
 /* all these importants are to override the bootstrap styling */
 .learn-more {
   font-family: "Montserrat", sans-serif !important;
-  background-color: #006d43 !important;
+  background-color: #49680d !important;
   color: white !important;
   border-radius: 20px !important;
   padding-right: 24px !important;
@@ -147,7 +150,7 @@
 
 .learn-more:hover {
   font-family: "Montserrat", sans-serif !important;
-  background-color: #006d43 !important;
+  background-color: #49680d !important;
   color: white !important;
   font-weight: 550 !important;
 }

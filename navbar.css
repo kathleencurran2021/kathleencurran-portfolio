@@ -1,7 +1,8 @@
 .navbar {
   border-bottom: solid 3px #f8f9fa;
-  height: 20rem;
-  background-color: #e5fcea;
+  height: 18rem;
+  /* background-color: #e1f5b9; */
+  background-color: #cee8a4;
 }
 
 .flex-guy {
@@ -16,16 +17,21 @@
   width: 100%;
 }
 
-.navbar-nav li a {
+.nav-item .nav-link {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
   color: black;
   text-transform: uppercase;
 }
 
-.navbar-nav li a:hover {
+.nav-item .nav-link:hover {
   font-weight: 500;
-  color: black;
+  color: #121f00;
+}
+
+.nav-item .current-page {
+  font-weight: 600;
+  color: #121f00;
 }
 
 .dropdown button {
