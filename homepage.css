@@ -247,7 +247,7 @@
 }
 
 #resume-button {
-  background-color: #006d43;
+  background-color: #49680d;
   border: none;
   color: white !important;
   font-family: "Montserrat", sans-serif;
@@ -270,7 +270,7 @@
 }
 
 #resume-button:hover {
-  background-color: #006d43;
+  background-color: #49680d;
   color: white;
   font-weight: 550;
   font-family: "Montserrat", sans-serif;
