@@ -5,28 +5,31 @@
   text-align: center;
 }
 
-
 /* Here  */
 .animation-tagline {
-  width: 75%;
+  /* width: 30%; */
   /* position: relative; */
   height: 10rem;
-  /* display: fle; */
   margin: auto;
   /* background-color: #49680d; */
   text-align: center;
+  /* display: block; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 
 /* this guy is the one  */
 .changing-line {
   position: absolute;
-  /* text-align: center;
-  margin: auto; */
-  left: 5%;
-  top: 45%;
+  /* text-align: center; */
+  margin: auto;
+  top: 69%;
   opacity: 0;
-  color: #596248;
+  font-weight: 900;
+  /* font-style: italic; */
+  color: #396661;
   animation-name: fadeInOut;
   animation-iteration-count: infinite;
 }
@@ -68,7 +71,7 @@
   19% {
     opacity: 1;
   }
-  24% {
+  29% {
     opacity: 0;
   }
   80% {
@@ -82,12 +85,12 @@
 
 /* common css */
 .project-contents {
-  column-gap: 2rem;
+  column-gap: 3rem;
   width: 80%;
   align-items: start;
-  margin: 2rem auto;
+  margin: 5rem auto;
   display: grid;
-  row-gap: 1rem;
+  row-gap: 3rem;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -98,6 +101,14 @@
   display: flex;
   align-items: center;
   height: 100%;
+  background-color: white;
+  border-radius: 10px;
+  /* box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  box-shadow: 2px 2px 6px #59624870;
+}
+
+.cutgroup-image img {
+  border-radius: 10px;
 }
 
 .project-image img {
@@ -119,6 +130,8 @@
 
 #huddle-image-container img {
   width: 75%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .huddle-image-container:first-child {
@@ -134,6 +147,7 @@
   opacity: 1;
   display: block;
   height: auto;
+  padding-top: 0.5rem;
   transition: 0.5s ease;
   backface-visibility: hidden;
 }
@@ -228,57 +242,6 @@
   background-color: #49680d !important;
   color: white !important;
   font-weight: 550 !important;
-}
-
-/* cutgroup-specific */
-#cutgroup-thumbnail {
-  grid-column: 1;
-  width: 100%;
-  justify-content: flex-end;
-}
-
-.cutgroup-thumbnail-img {
-  width: 80%;
-}
-
-.cutgroup-name {
-  grid-column: 2;
-}
-
-/* Sahiyo-specific */
-#sahiyo-project {
-  grid-row: 2;
-}
-
-.sahiyo-name {
-  grid-column: 1;
-}
-
-.sahiyo-thumbnail {
-  grid-column: 2;
-  width: 100%;
-}
-
-/* ~~~~huddle~~~~~~ */
-#huddle-project {
-  grid-row: 3;
-}
-
-#huddle-thumbnail {
-  grid-column: 1;
-  flex-direction: row;
-  width: 80%;
-  margin: auto;
-}
-
-.huddle-thumbnail-img {
-  width: 40%;
-  margin-top: 2rem;
-}
-
-.huddle-name {
-  grid-column: 2;
-  grid-row: 1;
 }
 
 /* ~~~~~~~~About me page~~~~~~~~~ */
