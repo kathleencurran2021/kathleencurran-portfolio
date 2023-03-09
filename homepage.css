@@ -7,33 +7,39 @@
 
 /* Here  */
 .animation-tagline {
-  height: 10rem;
-  margin: auto;
+  height: 8rem;
+  margin: 3rem auto;
   text-align: center;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+  width: 100%;
 
-  /* display: grid;
-  grid-template-rows: 3rem 3rem; */
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
 }
 
-/* #greeting {
-  background-color: red;
+#greeting-div {
   grid-row: 1;
 }
 
-.animation-tagline div {
-  background-color: blue;
+#change-div {
   grid-row: 2;
-} */
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 /* this guy is the one  */
 .changing-line {
   position: absolute;
-  margin: auto;
-  top: 69%;
+  /* margin: auto; */
+  /* top: 69%; */
+  width: 60%;
   opacity: 0;
   font-weight: 900;
   color: #396661;
@@ -43,21 +49,25 @@
 
 .first-line {
   animation-duration: 24s;
+  text-align: center;
 }
 
 .second-line {
   animation-duration: 24s;
   animation-delay: 6s;
+  text-align: center;
 }
 
 .third-line {
   animation-duration: 24s;
   animation-delay: 12s;
+  text-align: center;
 }
 
 .fourth-line {
   animation-duration: 24s;
   animation-delay: 18s;
+  text-align: center;
 }
 
 @keyframes fadeInOut {
