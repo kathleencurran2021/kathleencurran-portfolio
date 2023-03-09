@@ -1,8 +1,83 @@
-#portfolio-welcome {
+.portfolio-welcome {
   font-size: 2rem;
   margin: 4rem auto;
   font-weight: 300;
   text-align: center;
+}
+
+
+/* Here  */
+.animation-tagline {
+  width: 75%;
+  /* position: relative; */
+  height: 10rem;
+  /* display: fle; */
+  margin: auto;
+  /* background-color: #49680d; */
+  text-align: center;
+}
+
+
+/* this guy is the one  */
+.changing-line {
+  position: absolute;
+  /* text-align: center;
+  margin: auto; */
+  left: 5%;
+  top: 45%;
+  opacity: 0;
+  color: #596248;
+  animation-name: fadeInOut;
+  animation-iteration-count: infinite;
+}
+
+.first-line {
+  animation-duration: 24s;
+}
+
+.second-line {
+  animation-duration: 24s;
+  animation-delay: 6s;
+}
+
+.third-line {
+  animation-duration: 24s;
+  animation-delay: 12s;
+}
+
+.fourth-line {
+  animation-duration: 24s;
+  animation-delay: 18s;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  2% {
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  19% {
+    opacity: 1;
+  }
+  24% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 /* common css */
