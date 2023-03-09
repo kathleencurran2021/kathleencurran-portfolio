@@ -7,28 +7,35 @@
 
 /* Here  */
 .animation-tagline {
-  /* width: 30%; */
-  /* position: relative; */
   height: 10rem;
   margin: auto;
-  /* background-color: #49680d; */
   text-align: center;
-  /* display: block; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  /* display: grid;
+  grid-template-rows: 3rem 3rem; */
 }
+
+/* #greeting {
+  background-color: red;
+  grid-row: 1;
+}
+
+.animation-tagline div {
+  background-color: blue;
+  grid-row: 2;
+} */
 
 /* this guy is the one  */
 .changing-line {
   position: absolute;
-  /* text-align: center; */
   margin: auto;
   top: 69%;
   opacity: 0;
   font-weight: 900;
-  /* font-style: italic; */
   color: #396661;
   animation-name: fadeInOut;
   animation-iteration-count: infinite;

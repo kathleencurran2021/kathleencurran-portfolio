@@ -170,22 +170,28 @@
   font-size: large;
 }
 
+.some-link a {
+  color: #49680d !important;
+}
+
+.some-link a:hover {
+  font-weight: 600;
+  color: #49680d !important;
+}
+
 .link-container {
   text-align: center;
   margin: 1.5rem auto;
   display: block;
 }
 
-/* span {
-  font-family: "Merriweather", serif;
-} */
-
-.some-link:hover {
+.link-container:hover {
   font-weight: 600;
 }
 
-.link-container:hover {
-  font-weight: 600;
+#sahiyo-final-presentation {
+  color: #49680d !important;
+  font-family: "Merriweather", serif;
 }
 
 .presentation-link:hover {
@@ -197,8 +203,14 @@
   margin: 1.5rem auto;
   display: block;
 }
-#sahiyo-script-link:hover {
+
+#sahiyo-script-link a {
+  color: #49680d !important;
+}
+
+#sahiyo-script-link a:hover {
   font-weight: 600;
+  color: #49680d !important;
 }
 
 @media only screen and (max-width: 700px) {

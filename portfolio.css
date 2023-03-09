@@ -7,7 +7,7 @@ html {
   height: auto;
   margin: 0;
   line-height: 200%;
-  background-color: #fefcf4 !important;
+  background-color: #faf9f7 !important;
 }
 
 h1,
@@ -106,7 +106,7 @@ figcaption {
   margin: auto;
 }
 .title-div h1 {
-  margin: 2.5rem 3rem 1.5rem 3rem;
+  margin: 4rem 3rem 2.5rem 3rem;
   text-align: center;
 }
 
@@ -115,8 +115,9 @@ figcaption {
   grid-column-start: 2;
   grid-column-end: 4;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: 20rem 20rem 1fr;
+  justify-items: start;
 }
 
 .project-specs ul {
@@ -219,6 +220,5 @@ figcaption {
 }
 
 .what-learned h4 {
-  font-family: "Montserrat", sans-serif;
   text-align: center;
 }
