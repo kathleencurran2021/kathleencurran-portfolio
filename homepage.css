@@ -5,15 +5,10 @@
   text-align: center;
 }
 
-/* Here  */
 .animation-tagline {
   height: 8rem;
-  margin: 3rem auto;
+  margin: 4rem auto;
   text-align: center;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
   width: 100%;
 
   display: grid;
@@ -34,15 +29,18 @@
   align-items: center;
 }
 
-/* this guy is the one  */
-.changing-line {
+.animation-tagline h1 {
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+#change-div .changing-line {
   position: absolute;
-  /* margin: auto; */
-  /* top: 69%; */
-  width: 60%;
+  /* width: 60%; */
   opacity: 0;
-  font-weight: 900;
-  color: #396661;
+  font-weight: 800;
+  /* color: #396661; */
+  color: #49680d;
   animation-name: fadeInOut;
   animation-iteration-count: infinite;
 }
@@ -120,7 +118,6 @@
   height: 100%;
   background-color: white;
   border-radius: 10px;
-  /* box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   box-shadow: 2px 2px 6px #59624870;
 }
 
@@ -135,6 +132,11 @@
   height: auto;
   transition: 0.5s ease;
   backface-visibility: hidden;
+}
+
+.sahiyo-image img {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 #huddle-image-container {
@@ -205,6 +207,9 @@
 .project-image:hover img {
   opacity: 0.3;
   width: 100%;
+  /* backdrop-filter: blur(10px); */
+  filter: blur(2px);
+  /* -webkit-filter: blur(4px); */
 }
 
 .project-image:hover .huddle-image-container {
@@ -223,7 +228,7 @@
 }
 
 .project-image:hover {
-  background-color: lightgray;
+  background-color: rgb(255, 255, 255);
 }
 
 /*  */

@@ -130,6 +130,21 @@
   grid-column: 1/3;
 }
 
+.sahiyo-recommendations {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.rec-card {
+  margin: 0.5rem;
+  background-color: #bcece5;
+  color: #00201d;
+}
+
+/* .rec-card:hover {
+  box-shadow: 2px 2px 5px #008679;
+} */
+
 .rec-list {
   margin-top: 2rem;
   display: grid;
