@@ -5,17 +5,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Needs Assessment</title>
-  <link rel="stylesheet" href="portfolio.css">
-  <link rel="stylesheet" href="homepage.css">
-  <link rel="stylesheet" href="sahiyo.css">
-  <link rel="stylesheet" href="navbar.css">
-  <link rel="icon" type="image/x-icon" href="images/katicon.ico">
-
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
     rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
     crossorigin="anonymous">
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="portfolio.css">
+  <link rel="stylesheet" href="sahiyo.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="icon" type="image/x-icon" href="images/katicon.ico">
+
+
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -35,18 +36,22 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md ">
-    <div class="container-fluid">
-      <a class="navbar-brand active" id="logo-home" href="index.html">Kathleen
-        Curran</a>
-      <ul class="navbar-nav me-5 justify-content-right">
-        <li class="nav-item me-4">
-          <a class="nav-link" id="nav-home" href="index.html">Projects</a>
+  <nav class="navbar navbar-expand-md pt-4 ">
+    <div class="container-fluid flex-guy">
+      <a class=" kat-icon" href="index.html">
+        <img src="/images/banner.png"
+          alt="Kathleen Curran: UX Research and Design">
+      </a>
+
+      <ul class="navbar-nav mb-4 mt-5 justify-content-right">
+        <li class="nav-item me-5 ">
+          <a class="nav-link current-page" id="nav-home" aria-current="page"
+            href="index.html">Projects</a>
         </li>
-        <li class="nav-item me-4">
+        <li class="nav-item me-5">
           <a class="nav-link" id="nav-about" href="about.html">About</a>
         </li>
-        <li class="nav-item me-4">
+        <li class="nav-item">
           <a class="nav-link" id="nav-resume" href="resume.html">Resume</a>
         </li>
       </ul>
@@ -56,9 +61,6 @@
   <main>
     <div id="sahiyo-case-study" class="case-study">
       <div id="title" class="title-div">
-        <!-- <img src="images/sahiyo imgs/Sahiyo-logo-2.jpg" height="270" width="600"
-          alt="An image of the Sahiyo logo, with the words 
-          'United Against Female Genital Cutting' underneath "> -->
         <h1>Sahiyo: Needs Assessment and Usability Evaluation</h1>
       </div>
 
@@ -112,7 +114,7 @@
           community involvement.
           However, the website is not always accessible and users often have
           difficulty
-          finding the resources they need, particularly with event information.
+          finding the resources they need.
           Throughout the study, our team sought to answer the following
           question:</p>
         <span class="challenge-statement">“What accessibility challenges do
@@ -124,13 +126,14 @@
       <section class="scope-constraints">
         <h3>Scope and Constraints</h3>
         <p>
-          The project was limited to four months. Due to this time constraint,
-          we decided to work primarily with the desktop version of sahiyo.org
-          because analytics showed that most visitors accessed the site
-          on desktop, despite there being a mobile version as well.</p>
+          The project was limited to four months. Analytics showed that
+          visitors primarily accessed the site on the desktop version so we
+          focused our efforts there, despite there being a mobile version of
+          the site as
+          well.</p>
 
         <span class="link-container">
-          <a href="#final-presentation" class="jump-link">Jump to final
+          <a class="jump-link" href="#sahiyo-recommendations-div">Jump to final
             presentation and conclusion </a>
         </span>
       </section>
@@ -158,20 +161,7 @@
               community; Users often accidentally navigated to Sahiyo’s old website
               (sahiyo.com), since it is more prevalent in
               Google search results">
-
           </div>
-          <!-- <ol>
-            <li>Users believed that sahiyo.org was effective at helping them
-              find resources about FGC.</li>
-            <li>Users struggled with accessibility issues like responsiveness,
-              especially with the mobile version.</li>
-            <li>Many users believed that storytelling (such as the blog) is a
-              vital part of connecting to the Sahiyo
-              community.</li>
-            <li>Users often accidentally navigated to Sahiyo’s old website
-              (sahiyo.com), since it is more prevalent in
-              Google search results.</li>
-          </ol> -->
         </section>
 
         <section class="sahiyo-personas">
@@ -183,30 +173,29 @@
               and keep in mind user's needs as we
               made
               decisions.</p>
-            <div class="persona-container">
-              <img class="persona-1" id="kara-image"
-                src="images/sahiyo imgs/kara persona.png"
-                alt="an infographic of the persona Kara, who has the role of intern at Sahiyo">
-              <img class="persona-2" id="anita-image"
-                src="images/sahiyo imgs/anita-persona.png"
-                alt="an infographic of the persona Anita, who has the role of advisory board member at Sahiyo">
+            <div>
+              <div class="persona-container">
+                <img class="persona-1" id="kara-image"
+                  src="images/sahiyo imgs/kara persona.png"
+                  alt="an infographic of the persona Kara, who has the role of intern at Sahiyo">
+                <img class="persona-2" id="anita-image"
+                  src="images/sahiyo imgs/anita-persona.png"
+                  alt="an infographic of the persona Anita, who has the role of advisory board member at Sahiyo">
+              </div>
+              <figcaption>Click a persona to enlarge</figcaption>
             </div>
 
             <div id="merged-kara-modal" class="persona-modal modal">
               <span tabindex="0" role="button" aria-pressed="false"
                 class="close" id="kara-close">&times;</span>
               <img class="modal-merged-image" id="kara-enlarged-image">
-              <!-- <div id="caption"></div> -->
             </div>
 
             <div id="merged-anita-modal" class="persona-modal modal">
               <span tabindex="0" role="button" aria-pressed="false"
                 class="close" id="anita-close">&times;</span>
               <img class="modal-merged-image" id="anita-enlarged-image">
-              <!-- <div id="caption"></div> -->
             </div>
-
-
           </div>
         </section>
 
@@ -218,7 +207,7 @@
             sahiyo.org, we launched a survey to the
             Sahiyo community. Our goal was to <b>understand people's experiences
               with the site,
-              especially for anyone who had a disability</b>. </p>
+              especially for anyone with a disability</b>. </p>
           <p>
             The survey had several limitations. First, we did not receive
             enough
@@ -243,8 +232,9 @@
           </div>
 
           <p>
-            The survey showed that people with reported disabilities had lower
-            satisfaction with the site in every area. In particular, their
+            The survey showed that <b>people who reported disabilities had
+              lower
+              satisfaction with the site in every area</b>. In particular, their
             experiences in finding information on Sahiyo events was
             significantly more negative.
           </p>
@@ -339,7 +329,7 @@
           </p>
         </section>
 
-        <section class="recommendations">
+        <section id="sahiyo-recommendations-div" class="recommendations">
           <h3>Recommendations</h3>
           <p>Our recommendations seek to improve the accessibility of sahiyo.org
             in terms of online accessibility
@@ -348,7 +338,47 @@
             looking for it.
           </p>
           <p>We recommend...</p>
-          <ol class="rec-list">
+          <div class="sahiyo-recommendations">
+            <div class="card rec-card rec-1">
+              <div class="card-body">
+                <h5 class="card-title">Reorganize Navigation</h5>
+                <p class="card-text">Some aspects of site navigation were
+                  confusing to users. Sahiyo should reorganize their top menu to
+                  align more with user expectations and fix broken links.</p>
+              </div>
+            </div>
+
+            <div class="card rec-card rec-2">
+              <div class="card-body">
+                <h5 class="card-title"> Ensure Content is Up-To-Date</h5>
+                <p class="card-text">Sahiyo should remove outdated
+                  content from search results and validate page titles to make
+                  sure they accurately reflect page content.</p>
+              </div>
+            </div>
+
+            <div class="card rec-card rec-3">
+              <div class="card-body">
+                <h5 class="card-title">Redirect Old Site to Current Site</h5>
+                <p class="card-text">People often accidentally navigate to
+                  Sahiyo's old site. Sahiyo should set up the old site to
+                  redirect all users to the new site to avoid confusion.</p>
+              </div>
+            </div>
+
+            <div class="card rec-card rec-4">
+              <div class="card-body">
+                <h5 class="card-title">Fix Web Accessibility Issues</h5>
+                <p class="card-text">Sahiyo should increase accessibility by
+                  fixing color contrast issues with links,
+                  adding alt-text to all non-textual
+                  content, and ensuring proper responsiveness.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- <ol class="rec-list">
             <li>Improving site navigation by reorganizing the menu to align more
               with user expectations, and fixing
               broken links.</li>
@@ -360,10 +390,10 @@
             <li>Increasing accessibility by fixing contrast issues with links,
               adding alt-text to all non-textual
               content, and ensuring proper responsiveness. </li>
-          </ol>
+          </ol> -->
 
-          <span class="link-container">
-            <a id="final-presentation" class="presentation-link"
+          <span id="sahiyo-conclusion-link" class="link-container">
+            <a id="sahiyo-final-presentation" class="presentation-link"
               href="https://drive.google.com/file/d/1kRMVWZ7Ur_GeDWxiS840DUP4qB3oCQRu/view?usp=share_link"
               target="_blank">
               Final Stakeholder Presentation
@@ -376,36 +406,48 @@
         <h2>Conclusion</h2>
         <section>
           <h3>Next Steps</h3>
-          <p>While our suggestions will help increase accessibility on
-            sahiyo.org, we recommend that the Sahiyo team has
-            regular audits of their content to make sure everything is up to
+          <p>During our research, we discovered that while many of the
+            accessibility issues on sahiyo.org were things that were easily
+            fixable (color
+            contrast, alt-text, responsiveness, etc) they caused much
+            frustration for our
+            users and negatively impacted how they used the site.</p>
+          <p>While we recommended specific ways to fix the accessibility issues
+            we found, it will be important for Sahiyo to conduct regular audits
+            of their site to make sure everything is up to
             date and still accessible to the community.
-          </p>
-          <p>
             We also recommend further accessibility testing to the mobile site,
             since we were unable to include that in
             our user testing. </p>
           <p>
-            However, making even small changes to increase sahiyo.org’s
+            Making even small changes to increase sahiyo.org’s
             accessibility will increase community engagement
             by making it easier for users to find information and interact with
-            the site content.</p>
+            the site content, helping them continue their mission of creating
+            positive social change and ending FGC.</p>
         </section>
         <section class="sahiyo-learned">
           <h3>What I Learned</h3>
-          <p>While I love to try to plan for every eventuality, there’s still so
-            much value to be gained
-            from studies that don’t go perfectly, and being flexible is so
-            important for being able to see that
-            potential.
+          <p>
+            If there had been more time, <b>I would have loved to conduct a card
+              sort exercise.</b> We were able to come up with solutions for
+            many of
+            the accessibility issues, but <b>our usability test
+              showed
+              there was confusion with how Sahiyo.org was organized,
+              and our users had difficulty finding information</b>. A card sort
+            could help determine a better way to structure the site.
           </p>
-          <p>My team learned this with our survey study.
-            While we had few participants, their answers about their experiences
-            (especially those who reported they had
-            disabilities) pointed us towards focusing more on people with
-            disabilities in our usability testing. We were
-            able to identify some areas for improvement that hadn't been on our
-            radar before. </p>
+          <p> I also learned there’s still <b>so much value to gain
+              from studies that don’t go perfectly</b>. Our survey didn't get
+            the
+            number of responses
+            responses we had hoped, but the responses we did receive helped the
+            team find the right direction for usability testing. Being flexible
+            and willing to pivot helped the team see value in the data we got,
+            and ultimately find
+            success.
+          </p>
         </section>
       </div>
     </div>

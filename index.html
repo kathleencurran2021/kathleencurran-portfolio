@@ -44,20 +44,22 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-md ">
-    <div class="container-fluid">
-      <a class="navbar-brand active" id="logo-home" href="index.html">Kathleen
-        Curran</a>
+  <nav class="navbar navbar-expand-md pt-4 ">
+    <div class="container-fluid flex-guy">
+      <a class=" kat-icon" href="index.html">
+        <img src="/images/banner.png"
+          alt="Kathleen Curran: UX Research and Design">
+      </a>
 
-      <ul class="navbar-nav me-5 justify-content-right">
-        <li class="nav-item me-4">
-          <a class="nav-link" id="nav-home" aria-current="page"
+      <ul class="navbar-nav mb-4 mt-5 justify-content-right">
+        <li class="nav-item me-5 ">
+          <a class="nav-link current-page" id="nav-home" aria-current="page"
             href="index.html">Projects</a>
         </li>
-        <li class="nav-item me-4">
+        <li class="nav-item me-5">
           <a class="nav-link" id="nav-about" href="about.html">About</a>
         </li>
-        <li class="nav-item me-4">
+        <li class="nav-item">
           <a class="nav-link" id="nav-resume" href="resume.html">Resume</a>
         </li>
       </ul>
@@ -65,73 +67,81 @@
   </nav>
 
   <main>
-    <h1 id="portfolio-welcome">Hi I'm Kathleen! I'm a UX Researcher and
-      Designer.</h1>
 
+
+    <!-- Here -->
+    <div class="animation-tagline">
+
+      <div id="greeting-div">
+        <h1 id="greeting">As a UX professional, I </h1>
+      </div>
+
+      <div id="change-div">
+
+        <h1 class="changing-line second-line">advance social change
+          for public
+          good</h1>
+        <h1 class="changing-line third-line">craft intuitive user
+          experiences
+        </h1>
+        <h1 class="changing-line first-line"> prioritize building relationships
+        </h1>
+        <h1 class="changing-line fourth-line">turn challenges into
+          opportunities</h1>
+      </div>
+
+    </div>
+
+
+    <!-- Cutgroup Project -->
     <div class="project-contents">
-      <div class="cutgroup-project project-block thumbnail-left" id="cg-proj">
-        <div class="project-thumbnail" id="cutgroup-thumbnail">
-          <img class="cutgroup-thumbnail-img thumbnail-img"
-            alt="black and white silhouette of a hand putting a ballot into a box"
-            src="images/ballot.jpg">
-        </div>
-        <div class="cutgroup-name proj-name">
-          <h3>Civic User Testing: Poll Working</h3>
+      <div class="project-image cutgroup-image">
+        <img src="/images/ballot.jpg" alt="Ballot">
+
+        <div class="project-overlay cutgroup-overlay">
+          <h2>Civic User Testing: Poll Work</h2>
           <a href="cutgroup-project.html"
             aria-label="learn more about the cutgroup project"
             id="cutgroup-learn-more" type="button"
-            class="btn btn-light learn-more">Learn
+            class="btn btn-light border-0 learn-more">Learn
             More</a>
         </div>
       </div>
 
-      <div class="project-block thumbnail-right" id="sahiyo-project">
-        <div class="sahiyo-name proj-name">
-          <h3>
-            Needs Assessment and Usability Evaluation
-          </h3>
+      <div class="project-image sahiyo-image">
+        <img src="/images/sahiyo imgs/Sahiyo-logo-2.png" alt="sahiyo">
+
+        <div class="project-overlay sahiyo-overlay">
+          <h2>Sahiyo Accessibility Evaluation</h2>
           <a href="sahiyo-project.html" type="button" id="sahiyo-learn-more"
             aria-label="learn more about the needs assessment project"
-            class="btn btn-light learn-more">Learn
+            class="btn btn-light border-0 learn-more">Learn
             More
           </a>
         </div>
-        <div class="project-thumbnail sahiyo-thumbnail">
-          <img class="sahiyo-thumbnail-img thumbnail-img"
-            alt="pink and purple Sahiyo logo with text underneath that reads 'United Against Female Genital Cutting'"
-            src="images/sahiyo imgs/Sahiyo-logo-2.jpg">
-        </div>
       </div>
 
-
-
-      <div class="huddle-project project-block thumbnail-left"
-        id="huddle-project">
-        <div class="project-thumbnail " id="huddle-thumbnail">
-          <img class=" thumbnail-img huddle-thumbnail-img"
-            id="huddle-thumbnail-img-1"
-            alt="a phone screen with a login page to the Huddle applications"
-            src="images/huddle imgs/huddle-phone-1.png">
-          <img class=" thumbnail-img huddle-thumbnail-img"
-            id="huddle-thumbnail-img-2"
-            alt="a phone screen with a login page to the Huddle applications"
-            src="images/huddle imgs/huddle-phone-2.png">
-          <!-- <img class="huddle-thumbnail-img thumbnail-img"
-            alt="two outlined figures from the shoulders up with the word Huddle underneath them"
-            src="images/huddle imgs/huddle4.png"> -->
+      <div class="project-image huddle-image">
+        <div id="huddle-image-container">
+          <img src="/images/huddle imgs/huddle-phone-1.png"
+            alt="a phone screen with a login page to the Huddle applications">
+          <img src="/images/huddle imgs/huddle-phone-2.png"
+            alt="a phone screen with a login page to the Huddle applications">
         </div>
-        <div class="huddle-name proj-name">
-          <h3>
-            Huddle: Interaction Design
-          </h3>
+
+
+        <div class="project-overlay huddle-overlay">
+          <h2>Huddle: Interaction Design</h2>
           <a href="huddle.html" type="button" id="huddle-learn-more"
             aria-label="learn more about the Huddle Interaction Design  project"
-            class="btn btn-light learn-more">Learn
+            class="btn btn-light border-0 learn-more">Learn
             More
           </a>
         </div>
-
       </div>
+
+
+    </div>
 
 
 

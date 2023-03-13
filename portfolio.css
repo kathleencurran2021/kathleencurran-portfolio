@@ -7,19 +7,8 @@ html {
   height: auto;
   margin: 0;
   line-height: 200%;
-  /* background-color: #fffbff; */
+  background-color: #faf9f7 !important;
 }
-
-/* a {
-  color: #683254 !important;
-  font-family: "Merriweather", serif;
-  font-weight: 500;
-}
-
-a:hover {
-  color: #4d243d !important;
-  font-weight: 700;
-} */
 
 h1,
 h2,
@@ -27,7 +16,31 @@ h3,
 h4,
 h5 {
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+h2 {
+  font-size: 2.75rem;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 p,
@@ -35,7 +48,6 @@ ol,
 li {
   font-family: "Merriweather", serif;
   font-weight: 300;
-  line-height: 175%;
 }
 
 b {
@@ -44,7 +56,11 @@ b {
 
 q {
   font-style: italic;
-  color: #683254;
+  font-family: "Merriweather", serif;
+  color: #396661;
+  line-height: 150%;
+  font-weight: 600;
+  margin-bottom: 2rem;
 }
 
 section {
@@ -52,11 +68,14 @@ section {
 }
 
 figcaption {
-  margin: 0.5rem;
-  padding: 0px;
-  font-size: 0.8rem;
+  font-family: "Merriweather", serif;
   font-style: italic;
   text-align: center;
+  font-size: 0.85rem;
+  line-height: 150%;
+
+  margin: 0.5rem;
+  padding: 0px;
 }
 
 /* Reusable CSS */
@@ -66,10 +85,6 @@ figcaption {
   grid-template-columns: 1fr 3.5fr 3.5fr 1fr;
   height: auto;
   gap: 2rem 5rem;
-}
-
-.case-study h2 {
-  font-size: 2.5rem;
 }
 
 .title-div {
@@ -87,7 +102,7 @@ figcaption {
   margin: auto;
 }
 .title-div h1 {
-  margin: 2.5rem 3rem 1.5rem 3rem;
+  margin: 4rem 3rem 2.5rem 3rem;
   text-align: center;
 }
 
@@ -95,15 +110,10 @@ figcaption {
   grid-row: 2;
   grid-column-start: 2;
   grid-column-end: 4;
-  /* display: flex;
-  justify-content: space-around; */
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* grid-template-columns: 20rem 20rem 1fr; */
   justify-items: center;
-}
-
-.project-specs h3 {
-  /* text-align: center; */
 }
 
 .project-specs ul {
@@ -143,6 +153,23 @@ figcaption {
 .scope-constraints {
   grid-row: 5;
   grid-column: 2/4;
+}
+
+.link-container {
+  text-align: center;
+  margin: 1.5rem auto;
+  display: block;
+}
+
+.jump-link {
+  font-family: "Merriweather", serif;
+  color: #49680d;
+  text-align: center;
+}
+
+.jump-link:hover {
+  color: #49680d;
+  font-weight: 700;
 }
 
 .project-process {
@@ -196,6 +223,5 @@ figcaption {
 }
 
 .what-learned h4 {
-  font-family: "Montserrat", sans-serif;
   text-align: center;
 }

@@ -17,7 +17,8 @@
 
 .wireframe-div {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .wireframe-div img {
@@ -31,6 +32,11 @@
 }
 
 .mid-fi-div {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mid-fi-div div {
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
@@ -66,7 +72,8 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .hi-fi-div img {
@@ -78,8 +85,12 @@
   text-align: center;
 }
 
+.walkthrough-p a {
+  color: #49680d;
+}
+
 .walkthrough-p a:hover {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .huddle-usability-table figcaption {
