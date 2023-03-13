@@ -368,19 +368,6 @@
   margin-top: 2.5rem;
 }
 
-#resume-button {
-  background-color: #49680d;
-  border: none;
-  color: white !important;
-  font-family: "Montserrat", sans-serif;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-right: 16px;
-  padding-left: 24px;
-  height: 40px;
-  border-radius: 20px;
-}
-
 #resume-button a {
   padding-right: 8px;
 }
@@ -404,7 +391,7 @@
 
 .experience > h2 {
   text-align: center;
-  font-weight: 400;
+  /* font-weight: 400; */
   text-decoration: underline;
 }
 
@@ -414,10 +401,6 @@
   column-gap: 2rem;
   margin: 2rem 8rem;
   align-items: flex-start;
-}
-
-.role h3 {
-  font-size: 1.4rem;
 }
 
 .experience-block .role {
@@ -435,6 +418,24 @@
 .experience-block ul {
   grid-row: 1;
   grid-column: 2;
+}
+
+.resume-span {
+  display: flex;
+  justify-content: center;
+}
+
+#resume-button {
+  background-color: #49680d;
+  border: none;
+  color: white !important;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 16px;
+  padding-left: 24px;
+  height: 40px;
+  border-radius: 20px;
 }
 
 @media only screen and (min-width: 730px) and (max-width: 1000px) {
