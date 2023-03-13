@@ -112,8 +112,8 @@ figcaption {
   grid-column-end: 4;
   display: grid;
   /* grid-template-columns: 1fr 1fr 1fr; */
-  grid-template-columns: 20rem 20rem 1fr;
-  justify-items: start;
+  /* grid-template-columns: 20rem 20rem 1fr; */
+  justify-items: center;
 }
 
 .project-specs ul {
@@ -155,9 +155,16 @@ figcaption {
   grid-column: 2/4;
 }
 
+.link-container {
+  text-align: center;
+  margin: 1.5rem auto;
+  display: block;
+}
+
 .jump-link {
   font-family: "Merriweather", serif;
   color: #49680d;
+  text-align: center;
 }
 
 .jump-link:hover {

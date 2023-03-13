@@ -8,12 +8,6 @@
 
 .cutgroup-findings {
   grid-row: 3;
-  margin: auto;
-  width: 75%;
-}
-
-#cutgroup-findings-img {
-  width: 100%;
 }
 
 .cutgroup-recs {
