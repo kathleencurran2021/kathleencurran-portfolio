@@ -137,7 +137,8 @@
 
 .rec-card {
   margin: 0.5rem;
-  background-color: #bcece5;
+  /* background-color: #bcece5; */
+  background-color: #dde6c6;
   color: #00201d;
 }
 
