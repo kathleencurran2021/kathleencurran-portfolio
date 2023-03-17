@@ -131,18 +131,6 @@
 
 /* Media Breakpoints Homepage */
 @media only screen and (max-width: 480px) {
-  #cutgroup-case-study {
-    display: block;
-    /* grid-template-columns: 0.5fr 3fr 0.5fr; */
-    margin: auto 2rem;
-  }
-
-  .title-div {
-    grid-column: 1/4;
-  }
-  .title-div h1 {
-    margin: 4rem 0 2.5rem 0;
-  }
   .all-rec {
     display: block;
   }
