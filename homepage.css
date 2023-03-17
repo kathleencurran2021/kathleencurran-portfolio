@@ -269,72 +269,6 @@
   font-weight: 550 !important;
 }
 
-/* Media Breakpoints Homepage */
-@media only screen and (max-width: 480px) {
-  .animation-tagline {
-    height: auto;
-    grid-template-rows: 1fr 1.5fr;
-  }
-
-  .project-contents {
-    grid-template-columns: 1fr;
-    grid-template-rows: 20rem 20rem 20rem;
-    margin: 0;
-    width: 100%;
-  }
-
-  .project-image {
-    width: 100%;
-    border-radius: 0;
-    background-color: rgb(255, 255, 255);
-    /* opacity: 0.3; */
-  }
-
-  .invisible-link {
-    display: block;
-  }
-
-  .project-image img {
-    background-color: rgb(255, 255, 255);
-  }
-
-  .project-overlay {
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.727);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  /* .learn-more {
-    display: none;
-  } */
-
-  .project-image:hover img {
-    opacity: inherit;
-    width: inherit;
-    filter: inherit;
-  }
-
-  .project-image:hover .huddle-image-container {
-    opacity: inherit;
-    width: inherit;
-  }
-
-  .project-image:hover .project-overlay {
-    opacity: inherit;
-    width: inherit;
-    height: inherit;
-  }
-
-  .project-image:hover {
-    background-color: inherit;
-  }
-}
-
 /* ~~~~~~~~About me page~~~~~~~~~ */
 .about-content {
   display: grid;
@@ -426,118 +360,92 @@
 
 /* ~~~~~~~~~Resume~~~~~~~~~~~~~ */
 
-.resume-head {
-  text-align: center;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-}
-
-.resume-pdf {
-  text-align: center;
-  margin-top: 2.5rem;
-}
-
-#resume-button a {
-  padding-right: 8px;
-}
-
-#resume-button i {
-  font-size: 16px;
-  padding-left: 8px;
-  vertical-align: -7.5%;
-}
-
-#resume-button:hover {
-  background-color: #49680d;
-  color: white;
-  font-weight: 550;
-  font-family: "Montserrat", sans-serif;
-}
-
-.experience {
-  margin: 3rem 4rem 4rem 4rem;
-}
-
-.experience > h2 {
-  text-align: center;
-  /* font-weight: 400; */
-  text-decoration: underline;
-}
-
-.experience-block {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 2rem;
-  margin: 2rem 8rem;
-  align-items: flex-start;
-}
-
-.experience-block .role {
-  grid-row: 1;
-  grid-column: 1;
-  margin: 0 auto;
-  text-align: right;
-  width: 80%;
-}
-
-.role p {
-  color: grey;
-}
-
-.experience-block ul {
-  grid-row: 1;
-  grid-column: 2;
-}
-
-.resume-span {
-  display: flex;
-  justify-content: center;
-}
-
-#resume-button {
-  background-color: #49680d;
-  border: none;
-  color: white !important;
-  font-family: "Montserrat", sans-serif;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-right: 16px;
-  padding-left: 24px;
-  height: 40px;
-  border-radius: 20px;
-}
-
-@media only screen and (min-width: 730px) and (max-width: 1000px) {
-  .proj-name {
-    padding-right: 0.75rem;
-    padding-left: 0.75rem;
-  }
-
-  .about-content {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-
-  .about-text :first-child {
-    text-align: center;
-  }
-
-  .headshot {
-    width: 65%;
-    margin-bottom: 1rem;
-  }
-}
-
 /* Media Breakpoints  */
 
-@media only screen and (max-width: 729px) {
-  p,
+@media only screen and (max-width: 480px) {
+  /* Home Page */
+  .animation-tagline {
+    height: auto;
+    grid-template-rows: 1fr 1.5fr;
+  }
+
+  .project-contents {
+    grid-template-columns: 1fr;
+    grid-template-rows: 20rem 20rem 20rem;
+    margin: 0;
+    width: 100%;
+  }
+
+  .project-image {
+    width: 100%;
+    border-radius: 0;
+    background-color: rgb(255, 255, 255);
+    /* opacity: 0.3; */
+  }
+
+  .invisible-link {
+    display: block;
+  }
+
+  .project-image img {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .project-overlay {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.727);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* .learn-more {
+    display: none;
+  } */
+
+  .project-image:hover img {
+    opacity: inherit;
+    width: inherit;
+    filter: inherit;
+  }
+
+  .project-image:hover .huddle-image-container {
+    opacity: inherit;
+    width: inherit;
+  }
+
+  .project-image:hover .project-overlay {
+    opacity: inherit;
+    width: inherit;
+    height: inherit;
+  }
+
+  .project-image:hover {
+    background-color: inherit;
+  }
+
+  /* Resume page */
+  .experience .experience-block .amd {
+    display: block;
+    background-color: red;
+  }
+
+  /* About page */
+  .about-content {
+    display: block;
+  }
+}
+
+/* @media only screen and (max-width: 729px) { */
+/* p,
   li,
   span {
     font-size: 1.5rem;
-  }
-
+  } */
+/* 
   #resume-button {
     vertical-align: middle;
     text-align: center;
@@ -564,5 +472,5 @@
 
   .about-text {
     font-size: 1.5rem;
-  }
-}
+  } */
+/* } */
