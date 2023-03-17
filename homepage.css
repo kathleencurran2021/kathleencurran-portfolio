@@ -1,3 +1,4 @@
+/* Home page */
 .portfolio-welcome {
   font-size: 2rem;
   margin: 4rem auto;
@@ -266,6 +267,14 @@
   font-weight: 550 !important;
 }
 
+/* Media Breakpoints Homepage */
+@media only screen and (max-width: 480px) {
+  .animation-tagline {
+    height: auto;
+    grid-template-rows: 1fr 1.5fr;
+  }
+}
+
 /* ~~~~~~~~About me page~~~~~~~~~ */
 .about-content {
   display: grid;
@@ -459,6 +468,8 @@
     margin-bottom: 1rem;
   }
 }
+
+/* Media Breakpoints  */
 
 @media only screen and (max-width: 729px) {
   .project-contents {
