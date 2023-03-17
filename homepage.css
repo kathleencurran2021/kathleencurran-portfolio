@@ -208,9 +208,7 @@
 .project-image:hover img {
   opacity: 0.3;
   width: 100%;
-  /* backdrop-filter: blur(10px); */
   filter: blur(2px);
-  /* -webkit-filter: blur(4px); */
 }
 
 .project-image:hover .huddle-image-container {
@@ -220,6 +218,10 @@
 
 .project-overlay {
   width: 70%;
+}
+
+.invisible-link {
+  display: none;
 }
 
 .project-image:hover .project-overlay {
@@ -272,6 +274,64 @@
   .animation-tagline {
     height: auto;
     grid-template-rows: 1fr 1.5fr;
+  }
+
+  .project-contents {
+    grid-template-columns: 1fr;
+    grid-template-rows: 20rem 20rem 20rem;
+    margin: 0;
+    width: 100%;
+  }
+
+  .project-image {
+    width: 100%;
+    border-radius: 0;
+    background-color: rgb(255, 255, 255);
+    /* opacity: 0.3; */
+  }
+
+  .invisible-link {
+    display: block;
+  }
+
+  .project-image img {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .project-overlay {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.727);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* .learn-more {
+    display: none;
+  } */
+
+  .project-image:hover img {
+    opacity: inherit;
+    width: inherit;
+    filter: inherit;
+  }
+
+  .project-image:hover .huddle-image-container {
+    opacity: inherit;
+    width: inherit;
+  }
+
+  .project-image:hover .project-overlay {
+    opacity: inherit;
+    width: inherit;
+    height: inherit;
+  }
+
+  .project-image:hover {
+    background-color: inherit;
   }
 }
 
@@ -472,11 +532,6 @@
 /* Media Breakpoints  */
 
 @media only screen and (max-width: 729px) {
-  .project-contents {
-    grid-template-columns: 1fr;
-    grid-template-rows: 20rem 20rem 20rem;
-  }
-
   p,
   li,
   span {
