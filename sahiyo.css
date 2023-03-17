@@ -219,6 +219,38 @@
   color: #49680d !important;
 }
 
+@media only screen and (max-width: 700px) {
+  .persona-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .persona-container img {
+    max-width: 100%;
+  }
+  .persona-2 {
+    margin-left: 0;
+  }
+
+  .surv-res-fig {
+    width: 100%;
+  }
+
+  .ut-observations {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sahiyo-recommendations {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* .persona-container figcaption {
+    display: none;
+  } */
+}
+
 /* @media only screen and (max-width: 700px) {
   .case-study {
     display: grid;
