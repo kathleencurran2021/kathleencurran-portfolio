@@ -267,6 +267,11 @@ figcaption {
     margin: auto 2rem;
   }
 
+  .interview-study h2:first-child {
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+  }
+
   .project-specs {
     display: flex;
     flex-direction: column;
