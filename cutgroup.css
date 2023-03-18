@@ -61,6 +61,13 @@
   max-width: 600px;
 }
 
+#before-hierarchy,
+#after-hierarchy,
+.before-caption,
+.after-caption {
+  display: none;
+}
+
 .know-rights-container {
   display: flex;
   flex-direction: column;
@@ -93,7 +100,7 @@
   display: block;
   /* padding-top: 2rem; */
   width: 80%;
-  max-width: 875px;
+  max-width: 930px;
 }
 
 #merged-img-modal {
@@ -127,4 +134,31 @@
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* Media Breakpoints Homepage */
+@media only screen and (max-width: 480px) {
+  .all-rec {
+    display: block;
+  }
+
+  .rec-img,
+  .hierarchy-caption {
+    display: none;
+  }
+
+  .know-rights {
+    display: block;
+    width: 90%;
+  }
+
+  #before-hierarchy,
+  #after-hierarchy {
+    display: block;
+    width: 90%;
+  }
+  .after-caption,
+  .before-caption {
+    display: block;
+  }
 }

@@ -1,0 +1,97 @@
+.resume-head {
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.resume-pdf {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+#resume-button a {
+  padding-right: 8px;
+}
+
+#resume-button i {
+  font-size: 16px;
+  padding-left: 8px;
+  vertical-align: -7.5%;
+}
+
+#resume-button:hover {
+  background-color: #49680d;
+  color: white;
+  font-weight: 550;
+  font-family: "Montserrat", sans-serif;
+}
+
+.experience {
+  margin: 3rem 4rem 4rem 4rem;
+}
+
+.experience > h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.experience-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  margin: 2rem 8rem;
+  align-items: flex-start;
+}
+
+.experience-block .role {
+  grid-row: 1;
+  grid-column: 1;
+  margin: 0 auto;
+  text-align: right;
+  width: 80%;
+}
+
+.role p {
+  color: grey;
+}
+
+.experience-block ul {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.resume-span {
+  display: flex;
+  justify-content: center;
+}
+
+#resume-button {
+  background-color: #49680d;
+  border: none;
+  color: white !important;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 16px;
+  padding-left: 24px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+  .experience-block {
+    display: block;
+    margin: 2rem 0;
+  }
+
+  .experience:first-child {
+    margin-bottom: 2rem;
+  }
+
+  .experience-block .role {
+    text-align: left;
+  }
+  .experience-block .role h4 {
+    font-style: italic;
+  }
+}

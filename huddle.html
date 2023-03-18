@@ -233,6 +233,39 @@
               page, a resources page, and a forum page.
             </figcaption>
           </div>
+
+
+          <div class="mid-fi-slideshow-container">
+            <div class="my-slides fade">
+              <img src="images/huddle imgs/mid-fi-home.png" style="width: 80%;">
+              <!-- <div class="text">home page</div> -->
+            </div>
+
+            <div class="my-slides fade">
+
+              <img src="images/huddle imgs/mid-fi-resource.png"
+                style="width: 80%;">
+              <!-- <div class="text">resource page</div> -->
+            </div>
+
+            <div class="my-slides fade">
+              <img src="images/huddle imgs/mid-fi-forum.png"
+                style="width: 80%;">
+              <!-- <div class="text">forum page</div> -->
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          </div>
+
+          <div>
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+          </div>
         </section>
 
         <section class="huddle-testing">
@@ -279,6 +312,41 @@
             <img src="images/huddle imgs/huddle-forum.png"
               alt="a high-fidelity screen showing the main forum page, showing all categories of conversations ">
           </div>
+
+          <div class="hi-fi-slideshow-container">
+            <div class="hi-fi-slides fade">
+              <img src="images/huddle imgs/huddle-home.png" style="width: 80%;">
+              <!-- <div class="text">home page</div> -->
+            </div>
+
+            <div class="hi-fi-slides fade">
+
+              <img src="images/huddle imgs/huddle-resource.png"
+                style="width: 80%;">
+              <!-- <div class="text">resource page</div> -->
+            </div>
+
+            <div class="hi-fi-slides fade">
+              <img src="images/huddle imgs/huddle-forum.png"
+                style="width: 80%;">
+              <!-- <div class="text">forum page</div> -->
+            </div>
+
+            <a class="prev" onclick="plusHiSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusHiSlides(1)">&#10095;</a>
+
+            <div>
+              <div style="text-align:center">
+                <span class="hi-dot" onclick="currentHiSlide(1)"></span>
+                <span class="hi-dot" onclick="currentHiSlide(2)"></span>
+                <span class="hi-dot" onclick="currentHiSlide(3)"></span>
+              </div>
+            </div>
+
+          </div>
+
+
+
           <p class="walkthrough-p"> Walk through the hi-fidelity prototype <a
               aria-label="link to Adobe XD prototype walkthrough"
               target="_blank"
@@ -362,6 +430,81 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous">
     </script>
+
+  <script>
+    let slideIndex = 1;
+    let hiSlideIndex = 1
+
+
+    showSlides(slideIndex);
+    showHiSlides(hiSlideIndex)
+
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+
+    }
+
+    function plusHiSlides(n) {
+
+      showHiSlides(hiSlideIndex += n)
+      console.log(n)
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function currentHiSlide(n) {
+      showHiSlides(hiSlideIndex = n)
+    }
+
+    function showSlides(n) {
+      let i;
+
+      console.log(n)
+
+      let slides = document.getElementsByClassName("my-slides");
+      let dots = document.getElementsByClassName("dot");
+
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "flex";
+      slides[slideIndex - 1].style.justifyContent = "center"
+      slides[slideIndex - 1].style.opacity = 1;
+      dots[slideIndex - 1].className += " active";
+
+    }
+
+
+    function showHiSlides(n) {
+      let slides = document.getElementsByClassName("hi-fi-slides")
+      let dots = document.getElementsByClassName("hi-dot");
+
+      console.log(n)
+
+      if (n > slides.length) { hiSlideIndex = 1 }
+      if (n < 1) { hiSlideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[hiSlideIndex - 1].style.display = "flex";
+      slides[hiSlideIndex - 1].style.justifyContent = "center"
+      slides[hiSlideIndex - 1].style.opacity = 1;
+      dots[hiSlideIndex - 1].className += " active";
+    }  
+  </script>
 
 </body>
 

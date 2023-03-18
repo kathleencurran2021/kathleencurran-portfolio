@@ -20,27 +20,27 @@ h5 {
 
 h1 {
   font-size: 3rem;
-  font-weight: 200;
+  font-weight: 600;
 }
 
 h2 {
   font-size: 2.75rem;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 h3 {
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 h4 {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 h5 {
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 300;
 }
 
 p,
@@ -79,7 +79,6 @@ figcaption {
 }
 
 /* Reusable CSS */
-
 .case-study {
   display: grid;
   grid-template-columns: 1fr 3.5fr 3.5fr 1fr;
@@ -224,4 +223,76 @@ figcaption {
 
 .what-learned h4 {
   text-align: center;
+}
+
+/* Global breakpoints */
+@media only screen and (max-width: 480px) {
+  body {
+    /* paddi: 0 2rem; */
+  }
+  p,
+  li {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+    font-weight: 200;
+  }
+
+  /* project breakpoints */
+
+  .case-study {
+    display: block;
+    margin: auto 2rem;
+  }
+
+  .interview-study h2:first-child {
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .project-specs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title-div h1 {
+    margin: 4rem 0 2.5rem 0;
+  }
+
+  .project-overview {
+    margin: 2rem auto;
+  }
+  .challenge {
+    margin: 2rem auto;
+  }
+  .scope-constraints {
+    margin: 2rem auto;
+  }
+
+  .project-process {
+    grid-template-columns: 1fr;
+    row-gap: inherit;
+  }
 }
