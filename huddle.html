@@ -34,6 +34,9 @@
 
 <body>
 
+  <button onclick="topFunction()" class="top-button" id="huddle-button"
+    title="Return to top">&#8679;</button>
+
   <nav class="navbar navbar-expand-md pt-4 ">
     <div class="container-fluid flex-guy">
       <a class=" kat-icon" href="index.html">
@@ -432,6 +435,29 @@
     </script>
 
   <script>
+
+    let topButton = document.getElementById("huddle-button")
+
+    window.onscroll = function () {
+      scrollFunction();
+    }
+
+    // shows button when user scrolls down 50px
+    function scrollFunction() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 20) {
+        topButton.style.display = "block"
+      } else {
+        topButton.style.display = "none"
+      }
+    }
+
+    // scrolls to top of the page
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+
     let slideIndex = 1;
     let hiSlideIndex = 1
 

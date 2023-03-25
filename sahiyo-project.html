@@ -35,6 +35,9 @@
 </head>
 
 <body>
+  <button onclick="topFunction()" class="top-button" id="sahiyo-button"
+    title="Return to top">&#8679;</button>
+
   <nav class="navbar navbar-expand-md pt-4 ">
     <div class="container-fluid flex-guy">
       <a class=" kat-icon" href="index.html">
@@ -479,6 +482,29 @@
 
 
   <script>
+    let topButton = document.getElementById("sahiyo-button")
+
+    window.onscroll = function () {
+      scrollFunction();
+    }
+
+    // shows button when user scrolls down 50px
+    function scrollFunction() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 20) {
+        topButton.style.display = "block"
+      } else {
+        topButton.style.display = "none"
+      }
+    }
+
+    // scrolls to top of the page
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+
+
     // Kara variables
     let karaModal = document.getElementById("merged-kara-modal")
     let karaImage = document.getElementById("kara-image")
