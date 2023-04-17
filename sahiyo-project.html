@@ -1,385 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Needs Assessment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Needs Assessment</title>
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="homepage.css" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet" href="sahiyo.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="icon" type="image/x-icon" href="images/katicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Hotjar Tracking Code for my site -->
+    <script>
+      ;(function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            ;(h.hj.q = h.hj.q || []).push(arguments)
+          }
+        h._hjSettings = { hjid: 3370557, hjsv: 6 }
+        a = o.getElementsByTagName('head')[0]
+        r = o.createElement('script')
+        r.async = 1
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv
+        a.appendChild(r)
+      })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=')
+    </script>
+  </head>
 
-  <link rel="stylesheet" href="homepage.css">
-  <link rel="stylesheet" href="portfolio.css">
-  <link rel="stylesheet" href="sahiyo.css">
-  <link rel="stylesheet" href="navbar.css">
-  <link rel="icon" type="image/x-icon" href="images/katicon.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Hotjar Tracking Code for my site -->
-  <script>
-    (function (h, o, t, j, a, r) {
-      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
-      h._hjSettings = { hjid: 3370557, hjsv: 6 };
-      a = o.getElementsByTagName('head')[0];
-      r = o.createElement('script'); r.async = 1;
-      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-      a.appendChild(r);
-    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-  </script>
-</head>
+  <body>
+    <button onclick="topFunction()" class="top-button" id="sahiyo-button" title="Return to top">&#8679;</button>
 
-<body>
-  <nav class="navbar navbar-expand-md pt-4 ">
-    <div class="container-fluid flex-guy">
-      <a class=" kat-icon" href="index.html">
-        <img src="/images/banner.png"
-          alt="Kathleen Curran: UX Research and Design">
-      </a>
+    <nav class="navbar navbar-expand-md pt-4">
+      <div class="container-fluid flex-guy">
+        <a class="kat-icon" href="index.html">
+          <img src="/images/banner.png" alt="Kathleen Curran: UX Research and Design" />
+        </a>
 
-      <ul class="navbar-nav mb-4 mt-5 justify-content-right">
-        <li class="nav-item me-5 ">
-          <a class="nav-link current-page" id="nav-home" aria-current="page"
-            href="index.html">Projects</a>
-        </li>
-        <li class="nav-item me-5">
-          <a class="nav-link" id="nav-about" href="about.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="nav-resume" href="resume.html">Resume</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+        <ul class="navbar-nav mb-4 mt-5 justify-content-right">
+          <!-- start of dropdown -->
+          <li class="nav-item dropdown me-5">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Projects
+            </a>
+            <ul class="dropdown-menu" aria-label="navbaDropdownMenuLink">
+              <li>
+                <a class="dropdown-item" href="cutgroup-project.html">Civic User Testing</a>
+              </li>
+              <li>
+                <a class="dropdown-item current-page" href="sahiyo-project.html">Community Accessibility</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="huddle.html">Huddle</a>
+              </li>
+            </ul>
+          </li>
 
-  <main>
-    <div id="sahiyo-case-study" class="case-study">
-      <div id="title" class="title-div">
-        <h1>Sahiyo: Needs Assessment and Usability Evaluation</h1>
+          <!-- End of dropdown -->
+          <li class="nav-item me-5">
+            <a class="nav-link" id="nav-about" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="nav-resume" href="resume.html">Resume</a>
+          </li>
+        </ul>
       </div>
+    </nav>
 
-      <section class="project-specs">
-        <div id="sahiyo-project-specs" class="sahiyo-overview overview specs">
-          <h3>Project Details</h3>
-          <ul>
-            <li><b>Role:</b> UX Researcher</li>
-            <!-- <li><b>Time Frame:</b> Spring 2022</li> -->
-            <li><b>Team:</b> Austin Williams, Grace <br>Brindle, and Alyssa
-              Downs</li>
-          </ul>
+    <main>
+      <div id="sahiyo-case-study" class="case-study">
+        <div id="title" class="title-div">
+          <h1>Sahiyo: Building Community through Improved Accessibility</h1>
         </div>
-        <div id="sahiyo-project-skills" class="sahiyo-overview overview skills">
-          <h3>Skills</h3>
-          <ul>
-            <li>Usability Testing</li>
-            <li>Semi-Structured Interviewing</li>
-            <li>Qualitative Data Analysis </li>
-            <li>Quantitative Data Analysis</li>
-            <li>Heuristic Evaluation</li>
-          </ul>
-        </div>
-        <div id="sahiyo-project-tools" class="sahiyo-overview overview tools">
-          <h3>Tools</h3>
-          <ul>
-            <li>Qualtrics</li>
-            <li>Miro</li>
-            <li>Google Analytics</li>
-            <li>Figma</li>
-          </ul>
-        </div>
-      </section>
 
+        <section class="project-specs">
+          <div id="sahiyo-project-specs" class="sahiyo-overview overview specs">
+            <h3>Project Details</h3>
+            <ul>
+              <li>
+                <b>Role:</b>
+                UX Researcher
+              </li>
+              <!-- <li><b>Time Frame:</b> Spring 2022</li> -->
+              <li>
+                <b>Team:</b>
+                Austin Williams, Grace
+                <br />
+                Brindle, and Alyssa Downs
+              </li>
+            </ul>
+          </div>
+          <div id="sahiyo-project-skills" class="sahiyo-overview overview skills">
+            <h3>Skills</h3>
+            <ul>
+              <li>Usability Testing</li>
+              <li>Semi-Structured Interviewing</li>
+              <li>Qualitative Data Analysis</li>
+              <li>Quantitative Data Analysis</li>
+              <li>Heuristic Evaluation</li>
+            </ul>
+          </div>
+          <div id="sahiyo-project-tools" class="sahiyo-overview overview tools">
+            <h3>Tools</h3>
+            <ul>
+              <li>Qualtrics</li>
+              <li>Miro</li>
+              <li>Google Analytics</li>
+              <li>Figma</li>
+            </ul>
+          </div>
+        </section>
 
-      <section class="project-overview">
-        <h2>Overview</h2>
-        <p>Sahiyo (pronounced Say-yo) is an international organization dedicated
-          to fighting for women's rights,
-          specifically in the area of female genital cutting (FGC). They work to
-          empower communities to end FGC and
-          create social change through education and community involvement on
-          their website, sahiyo.org.
+        <section class="project-overview">
+          <h2>Overview</h2>
+          <p>
+            Sahiyo (pronounced Say-yo) is an international organization dedicated to fighting for women's rights,
+            specifically in the area of female genital cutting (FGC). They work to empower communities to end FGC and
+            create social change through education and community involvement on their website, sahiyo.org.
+          </p>
+        </section>
 
-        </p>
-      </section>
+        <section class="challenge">
+          <h3>The Challenge</h3>
+          <p>
+            Sahiyo uses their website to post resources for FGC as well as foster community involvement. However, the
+            website is not always accessible and users often have difficulty finding the resources they need. Throughout
+            the study, our team sought to answer the following question:
+          </p>
+          <span class="challenge-statement">
+            “What accessibility challenges do users encounter when they use Sahiyo’s website, and how are those issues
+            negatively impacting user engagement across the site?”
+          </span>
+        </section>
 
-      <section class="challenge">
-        <h3>The Challenge</h3>
-        <p>Sahiyo uses their website to post resources for FGC as well as foster
-          community involvement.
-          However, the website is not always accessible and users often have
-          difficulty
-          finding the resources they need.
-          Throughout the study, our team sought to answer the following
-          question:</p>
-        <span class="challenge-statement">“What accessibility challenges do
-          users encounter
-          when they use Sahiyo’s website, and how are those issues negatively
-          impacting user engagement across the site?”</span>
-      </section>
+        <section class="scope-constraints">
+          <h3>Scope and Constraints</h3>
+          <p>
+            The project was limited to four months. Analytics showed that visitors primarily accessed the site on the
+            desktop version so we focused our efforts there, despite there being a mobile version of the site as well.
+          </p>
 
-      <section class="scope-constraints">
-        <h3>Scope and Constraints</h3>
-        <p>
-          The project was limited to four months. Analytics showed that
-          visitors primarily accessed the site on the desktop version so we
-          focused our efforts there, despite there being a mobile version of
-          the site as
-          well.</p>
+          <span class="link-container">
+            <a class="jump-link" href="#sahiyo-recommendations-div">Jump to final presentation and conclusion</a>
+          </span>
+        </section>
 
-        <span class="link-container">
-          <a class="jump-link" href="#sahiyo-recommendations-div">Jump to final
-            presentation and conclusion </a>
-        </span>
-      </section>
-
-      <div id="sahiyo-process" class="project-process">
-        <section class="interview-study">
-          <h2>Process</h2>
-          <h3>Interview Study</h3>
-          <p>We conducted an interview study which sought to understand the
-            primary goals, pain points, and needs of
-            users
-            navigating the Sahiyo website. </p>
-          <p> We conducted six interviews each
-            lasting between 30-60 minutes. Interviewees were recruited with the
-            help of Sahiyo leadership and through
-            online forums
-            for people with disabilities.</p>
-          <h5>Key Findings:</h5>
-          <div id="interview-findings">
-            <img src="images/sahiyo imgs/interview-findings.png"
-              id="interview-findings-img" alt="A list of findings that reads: Users believed that sahiyo.org was effective at helping them
+        <div id="sahiyo-process" class="project-process">
+          <section class="interview-study">
+            <h2>Process</h2>
+            <h3>Interview Study</h3>
+            <p>
+              We conducted an interview study which sought to understand the primary goals, pain points, and needs of
+              users navigating the Sahiyo website.
+            </p>
+            <p>
+              We conducted six interviews each lasting between 30-60 minutes. Interviewees were recruited with the help
+              of Sahiyo leadership and through online forums for people with disabilities.
+            </p>
+            <h5>Key Findings:</h5>
+            <div id="interview-findings">
+              <img
+                src="images/sahiyo imgs/interview-findings.png"
+                id="interview-findings-img"
+                alt="A list of findings that reads: Users believed that sahiyo.org was effective at helping them
               find resources about FGC; Users struggled with accessibility issues like responsiveness,
               especially with the mobile version; Many users believed that storytelling (such as the blog) is a
               vital part of connecting to the Sahiyo
               community; Users often accidentally navigated to Sahiyo’s old website
               (sahiyo.com), since it is more prevalent in
-              Google search results">
-          </div>
-        </section>
+              Google search results" />
+            </div>
+          </section>
 
-        <section class="sahiyo-personas">
-          <div>
-            <h3>Personas</h3>
-            <p>We used information from our interviews to create personas for
-              sahiyo.org users.
-              These personas allowed us to better understand our target audience
-              and keep in mind user's needs as we
-              made
-              decisions.</p>
+          <section class="sahiyo-personas">
             <div>
-              <div class="persona-container">
-                <img class="persona-1" id="kara-image"
-                  src="images/sahiyo imgs/kara persona.png"
-                  alt="an infographic of the persona Kara, an intern at Sahiyo">
-                <img class="persona-2" id="anita-image"
-                  src="images/sahiyo imgs/anita-persona.png"
-                  alt="an infographic of the persona Anita, an advisory board member at Sahiyo">
+              <h3>Personas</h3>
+              <p>
+                We used information from our interviews to create personas for sahiyo.org users. These personas allowed
+                us to better understand our target audience and keep in mind user's needs as we made decisions.
+              </p>
+              <div>
+                <div class="persona-container">
+                  <img
+                    class="persona-1"
+                    id="kara-image"
+                    src="images/sahiyo imgs/kara persona.png"
+                    alt="an infographic of the persona Kara, an intern at Sahiyo" />
+                  <img
+                    class="persona-2"
+                    id="anita-image"
+                    src="images/sahiyo imgs/anita-persona.png"
+                    alt="an infographic of the persona Anita, an advisory board member at Sahiyo" />
+                </div>
+                <figcaption>Click a persona to enlarge</figcaption>
               </div>
-              <figcaption>Click a persona to enlarge</figcaption>
+
+              <div id="merged-kara-modal" class="persona-modal modal">
+                <span tabindex="0" role="button" aria-pressed="false" class="close" id="kara-close">&times;</span>
+                <img
+                  class="modal-merged-image"
+                  id="kara-enlarged-image"
+                  alt="an infographic of the persona Kara, an intern at Sahiyo" />
+              </div>
+
+              <div id="merged-anita-modal" class="persona-modal modal">
+                <span tabindex="0" role="button" aria-pressed="false" class="close" id="anita-close">&times;</span>
+                <img
+                  class="modal-merged-image"
+                  id="anita-enlarged-image"
+                  alt="an infographic of the persona Anita, an advisory board member at Sahiyo" />
+              </div>
             </div>
+          </section>
 
-            <div id="merged-kara-modal" class="persona-modal modal">
-              <span tabindex="0" role="button" aria-pressed="false"
-                class="close" id="kara-close">&times;</span>
-              <img class="modal-merged-image" id="kara-enlarged-image"
-                alt="an infographic of the persona Kara, an intern at Sahiyo">
-            </div>
-
-            <div id="merged-anita-modal" class="persona-modal modal">
-              <span tabindex="0" role="button" aria-pressed="false"
-                class="close" id="anita-close">&times;</span>
-              <img class="modal-merged-image" id="anita-enlarged-image"
-                alt="an infographic of the persona Anita, an advisory board member at Sahiyo">
-            </div>
-          </div>
-        </section>
-
-        <section class="sahiyo-survey">
-          <h3>
-            Survey
-          </h3>
-          <p>To better understand how users of varying abilities engaged with
-            sahiyo.org, we launched a survey to the
-            Sahiyo community. Our goal was to <b>understand people's experiences
-              with the site,
-              especially for anyone with a disability</b>. </p>
-          <p>
-            The survey had several limitations. First, we did not receive
-            enough
-            responses for our survey results to be statistically significant.
-            Secondly, the majority of respondents were
-            either Sahiyo staff or volunteers which may not be representative of
-            typical users. </p>
-          <p>
-            However, our results indicated that <b>users with disabilities had a
-              more negative experience using the site than
-              those without disabilities.</b> </p>
-          <div class="survey-img-container">
-            <figure class="surv-res-fig">
-              <img class="survey-results-img"
-                src="images/sahiyo imgs/survey-results1.png"
-                alt="Crosstab image showing results from a survey question about user's experience with Sahiyo">
-              <figcaption>A crosstab comparing the average experiences of users
-                who reported disabilities to
-                those who did
-                not. </figcaption>
-            </figure>
-          </div>
-
-          <p>
-            The survey showed that <b>people who reported disabilities had
-              lower
-              satisfaction with the site in every area</b>. In particular, their
-            experiences in finding information on Sahiyo events was
-            significantly more negative.
-          </p>
-
-          <p>These responses suggested that there <b>were
-              issues within the site affecting accessibility and engagement</b>,
-            especially
-            when it came to Sahiyo events.
-          </p>
-
-          <p>
-            Because of this, we decided to perform a heuristic
-            evaluation to identify specific usability issues. </p>
-        </section>
-
-
-        <section class="sahiyo-he">
-          <h3>Heuristic Evaluation</h3>
-          <p>Because of our results from the survey, we wanted to determine the
-            specific accessibility issues
-            with sahiyo.org.
-            Each team member examined the website according to
-            <span class="some-link">
-              <a
-                href="https://www.nngroup.com/articles/ten-usability-heuristics/">
-                Nielsen's usability
-                heuristics</a>
-            </span>.
-            We prioritized each issue by severity level.
-          </p>
-          <p>Most of the issues we found were related to the visual design of
-            the site. We recommended that Sahiyo
-            implement several changes, such as:
-          <ul>
-            <li> increasing the color contrast of fonts and buttons</li>
-            <li>adding alternative text to images</li>
-            <li> increasing keyboard accessibility </li>
-            <li>adding text decoration to links to make them more distinct</li>
+          <section class="sahiyo-survey">
+            <h3>Survey</h3>
+            <p>
+              To better understand how users of varying abilities engaged with sahiyo.org, we launched a survey to the
+              Sahiyo community. Our goal was to
+              <b>understand people's experiences with the site, especially for anyone with a disability</b>
+              .
             </p>
-          </ul>
+            <p>
+              The survey had several limitations. First, we did not receive enough responses for our survey results to
+              be statistically significant. Secondly, the majority of respondents were either Sahiyo staff or volunteers
+              which may not be representative of typical users.
+            </p>
+            <p>
+              However, our results indicated that
+              <b>
+                users with disabilities had a more negative experience using the site than those without disabilities.
+              </b>
+            </p>
+            <div class="survey-img-container">
+              <figure class="surv-res-fig">
+                <img
+                  class="survey-results-img"
+                  src="images/sahiyo imgs/survey-results1.png"
+                  alt="Crosstab image showing results from a survey question about user's experience with Sahiyo" />
+                <figcaption>
+                  A crosstab comparing the average experiences of users who reported disabilities to those who did not.
+                </figcaption>
+              </figure>
+            </div>
 
+            <p>
+              The survey showed that
+              <b>people who reported disabilities had lower satisfaction with the site in every area</b>
+              . In particular, their experiences in finding information on Sahiyo events was significantly more
+              negative.
+            </p>
 
-        </section>
+            <p>
+              These responses suggested that there
+              <b>were issues within the site affecting accessibility and engagement</b>
+              , especially when it came to Sahiyo events.
+            </p>
 
-        <section class="sahiyo-usability">
-          <h3>Usability Testing</h3>
-          <p>In our usability tests, we assessed sahiyo.org and how well users
-            with visual impairments such as low vision or
-            colorblindness were able to engage with the site.
-          </p>
+            <p>Because of this, we decided to perform a heuristic evaluation to identify specific usability issues.</p>
+          </section>
 
-          <p>
-            Tests were conducted via Zoom and ranged from 20 – 60 minutes.
-            <span id="sahiyo-script-link">
-              <a
-                href="https://drive.google.com/file/d/1z_0kFGCPEJUpWSEaO2Pp4xMoFwRB-j2t/view?usp=share_link">
-                View Protocol Here</a>
-            </span>
-            For each task, the we recorded the participant's completion of the
-            task, the time they took,
-            and how
-            satisfying they found the task. We also kept observations of
-            participants in a color-coded spreadsheet,
-            which allowed us to keep track of common issues and comments that
-            users encountered.
-          </p>
+          <section class="sahiyo-he">
+            <h3>Heuristic Evaluation</h3>
+            <p>
+              Because of our results from the survey, we wanted to determine the specific accessibility issues with
+              sahiyo.org. Each team member examined the website according to
+              <span class="some-link">
+                <a href="https://www.nngroup.com/articles/ten-usability-heuristics/">Nielsen's usability heuristics</a>
+              </span>
+              . We prioritized each issue by severity level.
+            </p>
+            <p>
+              Most of the issues we found were related to the visual design of the site. We recommended that Sahiyo
+              implement several changes, such as:
+            </p>
 
-          <div class="ut-observations">
-            <figure class="metrics-fig">
-              <img id="metrics" src="images/sahiyo imgs/Task 1 metrics.png"
-                alt="a spreadsheet used to track participant's completion of tasks in the usability test">
-              <figcaption>A spreadsheet used to track and analyze user's success
-                in usability test tasks </figcaption>
-            </figure>
-            <figure>
-              <img src="images/sahiyo imgs/sahiyo-observations.png"
-                alt="a spreadsheet that tracks common issues accross participants">
-              <figcaption>A color-coded spreadsheet used to keep track of common
-                observations across participants.
-                Each color corresponds to a different participant.</figcaption>
-            </figure>
-          </div>
-          <p>
-            Users generally had high success with general navigation within the
-            site. They were generally able to locate Sahiyo's blog, which
-            is consistent with the satisfaction results from our survey.</p>
-          <p>However, users had difficulty
-            locating Sahiyo events in the calendar. Additionally, some
-            resources on the site were out of date or
-            broken, leaving users
-            frustrated.
-          </p>
-        </section>
+            <ul>
+              <li>increasing the color contrast of fonts and buttons</li>
+              <li>adding alternative text to images</li>
+              <li>increasing keyboard accessibility</li>
+              <li>adding text decoration to links to make them more distinct</li>
+            </ul>
+          </section>
 
-        <section id="sahiyo-recommendations-div" class="recommendations">
-          <h3>Recommendations</h3>
-          <p>Our recommendations seek to improve the accessibility of sahiyo.org
-            in terms of online accessibility
-            guidelines, as well as creating a site where information and
-            community is easily available for those who are
-            looking for it.
-          </p>
-          <p>We recommend...</p>
-          <div class="sahiyo-recommendations">
-            <div class="card rec-card rec-1">
-              <div class="card-body">
-                <h5 class="card-title">Reorganize Navigation</h5>
-                <p class="card-text">Some aspects of site navigation were
-                  confusing to users. Sahiyo should reorganize their top menu to
-                  align more with user expectations and fix broken links.</p>
+          <section class="sahiyo-usability">
+            <h3>Usability Testing</h3>
+            <p>
+              In our usability tests, we assessed sahiyo.org and how well users with visual impairments such as low
+              vision or colorblindness were able to engage with the site.
+            </p>
+
+            <p>
+              Tests were conducted via Zoom and ranged from 20 – 60 minutes.
+              <span id="sahiyo-script-link">
+                <a href="https://drive.google.com/file/d/1z_0kFGCPEJUpWSEaO2Pp4xMoFwRB-j2t/view?usp=share_link">
+                  View Protocol Here
+                </a>
+              </span>
+              For each task, the we recorded the participant's completion of the task, the time they took, and how
+              satisfying they found the task. We also kept observations of participants in a color-coded spreadsheet,
+              which allowed us to keep track of common issues and comments that users encountered.
+            </p>
+
+            <div class="ut-observations">
+              <figure class="metrics-fig">
+                <img
+                  id="metrics"
+                  src="images/sahiyo imgs/Task 1 metrics.png"
+                  alt="a spreadsheet used to track participant's completion of tasks in the usability test" />
+                <figcaption>A spreadsheet used to track and analyze user's success in usability test tasks</figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="images/sahiyo imgs/sahiyo-observations.png"
+                  alt="a spreadsheet that tracks common issues accross participants" />
+                <figcaption>
+                  A color-coded spreadsheet used to keep track of common observations across participants. Each color
+                  corresponds to a different participant.
+                </figcaption>
+              </figure>
+            </div>
+            <p>
+              Users generally had high success with general navigation within the site. They were generally able to
+              locate Sahiyo's blog, which is consistent with the satisfaction results from our survey.
+            </p>
+            <p>
+              However, users had difficulty locating Sahiyo events in the calendar. Additionally, some resources on the
+              site were out of date or broken, leaving users frustrated.
+            </p>
+          </section>
+
+          <section id="sahiyo-recommendations-div" class="recommendations">
+            <h3>Recommendations</h3>
+            <p>
+              Our recommendations seek to improve the accessibility of sahiyo.org in terms of online accessibility
+              guidelines, as well as creating a site where information and community is easily available for those who
+              are looking for it.
+            </p>
+            <p>We recommend...</p>
+            <div class="sahiyo-recommendations">
+              <div class="card rec-card rec-1">
+                <div class="card-body">
+                  <h5 class="card-title">Reorganize Navigation</h5>
+                  <p class="card-text">
+                    Some aspects of site navigation were confusing to users. Sahiyo should reorganize their top menu to
+                    align more with user expectations and fix broken links.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card rec-card rec-2">
+                <div class="card-body">
+                  <h5 class="card-title">Ensure Content is Up-To-Date</h5>
+                  <p class="card-text">
+                    Sahiyo should remove outdated content from search results and validate page titles to make sure they
+                    accurately reflect page content.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card rec-card rec-3">
+                <div class="card-body">
+                  <h5 class="card-title">Redirect Old Site to Current Site</h5>
+                  <p class="card-text">
+                    People often accidentally navigate to Sahiyo's old site. Sahiyo should set up the old site to
+                    redirect all users to the new site to avoid confusion.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card rec-card rec-4">
+                <div class="card-body">
+                  <h5 class="card-title">Fix Web Accessibility Issues</h5>
+                  <p class="card-text">
+                    Sahiyo should increase accessibility by fixing color contrast issues with links, adding alt-text to
+                    all non-textual content, and ensuring proper responsiveness.
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div class="card rec-card rec-2">
-              <div class="card-body">
-                <h5 class="card-title"> Ensure Content is Up-To-Date</h5>
-                <p class="card-text">Sahiyo should remove outdated
-                  content from search results and validate page titles to make
-                  sure they accurately reflect page content.</p>
-              </div>
-            </div>
-
-            <div class="card rec-card rec-3">
-              <div class="card-body">
-                <h5 class="card-title">Redirect Old Site to Current Site</h5>
-                <p class="card-text">People often accidentally navigate to
-                  Sahiyo's old site. Sahiyo should set up the old site to
-                  redirect all users to the new site to avoid confusion.</p>
-              </div>
-            </div>
-
-            <div class="card rec-card rec-4">
-              <div class="card-body">
-                <h5 class="card-title">Fix Web Accessibility Issues</h5>
-                <p class="card-text">Sahiyo should increase accessibility by
-                  fixing color contrast issues with links,
-                  adding alt-text to all non-textual
-                  content, and ensuring proper responsiveness.</p>
-              </div>
-            </div>
-
-          </div>
-
-          <!-- <ol class="rec-list">
+            <!-- <ol class="rec-list">
             <li>Improving site navigation by reorganizing the menu to align more
               with user expectations, and fixing
               broken links.</li>
@@ -393,136 +403,143 @@
               content, and ensuring proper responsiveness. </li>
           </ol> -->
 
-          <span id="sahiyo-conclusion-link" class="link-container">
-            <a id="sahiyo-final-presentation" class="presentation-link"
-              href="https://drive.google.com/file/d/1kRMVWZ7Ur_GeDWxiS840DUP4qB3oCQRu/view?usp=share_link"
-              target="_blank">
-              Final Stakeholder Presentation
+            <span id="sahiyo-conclusion-link" class="link-container">
+              <a
+                id="sahiyo-final-presentation"
+                class="presentation-link"
+                href="https://drive.google.com/file/d/1kRMVWZ7Ur_GeDWxiS840DUP4qB3oCQRu/view?usp=share_link"
+                target="_blank">
+                Final Stakeholder Presentation
+              </a>
+            </span>
+          </section>
+        </div>
+
+        <div class="conclusion sahiyo-insights">
+          <h2>Conclusion</h2>
+          <section>
+            <h3>Next Steps</h3>
+            <p>
+              During our research, we discovered that while many of the accessibility issues on sahiyo.org were things
+              that were easily fixable (color contrast, alt-text, responsiveness, etc) they caused much frustration for
+              our users and negatively impacted how they used the site.
+            </p>
+            <p>
+              While we recommended specific ways to fix the accessibility issues we found, it will be important for
+              Sahiyo to conduct regular audits of their site to make sure everything is up to date and still accessible
+              to the community. We also recommend further accessibility testing to the mobile site, since we were unable
+              to include that in our user testing.
+            </p>
+            <p>
+              Making even small changes to increase sahiyo.org’s accessibility will increase community engagement by
+              making it easier for users to find information and interact with the site content, helping them continue
+              their mission of creating positive social change and ending FGC.
+            </p>
+          </section>
+          <section class="sahiyo-learned">
+            <h3>What I Learned</h3>
+            <p>
+              If there had been more time,
+              <b>I would have loved to conduct a card sort exercise.</b>
+              We were able to come up with solutions for many of the accessibility issues, but
+              <b>
+                our usability test showed there was confusion with how Sahiyo.org was organized, and our users had
+                difficulty finding information
+              </b>
+              . A card sort could help determine a better way to structure the site.
+            </p>
+            <p>
+              I also learned there’s still
+              <b>so much value to gain from studies that don’t go perfectly</b>
+              . Our survey didn't get the number of responses responses we had hoped, but the responses we did receive
+              helped the team find the right direction for usability testing. Being flexible and willing to pivot helped
+              the team see value in the data we got, and ultimately find success.
+            </p>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container-fluid" id="footer-container">
+        <div class="footer-center">
+          <div class="icon-stuff">
+            <a aria-label="button to linkedin" href="https://www.linkedin.com/in/kathleencurran-/">
+              <i class="fa fa-linkedin"></i>
             </a>
-          </span>
-        </section>
-      </div>
-
-      <div class="conclusion sahiyo-insights">
-        <h2>Conclusion</h2>
-        <section>
-          <h3>Next Steps</h3>
-          <p>During our research, we discovered that while many of the
-            accessibility issues on sahiyo.org were things that were easily
-            fixable (color
-            contrast, alt-text, responsiveness, etc) they caused much
-            frustration for our
-            users and negatively impacted how they used the site.</p>
-          <p>While we recommended specific ways to fix the accessibility issues
-            we found, it will be important for Sahiyo to conduct regular audits
-            of their site to make sure everything is up to
-            date and still accessible to the community.
-            We also recommend further accessibility testing to the mobile site,
-            since we were unable to include that in
-            our user testing. </p>
-          <p>
-            Making even small changes to increase sahiyo.org’s
-            accessibility will increase community engagement
-            by making it easier for users to find information and interact with
-            the site content, helping them continue their mission of creating
-            positive social change and ending FGC.</p>
-        </section>
-        <section class="sahiyo-learned">
-          <h3>What I Learned</h3>
-          <p>
-            If there had been more time, <b>I would have loved to conduct a card
-              sort exercise.</b> We were able to come up with solutions for
-            many of
-            the accessibility issues, but <b>our usability test
-              showed
-              there was confusion with how Sahiyo.org was organized,
-              and our users had difficulty finding information</b>. A card sort
-            could help determine a better way to structure the site.
-          </p>
-          <p> I also learned there’s still <b>so much value to gain
-              from studies that don’t go perfectly</b>. Our survey didn't get
-            the
-            number of responses
-            responses we had hoped, but the responses we did receive helped the
-            team find the right direction for usability testing. Being flexible
-            and willing to pivot helped the team see value in the data we got,
-            and ultimately find
-            success.
-          </p>
-        </section>
-      </div>
-    </div>
-    </div>
-
-  </main>
-
-  <footer>
-    <div class=" container-fluid" id="footer-container">
-      <div class="footer-center">
-        <div class="icon-stuff">
-          <a aria-label="button to linkedin"
-            href="https://www.linkedin.com/in/kathleencurran-/"><i
-              class="fa fa-linkedin"></i></a>
-          <a aria-label="button to write email"
-            href="mailto:kcurran983@gmail.com?subject=Just Wanted to Connect">
-            <i class="fa fa-envelope"></i></a>
+            <a aria-label="button to write email" href="mailto:kcurran983@gmail.com?subject=Just Wanted to Connect">
+              <i class="fa fa-envelope"></i>
+            </a>
+          </div>
+          <div>
+            <p>Connect with me!</p>
+          </div>
         </div>
-        <div>
-          <p>Connect with me!</p>
+        <div class="created-by">
+          <p>Site designed and coded by Kathleen Curran</p>
         </div>
       </div>
-      <div class="created-by">
-        <p>Site designed and coded by Kathleen Curran</p>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
+    <script>
+      let topButton = document.getElementById('sahiyo-button')
 
-  <script>
-    // Kara variables
-    let karaModal = document.getElementById("merged-kara-modal")
-    let karaImage = document.getElementById("kara-image")
-    let karaModalImage = document.getElementById("kara-enlarged-image")
-    // var karaCaptionText = document.getElementById("caption");
-    let karaClose = document.getElementById("kara-close")
+      window.onscroll = function () {
+        scrollFunction()
+      }
 
-    // Anita variables
-    let anitaModal = document.getElementById("merged-anita-modal")
-    let anitaImage = document.getElementById("anita-image")
-    let anitaModalImage = document.getElementById("anita-enlarged-image")
-    // var closeButton = document.getElementsByClassName("close")[0];
-    let anitaClose = document.getElementById("anita-close")
+      // shows button when user scrolls down 50px
+      function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 20) {
+          topButton.style.display = 'block'
+        } else {
+          topButton.style.display = 'none'
+        }
+      }
 
+      // scrolls to top of the page
+      function topFunction() {
+        document.body.scrollTop = 0
+        document.documentElement.scrollTop = 0
+      }
 
-    // Kara JS
-    karaImage.onclick = function () {
-      karaModal.style.display = "flex";
-      karaModal.style.flexDirection = "column";
-      karaModalImage.src = this.src;
-    }
+      // Kara variables
+      let karaModal = document.getElementById('merged-kara-modal')
+      let karaImage = document.getElementById('kara-image')
+      let karaModalImage = document.getElementById('kara-enlarged-image')
+      // var karaCaptionText = document.getElementById("caption");
+      let karaClose = document.getElementById('kara-close')
 
+      // Anita variables
+      let anitaModal = document.getElementById('merged-anita-modal')
+      let anitaImage = document.getElementById('anita-image')
+      let anitaModalImage = document.getElementById('anita-enlarged-image')
+      // var closeButton = document.getElementsByClassName("close")[0];
+      let anitaClose = document.getElementById('anita-close')
 
+      // Kara JS
+      karaImage.onclick = function () {
+        karaModal.style.display = 'flex'
+        karaModal.style.flexDirection = 'column'
+        karaModalImage.src = this.src
+      }
 
-    karaClose.onclick = function () {
-      karaModal.style.display = "none";
-    }
+      karaClose.onclick = function () {
+        karaModal.style.display = 'none'
+      }
 
+      // Anita JS
+      anitaImage.onclick = function () {
+        anitaModal.style.display = 'flex'
+        anitaModal.style.flexDirection = 'column'
+        anitaModalImage.src = this.src
+      }
 
-    // Anita JS
-    anitaImage.onclick = function () {
-      anitaModal.style.display = "flex";
-      anitaModal.style.flexDirection = "column";
-      anitaModalImage.src = this.src;
-    }
+      anitaClose.onclick = function () {
+        anitaModal.style.display = 'none'
+      }
 
-    anitaClose.onclick = function () {
-      anitaModal.style.display = "none";
-    }
-
-
-
-
-    /*
+      /*
        let modal = document.getElementById("merged-img-modal")
       let img = document.getElementById("merged-image")
       let modalImg = document.getElementById("img01")
@@ -550,17 +567,11 @@
         }
       });
       */
-  </script>
-
-
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous">
     </script>
 
-</body>
-
-
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"></script>
+  </body>
 </html>
