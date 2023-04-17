@@ -1,465 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Civic User Testing</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="homepage.css" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="cutgroup.css" />
+    <link rel="icon" type="image/x-icon" href="images/katicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- Hotjar Tracking Code for my site -->
+    <script>
+      ;(function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            ;(h.hj.q = h.hj.q || []).push(arguments)
+          }
+        h._hjSettings = { hjid: 3370557, hjsv: 6 }
+        a = o.getElementsByTagName('head')[0]
+        r = o.createElement('script')
+        r.async = 1
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv
+        a.appendChild(r)
+      })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=')
+    </script>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Civic User Testing</title>
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="homepage.css">
-  <link rel="stylesheet" href="portfolio.css">
-  <link rel="stylesheet" href="navbar.css">
-  <link rel="stylesheet" href="cutgroup.css">
-  <link rel="icon" type="image/x-icon" href="images/katicon.ico">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Hotjar Tracking Code for my site -->
-  <script>
-    (function (h, o, t, j, a, r) {
-      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
-      h._hjSettings = { hjid: 3370557, hjsv: 6 };
-      a = o.getElementsByTagName('head')[0];
-      r = o.createElement('script'); r.async = 1;
-      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-      a.appendChild(r);
-    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-  </script>
-</head>
+  <body>
+    <button onclick="topFunction()" class="top-button" id="cg-button" title="Return to top">&#8679;</button>
 
+    <nav class="navbar navbar-expand-md pt-4">
+      <div class="container-fluid flex-guy">
+        <a class="kat-icon" href="index.html">
+          <img src="/images/banner.png" alt="Kathleen Curran: UX Research and Design" />
+        </a>
 
-<body>
-  <button onclick="topFunction()" class="top-button" id="cg-button"
-    title="Return to top">&#8679;</button>
-
-
-  <nav class="navbar navbar-expand-md pt-4 ">
-    <div class="container-fluid flex-guy">
-      <a class=" kat-icon" href="index.html">
-        <img src="/images/banner.png"
-          alt="Kathleen Curran: UX Research and Design">
-      </a>
-
-      <ul class="navbar-nav mb-4 mt-5 justify-content-right">
-        <li class="nav-item me-5 ">
-          <a class="nav-link current-page" id="nav-home" aria-current="page"
-            href="index.html">Projects</a>
-        </li>
-        <li class="nav-item me-5">
-          <a class="nav-link" id="nav-about" href="about.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="nav-resume" href="resume.html">Resume</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <main>
-
-    <div id="cutgroup-case-study" class="case-study">
-      <div id="title" class="title-div">
-        <h1>Civic User Testing: Improving Michigan Poll Work</h1>
-      </div>
-
-      <div class="project-specs">
-        <div id="cutgroup-project-specs" class="specs">
-          <h3>Project Details</h3>
-          <ul>
-            <li><b>Role:</b> UX Researcher</li>
-            <li><b>Time Frame:</b> 3 weeks</li>
-            <li><b>Team:</b> Emilee Kutyla, <br> Rebecca Xu, Grace Brindle
-            </li>
-          </ul>
-        </div>
-        <div class="skills">
-          <h3>Skills</h3>
-          <ul>
-            <li>Rapid Usability Testing</li>
-            <li>Qualitative Data Analysis</li>
-          </ul>
-        </div>
-        <div class="tools">
-          <h3>Tools</h3>
-          <ul>
-            <li>Miro</li>
-            <li>Figma</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="project-overview">
-        <h2>Overview</h2>
-        <p>In a time when elections are fraught with anxiety, the Michigan
-          Bureau of Elections (BOE)
-          ensures that all Michigan elections are safe, organized, and
-          legal. A
-          state-run
-          entity, the BOE helps local election officials on Election Day by
-          providing them with the support and
-          resources to make the election run smoothly.</p>
-      </div>
-
-      <div class="challenge">
-        <h3>The Challenge</h3>
-        <p>Our challenge was to improve the BOE’s Election Inspector's
-          Procedure
-          Manual, a dense paper manual that the
-          BOE supplies to each election location on Election Day as a
-          resource
-          to poll workers. While very thorough, the
-          manual was dense and somewhat difficult to read, particularly
-          within
-          the chaos that can arise in a busy
-          polling location.</p>
-        <span><b>Our goals were as follows:</b></span><br>
-        <ol>
-          <li>Understand poll workers' current experiences with the manual.
+        <ul class="navbar-nav mb-4 mt-5 justify-content-right">
+          <!-- start of dropdown -->
+          <li class="nav-item dropdown me-5">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Projects
+            </a>
+            <ul class="dropdown-menu" aria-label="navbaDropdownMenuLink">
+              <li>
+                <a class="dropdown-item current-page" href="cutgroup-project.html">Civic User Testing</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="sahiyo-project.html">Community Accessibility</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="huddle.html">Huddle</a>
+              </li>
+            </ul>
           </li>
-          <li>Test the manual with local poll workers to determine both
-            degree
-            and ease of use. </li>
-          <li>Make specific recommendations that would allow poll workers to
-            more easily solve any issues
-            that arise on Election Day.</li>
-        </ol>
+
+          <!-- End of dropdown -->
+          <li class="nav-item me-5">
+            <a class="nav-link" id="nav-about" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="nav-resume" href="resume.html">Resume</a>
+          </li>
+        </ul>
       </div>
+    </nav>
 
-      <div class="scope-constraints">
-        <h3>Scope and Constraints</h3>
-        <p>Civic User Testing Group (CUTGroup) projects are designed to be
-          short
-          and fast-paced in order to make public
-          applications more accessible and useful to residents. One of the
-          main
-          constraints was the short time frame, which meant that we were
-          limited
-          on how deep our research could go or how particular we could be
-          about
-          participants.
-        </p>
-        <p>
-          In fact, we did have sampling bias issues -
-          several of our participants were part of
-          the
-          University of Michigan Law School, and several others were
-          contacts of
-          the CUTGroup director.</p>
-      </div>
-
-      <div class="project-process">
-        <h2>The Process</h2>
-
-        <div class="cutgroup-testing process-section">
-          <h3>Testing the Manual</h3>
-          <p>After meeting with our BOE stakeholder, we came up with a
-            protocol
-            and series of tasks for our users to
-            test.
-            These tests required them to flip through a copy of the paper
-            Election Inspector’s Manual (provided by
-            us).</p>
-          <p>Our users were recruited by both our BOE representative and
-            through
-            contacts within the University of
-            Michigan. We ended up with 10 users total, all of whom had
-            worked
-            the polls in the state of Michigan. Our
-            users had varying levels of experience, ages, locations they had
-            worked the polls, and political
-            affiliations.
-          </p>
-          <p>The user testing took place over one evening. Each interview
-            lasted
-            around 30 minutes, was both over Zoom
-            and
-            in-person, and had an interview and a note-taker. Each member of
-            our
-            group took turns interviewing and
-            taking
-            notes.</p>
+    <main>
+      <div id="cutgroup-case-study" class="case-study">
+        <div id="title" class="title-div">
+          <h1>Civic User Testing: Improving Michigan Poll Work</h1>
         </div>
 
-        <div class="cutgroup-findings process-section">
-          <h4>Key Findings</h4>
+        <div class="project-specs">
+          <div id="cutgroup-project-specs" class="specs">
+            <h3>Project Details</h3>
+            <ul>
+              <li>
+                <b>Role:</b>
+                UX Researcher
+              </li>
+              <li>
+                <b>Time Frame:</b>
+                3 weeks
+              </li>
+              <li>
+                <b>Team:</b>
+                Emilee Kutyla,
+                <br />
+                Rebecca Xu, Grace Brindle
+              </li>
+            </ul>
+          </div>
+          <div class="skills">
+            <h3>Skills</h3>
+            <ul>
+              <li>Rapid Usability Testing</li>
+              <li>Qualitative Data Analysis</li>
+            </ul>
+          </div>
+          <div class="tools">
+            <h3>Tools</h3>
+            <ul>
+              <li>Miro</li>
+              <li>Figma</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project-overview">
+          <h2>Overview</h2>
+          <p>
+            In a time when elections are fraught with anxiety, the Michigan Bureau of Elections (BOE) ensures that all
+            Michigan elections are safe, organized, and legal. A state-run entity, the BOE helps local election
+            officials on Election Day by providing them with the support and resources to make the election run
+            smoothly.
+          </p>
+        </div>
+
+        <div class="challenge">
+          <h3>The Challenge</h3>
+          <p>
+            Our challenge was to improve the BOE’s Election Inspector's Procedure Manual, a dense paper manual that the
+            BOE supplies to each election location on Election Day as a resource to poll workers. While very thorough,
+            the manual was dense and somewhat difficult to read, particularly within the chaos that can arise in a busy
+            polling location.
+          </p>
+          <span><b>Our goals were as follows:</b></span>
+          <br />
           <ol>
-            <li>The manual's current structure does not align with the
-              user's
-              expectactions</li>
-            <li>Poll workers prefer easy-to-read instructions, but the
-              manual is
-              dense</li>
-            <li>Visual hierarchy and graphics makes content easier to find
+            <li>Understand poll workers' current experiences with the manual.</li>
+            <li>Test the manual with local poll workers to determine both degree and ease of use.</li>
+            <li>
+              Make specific recommendations that would allow poll workers to more easily solve any issues that arise on
+              Election Day.
             </li>
-            <li>The manual may serve different purposes depending on the
-              user's
-              role at the polling location</li>
           </ol>
         </div>
 
-        <div class="cutgroup-recs process-section">
-          <h3>Recommendations</h3>
-          <div class="rec1 all-rec">
-            <div class="rec-deets">
-              <h5>1. Restructure the manual to reflect user
-                expectations.</h5>
-              <p>Many users expected the manual to be in chronological
-                order,
-                or
-                similar topics to be in the same
-                location
-                and thus had difficulty finding the right information.</p>
-              <p>Reordering the manual to be in chronological order would
-                better
-                align the
-                manual with user
-                assumptions.</p>
-            </div>
-            <q>I thought it would be chronological for the day, so I would
-              assume [information on closing the polls is]
-              at the back.</q>
-          </div>
-
-          <div class="rec2 all-rec">
-            <div class="rec-deets">
-              <h5>2. Update the manual to include visuals that highlight
-                the
-                most important information.</h5>
-              <p>Users noted that things like <b>bolded text, headers, and
-                  graphics
-                  helped them find and understand
-                  key information.</b></p>
-              <p>Adding visual hierarchy to the manual like in the example
-                graphic below will help users more easily parse through
-                dense
-                information.</p>
-            </div>
-            <q>Graphics are helpful -- I'm a very visual learner.</q>
-            <div class="hierarchy-img">
-              <img class="rec-img hierarchy-img"
-                alt="A before and after version of the Assisting Voters page in the manual. The Before page is word-dense. 
-              The After page uses color and headers to show important information." id="merged-image"
-                src="/images/cutgroup imgs/Merged_before_after.png">
-              <figcaption class="hierarchy-caption">Click image to enlarge
-              </figcaption>
-              <img id="before-hierarchy" alt="the manual before updating"
-                src="/images/cutgroup imgs/Before visual hierarchy.png">
-              <figcaption class="before-caption">The Before page is a
-                word-dense
-                version of the manual
-              </figcaption>
-              <img id="after-hierarchy" alt="the manual after updating"
-                src="/images/cutgroup imgs/after visual hierarchy.png">
-              <figcaption class="after-caption">The After page uses color
-                and
-                headers to show important information</figcaption>
-
-            </div>
-          </div>
-
-          <div id="merged-img-modal" class="modal">
-            <span tabindex="0" role="button" aria-pressed="false"
-              class="close">&times;</span>
-            <img class="modal-merged-image" id="img01" alt="">
-            <div>
-              <p id="caption"></p>
-            </div>
-          </div>
-
-          <div class="rec3 all-rec">
-            <div class="rec-deets">
-              <h5>3. Divide the manual into two parts based on
-                roles.</h5>
-              <p>Typical poll workers tend to use the manual <b>only for
-                  procedural
-                  tasks</b>, and then ask the precinct chair
-                whenever issues arise. Because of this, we suggest splitting
-                the
-                manual into two parts. </p>
-              <p><b>Part 1 would include step by step procedures</b> for all
-                poll
-                workers to follow,
-                such as setting up the precinct or closing the polls. </p>
-              <p> <b>Part 2 would include more detailed information about
-                  edge
-                  cases or issues that might arise</b> on Election
-                day. This part is intended for the precinct chair, who
-                generally
-                has more authority and experience to
-                solve problems at the polls.</p>
-            </div>
-          </div>
-
-          <div class="rec4 all-rec">
-            <div class="rec-deets">
-              <h5>4. Create quick reference guides for poll workers and
-                voters.</h5>
-              </span>
-              <p>Because the manual has so much information, it is difficult
-                to
-                find the right information quickly. </p>
-              <p>We propose a series of ‘Voters, Know Your Rights’
-                posters
-                that can be displayed around the
-                precinct to help guide voters at the polls <b>to give voters
-                  easy
-                  access to important information</b>, instead of having to
-                rely on
-                poll workers.
-              </p>
-              <p>We also propose creating infographic outlines to common
-                procedures and issues
-                that poll workers can keep on the table
-                with them to quickly reference in the case of a question <b>to
-                  reduce the time spent searching in the manual.</b> </p>
-
-            </div>
-
-            <div class="know-rights-container">
-              <img class="rec-img know-rights" alt=""
-                caption="A prototype of a poster informing voters of their right to stay in line at the polls."
-                src="/images/cutgroup imgs/Know Your Rights Guide.png">
-              <figcaption>
-                A prototype of a poster informing voters of their right to
-                stay
-                in line at the polls.
-              </figcaption>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="conclusion">
-        <h2>Conclusion</h2>
-        <p>In the end, the Michigan Bureau of Elections <b> included over 60% of
-            the team's recommendations
-            into the new version of the Election Inspector's
-            Procedure Manual, </b> including updating
-          the
-          Table of Contents, adding bullet points and numbering for procedural
-          tasks, and putting relevant tasks into
-          chronological order. </p>
-
-        <p>While our methods and findings certainly were not perfect, we did
-          make a positive impact on the Michigan BOE
-          by
-          giving them the data they needed to make informed, user-centric
-          decisions about how to update the manual for
-          the upcoming 2022 midterm elections.</p>
-
-        <div class="what-learned">
-          <h3>What I Learned</h3>
-          <p>While a lot of UX research tends to focus on digital tools like
-            websites, it
-            still has great uses for things that are not on the web.
-            <b>CUTgroup
-              was an excellent practice in
-              applying UX research methods to solve offline problems</b>.
+        <div class="scope-constraints">
+          <h3>Scope and Constraints</h3>
+          <p>
+            Civic User Testing Group (CUTGroup) projects are designed to be short and fast-paced in order to make public
+            applications more accessible and useful to residents. One of the main constraints was the short time frame,
+            which meant that we were limited on how deep our research could go or how particular we could be about
+            participants.
           </p>
-
-          <p>One of the big themes of CUTGroup is, 'Don't let perfect be the
-            enemy of the good.' In a project like this
-            with such a short timeline, we simply didn't have time to make
-            things perfect. It was tempting to think in
-            terms of <i>‘if we only had more time we could…’</i> but instead
-            we
-            <b> focused on the areas we could add
-              the most value</b>.
+          <p>
+            In fact, we did have sampling bias issues - several of our participants were part of the University of
+            Michigan Law School, and several others were contacts of the CUTGroup director.
           </p>
         </div>
 
-      </div>
-    </div>
-  </main>
+        <div class="project-process">
+          <h2>The Process</h2>
 
-  <footer>
-    <div class="container-fluid" id="footer-container">
-      <div class="footer-center">
-        <div class="icon-stuff">
-          <a aria-label="button to linkedin"
-            href="https://www.linkedin.com/in/kathleencurran-/"><i
-              class="fa fa-linkedin"></i></a>
-          <a aria-label="button to write email"
-            href="mailto:kcurran983@gmail.com?subject=Just Wanted to Connect">
-            <i class="fa fa-envelope"></i></a>
+          <div class="cutgroup-testing process-section">
+            <h3>Testing the Manual</h3>
+            <p>
+              After meeting with our BOE stakeholder, we came up with a protocol and series of tasks for our users to
+              test. These tests required them to flip through a copy of the paper Election Inspector’s Manual (provided
+              by us).
+            </p>
+            <p>
+              Our users were recruited by both our BOE representative and through contacts within the University of
+              Michigan. We ended up with 10 users total, all of whom had worked the polls in the state of Michigan. Our
+              users had varying levels of experience, ages, locations they had worked the polls, and political
+              affiliations.
+            </p>
+            <p>
+              The user testing took place over one evening. Each interview lasted around 30 minutes, was both over Zoom
+              and in-person, and had an interview and a note-taker. Each member of our group took turns interviewing and
+              taking notes.
+            </p>
+          </div>
+
+          <div class="cutgroup-findings process-section">
+            <h4>Key Findings</h4>
+            <ol>
+              <li>The manual's current structure does not align with the user's expectactions</li>
+              <li>Poll workers prefer easy-to-read instructions, but the manual is dense</li>
+              <li>Visual hierarchy and graphics makes content easier to find</li>
+              <li>The manual may serve different purposes depending on the user's role at the polling location</li>
+            </ol>
+          </div>
+
+          <div class="cutgroup-recs process-section">
+            <h3>Recommendations</h3>
+            <div class="rec1 all-rec">
+              <div class="rec-deets">
+                <h5>1. Restructure the manual to reflect user expectations.</h5>
+                <p>
+                  Many users expected the manual to be in chronological order, or similar topics to be in the same
+                  location and thus had difficulty finding the right information.
+                </p>
+                <p>
+                  Reordering the manual to be in chronological order would better align the manual with user
+                  assumptions.
+                </p>
+              </div>
+              <q>
+                I thought it would be chronological for the day, so I would assume [information on closing the polls is]
+                at the back.
+              </q>
+            </div>
+
+            <div class="rec2 all-rec">
+              <div class="rec-deets">
+                <h5>2. Update the manual to include visuals that highlight the most important information.</h5>
+                <p>
+                  Users noted that things like
+                  <b>bolded text, headers, and graphics helped them find and understand key information.</b>
+                </p>
+                <p>
+                  Adding visual hierarchy to the manual like in the example graphic below will help users more easily
+                  parse through dense information.
+                </p>
+              </div>
+              <q>Graphics are helpful -- I'm a very visual learner.</q>
+              <div class="hierarchy-img">
+                <img
+                  class="rec-img hierarchy-img"
+                  alt="A before and after version of the Assisting Voters page in the manual. The Before page is word-dense. 
+              The After page uses color and headers to show important information."
+                  id="merged-image"
+                  src="/images/cutgroup imgs/Merged_before_after.png" />
+                <figcaption class="hierarchy-caption">Click image to enlarge</figcaption>
+                <img
+                  id="before-hierarchy"
+                  alt="the manual before updating"
+                  src="/images/cutgroup imgs/Before visual hierarchy.png" />
+                <figcaption class="before-caption">The Before page is a word-dense version of the manual</figcaption>
+                <img
+                  id="after-hierarchy"
+                  alt="the manual after updating"
+                  src="/images/cutgroup imgs/after visual hierarchy.png" />
+                <figcaption class="after-caption">
+                  The After page uses color and headers to show important information
+                </figcaption>
+              </div>
+            </div>
+
+            <div id="merged-img-modal" class="modal">
+              <span tabindex="0" role="button" aria-pressed="false" class="close">&times;</span>
+              <img class="modal-merged-image" id="img01" alt="" />
+              <div>
+                <p id="caption"></p>
+              </div>
+            </div>
+
+            <div class="rec3 all-rec">
+              <div class="rec-deets">
+                <h5>3. Divide the manual into two parts based on roles.</h5>
+                <p>
+                  Typical poll workers tend to use the manual
+                  <b>only for procedural tasks</b>
+                  , and then ask the precinct chair whenever issues arise. Because of this, we suggest splitting the
+                  manual into two parts.
+                </p>
+                <p>
+                  <b>Part 1 would include step by step procedures</b>
+                  for all poll workers to follow, such as setting up the precinct or closing the polls.
+                </p>
+                <p>
+                  <b>Part 2 would include more detailed information about edge cases or issues that might arise</b>
+                  on Election day. This part is intended for the precinct chair, who generally has more authority and
+                  experience to solve problems at the polls.
+                </p>
+              </div>
+            </div>
+
+            <div class="rec4 all-rec">
+              <div class="rec-deets">
+                <h5>4. Create quick reference guides for poll workers and voters.</h5>
+
+                <p>
+                  Because the manual has so much information, it is difficult to find the right information quickly.
+                </p>
+                <p>
+                  We propose a series of ‘Voters, Know Your Rights’ posters that can be displayed around the precinct to
+                  help guide voters at the polls
+                  <b>to give voters easy access to important information</b>
+                  , instead of having to rely on poll workers.
+                </p>
+                <p>
+                  We also propose creating infographic outlines to common procedures and issues that poll workers can
+                  keep on the table with them to quickly reference in the case of a question
+                  <b>to reduce the time spent searching in the manual.</b>
+                </p>
+              </div>
+
+              <div class="know-rights-container">
+                <img
+                  class="rec-img know-rights"
+                  alt=""
+                  caption="A prototype of a poster informing voters of their right to stay in line at the polls."
+                  src="/images/cutgroup imgs/Know Your Rights Guide.png" />
+                <figcaption>
+                  A prototype of a poster informing voters of their right to stay in line at the polls.
+                </figcaption>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          <p>Connect with me!</p>
+
+        <div class="conclusion">
+          <h2>Conclusion</h2>
+          <p>
+            In the end, the Michigan Bureau of Elections
+            <b>
+              included over 60% of the team's recommendations into the new version of the Election Inspector's Procedure
+              Manual,
+            </b>
+            including updating the Table of Contents, adding bullet points and numbering for procedural tasks, and
+            putting relevant tasks into chronological order.
+          </p>
+
+          <p>
+            While our methods and findings certainly were not perfect, we did make a positive impact on the Michigan BOE
+            by giving them the data they needed to make informed, user-centric decisions about how to update the manual
+            for the upcoming 2022 midterm elections.
+          </p>
+
+          <div class="what-learned">
+            <h3>What I Learned</h3>
+            <p>
+              While a lot of UX research tends to focus on digital tools like websites, it still has great uses for
+              things that are not on the web.
+              <b>CUTgroup was an excellent practice in applying UX research methods to solve offline problems</b>
+              .
+            </p>
+
+            <p>
+              One of the big themes of CUTGroup is, 'Don't let perfect be the enemy of the good.' In a project like this
+              with such a short timeline, we simply didn't have time to make things perfect. It was tempting to think in
+              terms of
+              <i>‘if we only had more time we could…’</i>
+              but instead we
+              <b>focused on the areas we could add the most value</b>
+              .
+            </p>
+          </div>
         </div>
       </div>
-      <div class="created-by">
-        <p>Site designed and coded by Kathleen Curran</p>
+    </main>
+
+    <footer>
+      <div class="container-fluid" id="footer-container">
+        <div class="footer-center">
+          <div class="icon-stuff">
+            <a aria-label="button to linkedin" href="https://www.linkedin.com/in/kathleencurran-/">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a aria-label="button to write email" href="mailto:kcurran983@gmail.com?subject=Just Wanted to Connect">
+              <i class="fa fa-envelope"></i>
+            </a>
+          </div>
+          <div>
+            <p>Connect with me!</p>
+          </div>
+        </div>
+        <div class="created-by">
+          <p>Site designed and coded by Kathleen Curran</p>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script>
+    <script>
+      // Handles the return to top button
+      let topButton = document.getElementById('cg-button')
 
-    // Handles the return to top button
-    let topButton = document.getElementById("cg-button")
-
-    window.onscroll = function () {
-      scrollFunction();
-    }
-
-    // shows button when user scrolls down 50px
-    function scrollFunction() {
-      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 20) {
-        topButton.style.display = "block"
-      } else {
-        topButton.style.display = "none"
+      window.onscroll = function () {
+        scrollFunction()
       }
-    }
 
-    // scrolls to top of the page
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-
-
-
-
-    let modal = document.getElementById("merged-img-modal")
-    let img = document.getElementById("merged-image")
-    let modalImg = document.getElementById("img01")
-    var captionText = document.getElementById("caption");
-
-    img.onclick = function () {
-      console.log('something is happening')
-      modal.style.display = "flex";
-      modal.style.flexDirection = "column";
-      modalImg.src = this.src;
-      captionText.innerHTML = this.alt;
-    }
-
-    var closeButton = document.getElementsByClassName("close")[0];
-
-    closeButton.onclick = function () {
-      modal.style.display = "none";
-    }
-
-    closeButton.addEventListener("keypress", function (e) {
-      if (e.key === "Enter") {
-        console.log('pressed enter')
-        event.preventDefault();
-        modal.style.display = 'none';
+      // shows button when user scrolls down 50px
+      function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 20) {
+          topButton.style.display = 'block'
+        } else {
+          topButton.style.display = 'none'
+        }
       }
-    });
-  </script>
 
+      // scrolls to top of the page
+      function topFunction() {
+        document.body.scrollTop = 0
+        document.documentElement.scrollTop = 0
+      }
 
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous">
+      let modal = document.getElementById('merged-img-modal')
+      let img = document.getElementById('merged-image')
+      let modalImg = document.getElementById('img01')
+      var captionText = document.getElementById('caption')
+
+      img.onclick = function () {
+        console.log('something is happening')
+        modal.style.display = 'flex'
+        modal.style.flexDirection = 'column'
+        modalImg.src = this.src
+        captionText.innerHTML = this.alt
+      }
+
+      var closeButton = document.getElementsByClassName('close')[0]
+
+      closeButton.onclick = function () {
+        modal.style.display = 'none'
+      }
+
+      closeButton.addEventListener('keypress', function (e) {
+        if (e.key === 'Enter') {
+          console.log('pressed enter')
+          event.preventDefault()
+          modal.style.display = 'none'
+        }
+      })
     </script>
 
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"></script>
+  </body>
 </html>

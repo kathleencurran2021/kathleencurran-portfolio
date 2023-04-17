@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@popperjs/core": "^2.11.7"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true,
+    "htmlWhitespaceSensitivity": "ignore",
+    "bracketSameLine": true,
+    "printWidth": 120
+  }
+}
