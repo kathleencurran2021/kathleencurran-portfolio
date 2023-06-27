@@ -131,13 +131,21 @@ figcaption {
   grid-column-start: 2;
   grid-column-end: 4;
   display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: 1fr 1fr;
   /* grid-template-columns: 20rem 20rem 1fr; */
   justify-items: center;
 }
 
 .project-specs ul {
   list-style-type: square;
+}
+
+.project-details {
+  grid-column: 1;
+}
+
+.spoilers {
+  grid-column: 2;
 }
 
 /* .specs {
