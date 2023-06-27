@@ -1,5 +1,5 @@
 /* Global CSS */
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 body,
 html {
@@ -15,7 +15,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
@@ -46,7 +46,7 @@ h5 {
 p,
 ol,
 li {
-  font-family: "Merriweather", serif;
+  font-family: 'Merriweather', serif;
   font-weight: 300;
 }
 
@@ -56,7 +56,7 @@ b {
 
 q {
   font-style: italic;
-  font-family: "Merriweather", serif;
+  font-family: 'Merriweather', serif;
   color: #396661;
   line-height: 150%;
   font-weight: 600;
@@ -68,7 +68,7 @@ section {
 }
 
 figcaption {
-  font-family: "Merriweather", serif;
+  font-family: 'Merriweather', serif;
   font-style: italic;
   text-align: center;
   font-size: 0.85rem;
@@ -140,27 +140,52 @@ figcaption {
   list-style-type: square;
 }
 
-.specs {
+/* .specs {
   grid-column: 1;
   width: auto;
-}
+} */
 
-.skills {
+/* .skills {
   grid-column: 2;
   overflow: hidden;
   width: auto;
-}
+} */
 
-.tools {
+/* .tools {
   grid-column: 3;
   overflow: hidden;
   width: auto;
-}
-
+} */
+/* Trying something  */
 .project-overview {
   grid-row: 3;
   grid-column: 2/4;
 }
+
+.whole-overview {
+  display: grid;
+  width: 100%;
+  column-gap: 1rem;
+  grid-template-columns: 1fr 1fr 0.1fr 1fr;
+}
+
+.project-overview .context {
+  grid-column: 1/3;
+}
+
+.project-deets {
+  grid-column: 4;
+}
+
+.line {
+  grid-column: 3;
+  border-left: solid 1.5px black;
+  height: 100%;
+  margin: auto;
+  /* background-color: black; */
+}
+
+/* End trying something  */
 .project-overview h2 {
   text-align: center;
 }
@@ -182,7 +207,7 @@ figcaption {
 }
 
 .jump-link {
-  font-family: "Merriweather", serif;
+  font-family: 'Merriweather', serif;
   color: #49680d;
   text-align: center;
 }
