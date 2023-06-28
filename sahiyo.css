@@ -224,7 +224,8 @@
 
 #sahiyo-final-presentation {
   color: #49680d !important;
-  font-family: 'Merriweather', serif;
+  /* font-family: 'Merriweather', serif; */
+  font-family: 'Montserrat', sans-serif;
 }
 
 .presentation-link:hover {
