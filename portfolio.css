@@ -19,28 +19,38 @@ h5 {
 }
 
 h1 {
-  font-size: 3rem;
-  font-weight: 600;
+  /* font-size: 3rem; */
+  /* font-weight: 600; */
+  font-size: 72px;
+  font-weight: 700;
 }
 
 h2 {
-  font-size: 2.75rem;
-  font-weight: 500;
+  /* font-size: 2.75rem;
+  font-weight: 500; */
+  font-size: 54px;
+  font-weight: 700;
 }
 
 h3 {
-  font-size: 2rem;
-  font-weight: 400;
+  /* font-size: 2rem;
+  font-weight: 400; */
+  font-size: 36px;
+  font-weight: 700;
 }
 
 h4 {
-  font-size: 1.5rem;
-  font-weight: 300;
+  /* font-size: 1.5rem;
+  font-weight: 300; */
+  font-size: 28px;
+  font-weight: 600;
 }
 
 h5 {
-  font-size: 1.25rem;
-  font-weight: 300;
+  /* font-size: 1.25rem;
+  font-weight: 300; */
+  font-size: 24px;
+  font-weight: 500;
 }
 
 p,
@@ -81,6 +91,23 @@ figcaption {
   padding: 0px;
 }
 
+/* hierarchy  */
+
+.case-study h2 {
+  margin: 60px auto;
+  text-align: center;
+}
+
+.case-study h3,
+h4 {
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.case-study p {
+  margin-bottom: 32px;
+}
+
 /* Reusable CSS */
 .top-button {
   display: none;
@@ -111,7 +138,8 @@ figcaption {
   display: grid;
   grid-template-columns: 1fr 3.5fr 3.5fr 1fr;
   height: auto;
-  gap: 2rem 5rem;
+  /* gap: 2rem 5rem; */
+  column-gap: 5rem;
 }
 
 .title-div {
@@ -143,7 +171,7 @@ figcaption {
   grid-template-columns: 0.6fr 1.2fr;
   justify-items: center;
   line-height: 150%;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
 .project-specs ul {
@@ -158,7 +186,7 @@ figcaption {
 
 .project-specs p,
 li {
-  font-size: 0.9rem;
+  /* font-size: 0.9rem; */
 }
 
 .project-details {
@@ -174,20 +202,15 @@ li {
   margin-bottom: 2rem;
 }
 
-.project-overview {
-  grid-row: 3;
-  grid-column: 2/4;
-}
-
 /* Project Overview */
 
 .project-overview .context {
   grid-column: 1/3;
 }
 
-/* End trying something  */
-.project-overview h2 {
-  text-align: center;
+.project-overview {
+  grid-row: 3;
+  grid-column: 2/4;
 }
 
 .challenge {
@@ -223,13 +246,14 @@ li {
   display: grid;
   grid-row: 6;
   grid-template-columns: 49% 49%;
-  gap: 2rem 2rem;
+  /* gap: 2rem 2rem; */
+  column-gap: 2rem;
 }
 
-.project-process h2 {
+.project-process .process-title-intro {
   grid-row: 1;
   grid-column: 1/3;
-  text-align: center;
+  /* text-align: center */
 }
 .interview-study {
   grid-row: 1;
@@ -266,10 +290,6 @@ li {
 
 .what-learned {
   margin-top: 2rem;
-}
-
-.what-learned h4 {
-  text-align: center;
 }
 
 /* Global breakpoints */
