@@ -14,7 +14,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -51,6 +52,12 @@ h5 {
   font-weight: 300; */
   font-size: 24px;
   font-weight: 500;
+}
+
+.subheader {
+  font-size: 28px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
 }
 
 p,
@@ -93,10 +100,15 @@ figcaption {
 
 /* hierarchy  */
 
-.case-study h2 {
+/* .case-study h2 {
   margin: 60px auto;
   text-align: center;
-}
+} */
+
+/* .title-div {
+  margin: 60px auto;
+  text-align: center;
+} */
 
 .case-study h3,
 h4 {
@@ -150,7 +162,7 @@ h4 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 60px auto;
 }
 
 .title-div img {
