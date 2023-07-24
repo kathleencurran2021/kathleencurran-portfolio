@@ -30,7 +30,7 @@
   margin: 3rem 4rem 4rem 4rem;
 }
 
-.experience > h2 {
+.experience .experience-header{
   text-align: center;
   text-decoration: underline;
 }
@@ -49,6 +49,10 @@
   margin: 0 auto;
   text-align: right;
   width: 80%;
+}
+
+.experience-block .role h4 {
+  margin-top: 0;
 }
 
 .role p {
