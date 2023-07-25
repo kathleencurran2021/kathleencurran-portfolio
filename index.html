@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="styles/portfolio.css" />
     <link rel="stylesheet" href="styles/navbar.css" />
     <link rel="stylesheet" href="styles/homepage.css" />
-    
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -44,42 +43,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-md pt-4">
-      <div class="container-fluid flex-guy">
-        <a class="kat-icon" href="index.html">
-          <img src="/images/banner.png" alt="Kathleen Curran: UX Research and Design" />
-        </a>
-
-        <ul class="navbar-nav mb-4 mt-5 justify-content-right">
-          <!-- start of dropdown -->
-          <li class="nav-item dropdown me-5">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Projects
-            </a>
-            <ul class="dropdown-menu" aria-label="navbaDropdownMenuLink">
-              <li>
-                <a class="dropdown-item" href="cutgroup-project.html">Civic User Testing</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="sahiyo-project.html">Community Accessibility</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="huddle.html">Huddle</a>
-              </li>
-            </ul>
-          </li>
-
-          <!-- End of dropdown -->
-          <li class="nav-item me-5">
-            <a class="nav-link" id="nav-about" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="nav-resume" href="resume.html">Resume</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
+    <script src="components/navbar.js"></script>
     <main>
       <!-- Here -->
       <div class="animation-tagline">
@@ -95,87 +59,67 @@
         </div>
       </div>
 
-      <!-- Cutgroup Project -->
       <div class="project-contents">
-        <div class="project-image cutgroup-image">
-          <img src="/images/ballot.jpg" alt="Ballot" />
+        <!-- Cutgroup Project -->
 
-          <!-- <a class="invisible-link" aria-label="link" href="cutgroup-project.html"> -->
-          <div class="project-overlay cutgroup-overlay">
-            <h2>Civic User Testing: Poll Work</h2>
+        <div class="project-card cutgroup-project-card">
+          <div class="project-details">
+            <h2>Civic User Testing</h2>
+            <div class="tag">Rapid User Testing</div>
+            <div class="subheader">Improving the Michigan poll worker experience</div>
             <a
               href="cutgroup-project.html"
-              aria-label="learn more about the cutgroup project"
+              aria-label="learn more about the civic user testing project"
+              id="civic-user-testing-learn-more"
+              type="button"
+              class="btn btn-light border-0 learn-more">
+              Learn More
+              <!-- <img src="/images/right-arrow.svg" alt="right arrow" /> -->
+            </a>
+          </div>
+          <img class="project-pic cutgroup-project-pic" src="/images/ballot-removebg.png" alt="Ballot" />
+        </div>
+
+        <div class="project-card sahiyo-project-card">
+          <div class="project-details">
+            <h2>Sahiyo</h2>
+            <div class="tag">User Research</div>
+            <div class="subheader">Building community through accessibility</div>
+            <a
+              href="cutgroup-project.html"
+              aria-label="learn more about the sahiyo project"
               id="cutgroup-learn-more"
               type="button"
               class="btn btn-light border-0 learn-more">
               Learn More
             </a>
           </div>
-          <!-- </a> -->
+          <img class="project-pic sahiyo-project-pic" src="/images/sahiyo imgs/Sahiyo-logo-2.png" alt="sahiyo logo" />
         </div>
 
-        <div class="project-image sahiyo-image">
-          <img src="/images/sahiyo imgs/Sahiyo-logo-2.png" alt="sahiyo" />
-
-          <div class="project-overlay sahiyo-overlay">
-            <h2>Building Community through Accessibility</h2>
+        <div class="project-card huddle-project-card">
+          <div class="project-details">
+            <h2>Huddle</h2>
+            <div class="tag">Interaction Design</div>
+            <div class="subheader">An app to bring grad students together</div>
             <a
-              href="sahiyo-project.html"
-              type="button"
-              id="sahiyo-learn-more"
-              aria-label="learn more about the needs assessment project"
-              class="btn btn-light border-0 learn-more">
-              Learn More
-            </a>
-          </div>
-        </div>
-
-        <div class="project-image huddle-image">
-          <div id="huddle-image-container">
-            <img
-              src="/images/huddle imgs/huddle-phone-1.png"
-              alt="a phone screen with a login page to the Huddle applications" />
-            <img
-              src="/images/huddle imgs/huddle-phone-2.png"
-              alt="a phone screen with a resource page to the Huddle applications" />
-          </div>
-
-          <div class="project-overlay huddle-overlay">
-            <h2>Huddle: Interaction Design</h2>
-            <a
-              href="huddle.html"
-              type="button"
+              href="cutgroup-project.html"
+              aria-label="learn more about the huddle project"
               id="huddle-learn-more"
-              aria-label="learn more about the Huddle Interaction Design  project"
+              type="button"
               class="btn btn-light border-0 learn-more">
               Learn More
             </a>
           </div>
+          <img
+            class="project-pic cutgroup-project-pic"
+            src="/images/huddle imgs/huddle-phone-2.png"
+            alt="huddle image" />
         </div>
       </div>
     </main>
 
-    <footer>
-      <div class="container-fluid" id="footer-container">
-        <div class="footer-center">
-          <div class="icon-stuff">
-            <a aria-label="button to linkedin" href="https://www.linkedin.com/in/kathleencurran-/">
-              <i class="fa fa-linkedin"></i>
-            </a>
-            <a aria-label="button to write email" href="mailto:kcurran983@gmail.com?subject=Just Wanted to Connect">
-              <i class="fa fa-envelope"></i>
-            </a>
-          </div>
-          <div>
-            <p>Connect with me!</p>
-          </div>
-        </div>
-        <div class="created-by">
-          <p>Site designed and coded by Kathleen Curran</p>
-        </div>
-      </div>
-    </footer>
+    <script src="components/footer.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
@@ -183,7 +127,26 @@
       crossorigin="anonymous"></script>
 
     <script>
-      let sahiyoLink = document.getElementById('sahiyo-thumbnail-img')
+      homeLink = document.querySelector('.nav-home')
+      homeLink.style.fontWeight = '600'
+
+      const cutgroupDiv = document.querySelector('.cutgroup-project-card')
+      cutgroupDiv.addEventListener('click', function () {
+        console.log('clicked')
+        window.location = 'cutgroup-project.html'
+      })
+
+      const sahiyoDiv = document.querySelector('.sahiyo-project-card')
+      sahiyoDiv.addEventListener('click', function () {
+        console.log('clicked')
+        window.location = 'sahiyo-project.html'
+      })
+
+      const huddleDiv = document.querySelector('.huddle-project-card')
+      huddleDiv.addEventListener('click', function () {
+        console.log('clicked')
+        window.location = 'huddle.html'
+      })
     </script>
   </body>
 </html>

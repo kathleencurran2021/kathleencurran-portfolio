@@ -35,47 +35,14 @@
 
   <body>
     <button onclick="topFunction()" class="top-button" id="cg-button" title="Return to top">&#8679;</button>
-
-    <nav class="navbar navbar-expand-md pt-4">
-      <div class="container-fluid flex-guy">
-        <a class="kat-icon" href="index.html">
-          <img src="/images/banner.png" alt="Kathleen Curran: UX Research and Design" />
-        </a>
-
-        <ul class="navbar-nav mb-4 mt-5 justify-content-right">
-          <!-- start of dropdown -->
-          <li class="nav-item dropdown me-5">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Projects
-            </a>
-            <ul class="dropdown-menu" aria-label="navbaDropdownMenuLink">
-              <li>
-                <a class="dropdown-item current-page" href="cutgroup-project.html">Civic User Testing</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="sahiyo-project.html">Community Accessibility</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="huddle.html">Huddle</a>
-              </li>
-            </ul>
-          </li>
-
-          <!-- End of dropdown -->
-          <li class="nav-item me-5">
-            <a class="nav-link" id="nav-about" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="nav-resume" href="resume.html">Resume</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <script src="components/navbar.js"></script>
 
     <main>
       <div id="cutgroup-case-study" class="case-study">
         <div id="title" class="title-div">
-          <h2>Improving Michigan Poll Work</h2>
+          <!-- <h2>Improving Michigan Poll Work</h2> -->
+          <h2>Civic User Testing</h2>
+          <div class="subheader">Improving the Michigan Poll Work Experience</div>
         </div>
 
         <div class="project-specs">
@@ -368,30 +335,14 @@
       </div>
     </main>
 
-    <footer>
-      <div class="container-fluid" id="footer-container">
-        <div class="footer-center">
-          <div class="icon-stuff">
-            <a aria-label="button to linkedin" href="https://www.linkedin.com/in/kathleencurran-/">
-              <i class="fa fa-linkedin"></i>
-            </a>
-            <a aria-label="button to write email" href="mailto:kcurran983@gmail.com?subject=Just Wanted to Connect">
-              <i class="fa fa-envelope"></i>
-            </a>
-          </div>
-          <div>
-            <p>Connect with me!</p>
-          </div>
-        </div>
-        <div class="created-by">
-          <p>Site designed and coded by Kathleen Curran</p>
-        </div>
-      </div>
-    </footer>
+    <script src="components/footer.js"></script>
 
     <script>
       // Handles the return to top button
       let topButton = document.getElementById('cg-button')
+
+      projectLink = document.querySelector('.nav-projects')
+      projectLink.style.fontWeight = '600'
 
       window.onscroll = function () {
         scrollFunction()
