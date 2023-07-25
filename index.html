@@ -43,46 +43,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-md pt-4">
-      <div class="container-fluid flex-guy">
-        <a class="kat-icon" href="index.html">
-          <img src="/images/banner.png" alt="Kathleen Curran: UX Research and Design" />
-        </a>
-
-        <ul class="navbar-nav mb-4 mt-5 justify-content-right">
-          <li class="nav-item me-5">
-            <a class="nav-link nav-home current-page" href="index.html">home</a>
-          </li>
-
-          <!-- start of dropdown -->
-          <li class="nav-item dropdown me-5">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Projects
-            </a>
-            <ul class="dropdown-menu" aria-label="navbaDropdownMenuLink">
-              <li>
-                <a class="dropdown-item" href="cutgroup-project.html">Civic User Testing</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="sahiyo-project.html">Sahiyo</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="huddle.html">Huddle</a>
-              </li>
-            </ul>
-          </li>
-
-          <!-- End of dropdown -->
-          <li class="nav-item me-5">
-            <a class="nav-link nav-about" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-resume" href="resume.html">Resume</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
+    <script src="components/navbar.js"></script>
     <main>
       <!-- Here -->
       <div class="animation-tagline">
@@ -156,10 +117,9 @@
             alt="huddle image" />
         </div>
       </div>
+    </main>
 
-
-
-    <script src="footer.js"></script>
+    <script src="components/footer.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
@@ -167,7 +127,8 @@
       crossorigin="anonymous"></script>
 
     <script>
-      let sahiyoLink = document.getElementById('sahiyo-thumbnail-img')
+      homeLink = document.querySelector('.nav-home')
+      homeLink.style.fontWeight = '600'
 
       const cutgroupDiv = document.querySelector('.cutgroup-project-card')
       cutgroupDiv.addEventListener('click', function () {

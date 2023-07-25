@@ -35,51 +35,7 @@
 
   <body>
     <button onclick="topFunction()" class="top-button" id="cg-button" title="Return to top">&#8679;</button>
-
-    <nav class="navbar navbar-expand-md pt-4">
-      <div class="container-fluid flex-guy">
-        <a class="kat-icon" href="index.html">
-          <img src="/images/banner.png" alt="Kathleen Curran: UX Research and Design" />
-        </a>
-
-        <ul class="navbar-nav mb-4 mt-5 justify-content-right">
-          <li class="nav-item me-5">
-            <a class="nav-link nav-home" href="index.html">home</a>
-          </li>
-
-          <!-- start of dropdown -->
-          <li class="nav-item dropdown me-5">
-            <a
-              class="nav-link dropdown-toggle current-page"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Projects
-            </a>
-            <ul class="dropdown-menu" aria-label="navbaDropdownMenuLink">
-              <li>
-                <a class="dropdown-item" href="cutgroup-project.html">Civic User Testing</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="sahiyo-project.html">Sahiyo</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="huddle.html">Huddle</a>
-              </li>
-            </ul>
-          </li>
-
-          <!-- End of dropdown -->
-          <li class="nav-item me-5">
-            <a class="nav-link nav-about" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-resume" href="resume.html">Resume</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <script src="components/navbar.js"></script>
 
     <main>
       <div id="cutgroup-case-study" class="case-study">
@@ -379,11 +335,14 @@
       </div>
     </main>
 
-    <script src="footer.js"></script>
+    <script src="components/footer.js"></script>
 
     <script>
       // Handles the return to top button
       let topButton = document.getElementById('cg-button')
+
+      projectLink = document.querySelector('.nav-projects')
+      projectLink.style.fontWeight = '600'
 
       window.onscroll = function () {
         scrollFunction()
