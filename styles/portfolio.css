@@ -60,6 +60,13 @@ h5 {
   font-family: 'Montserrat', sans-serif;
 }
 
+.tag {
+  font-size: 16px;
+  color: darkgreen;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
 p,
 ol,
 li {
@@ -336,6 +343,10 @@ li {
   h5 {
     font-size: 1.25rem;
     font-weight: 200;
+  }
+
+  .subheader {
+    font-size: 1rem;
   }
 
   /* project breakpoints */

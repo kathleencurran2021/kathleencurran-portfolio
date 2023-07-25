@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="styles/portfolio.css" />
     <link rel="stylesheet" href="styles/navbar.css" />
     <link rel="stylesheet" href="styles/homepage.css" />
-    
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -95,27 +94,66 @@
         </div>
       </div>
 
-      <!-- Cutgroup Project -->
       <div class="project-contents">
-        <div class="project-image cutgroup-image">
-          <img src="/images/ballot.jpg" alt="Ballot" />
+        <!-- Cutgroup Project -->
 
-          <!-- <a class="invisible-link" aria-label="link" href="cutgroup-project.html"> -->
-          <div class="project-overlay cutgroup-overlay">
-            <h2>Civic User Testing: Poll Work</h2>
+        <div class="project-card cutgroup-project-card">
+          <div class="project-details">
+            <h2>Civic User Testing</h2>
+            <div class="tag">Rapid User Testing</div>
+            <div class="subheader">Improving the Michigan poll worker experience</div>
             <a
               href="cutgroup-project.html"
-              aria-label="learn more about the cutgroup project"
+              aria-label="learn more about the civic user testing project"
+              id="civic-user-testing-learn-more"
+              type="button"
+              class="btn btn-light border-0 learn-more">
+              Learn More
+              <!-- <img src="/images/right-arrow.svg" alt="right arrow" /> -->
+            </a>
+          </div>
+          <img class="project-pic cutgroup-project-pic" src="/images/ballot-removebg.png" alt="Ballot" />
+        </div>
+
+        <div class="project-card sahiyo-project-card">
+          <div class="project-details">
+            <h2>Sahiyo</h2>
+            <div class="tag">User Research</div>
+            <div class="subheader">Building community through accessibility</div>
+            <a
+              href="cutgroup-project.html"
+              aria-label="learn more about the sahiyo project"
               id="cutgroup-learn-more"
               type="button"
               class="btn btn-light border-0 learn-more">
               Learn More
             </a>
           </div>
-          <!-- </a> -->
+          <img class="project-pic sahiyo-project-pic" src="/images/sahiyo imgs/Sahiyo-logo-2.png" alt="sahiyo logo" />
         </div>
 
-        <div class="project-image sahiyo-image">
+        <div class="project-card huddle-project-card">
+          <div class="project-details">
+            <h2>Huddle</h2>
+            <div class="tag">Interaction Design</div>
+            <div class="subheader">An app to bring grad students together</div>
+            <a
+              href="cutgroup-project.html"
+              aria-label="learn more about the huddle project"
+              id="huddle-learn-more"
+              type="button"
+              class="btn btn-light border-0 learn-more">
+              Learn More
+            </a>
+          </div>
+          <img
+            class="project-pic cutgroup-project-pic"
+            src="/images/huddle imgs/huddle-phone-2.png"
+            alt="huddle image" />
+        </div>
+      </div>
+
+      <!-- <div class="project-image sahiyo-image">
           <img src="/images/sahiyo imgs/Sahiyo-logo-2.png" alt="sahiyo" />
 
           <div class="project-overlay sahiyo-overlay">
@@ -129,8 +167,8 @@
               Learn More
             </a>
           </div>
-        </div>
-
+        </div> -->
+      <!-- 
         <div class="project-image huddle-image">
           <div id="huddle-image-container">
             <img
@@ -153,7 +191,7 @@
             </a>
           </div>
         </div>
-      </div>
+      </div> -->
     </main>
 
     <footer>
@@ -184,6 +222,24 @@
 
     <script>
       let sahiyoLink = document.getElementById('sahiyo-thumbnail-img')
+
+      const cutgroupDiv = document.querySelector('.cutgroup-project-card')
+      cutgroupDiv.addEventListener('click', function () {
+        console.log('clicked')
+        window.location = 'cutgroup-project.html'
+      })
+
+      const sahiyoDiv = document.querySelector('.sahiyo-project-card')
+      sahiyoDiv.addEventListener('click', function () {
+        console.log('clicked')
+        window.location = 'sahiyo-project.html'
+      })
+
+      const huddleDiv = document.querySelector('.huddle-project-card')
+      huddleDiv.addEventListener('click', function () {
+        console.log('clicked')
+        window.location = 'huddle.html'
+      })
     </script>
   </body>
 </html>
